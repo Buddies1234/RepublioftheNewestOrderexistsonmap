@@ -1,10 +1,16 @@
 state = {
 	id = 114
 	name = "STATE_114"
-	manpower = 991921
+	manpower = 5000000
 	
-	resources = {
-		coal = 1 # initial distribution
+
+	resources={
+		steel=40 #was: 5   was: 8
+		chromium=20 # was: 80
+		coal = 40 # initial distribution
+		alluminum = 20 # initial distribution
+		oil = 20 # initial distribution
+		tungsten = 10 # initial distribution
 	}
 
 	state_category = town
@@ -33,7 +39,7 @@ state = {
 		add_core_of = SPM
 	}
 	provinces = {
-		902 6891 9772 9863 11755 11773 11824 11874 	
+		902 6891 9772 9863 11755 11773 11824 11874  	
 	}
 
 	local_supplies = 0.0 

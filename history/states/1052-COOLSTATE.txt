@@ -1,0 +1,22 @@
+state={
+	id=1052
+	name="STATE_1052"
+	provinces={
+		13391 13397 13426 13433 13454 13460 13469 13478 13486 13488 13504 13523 13531 13557 13558 13559 13562 13573 13754 13764 13877 13957 
+	}
+
+	history = {
+		owner = RNO
+		add_core_of = RNO
+
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	manpower=43434
+	buildings_max_level_factor=1
+	local_supplies=0
+
+	state_category = "large_town"
+}

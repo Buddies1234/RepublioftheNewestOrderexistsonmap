@@ -8,7 +8,6 @@ state = {
 		steel=40 #was: 5   was: 8
 		chromium=20 # was: 80
 		coal = 40 # initial distribution
-		alluminum = 20 # initial distribution
 		oil = 20 # initial distribution
 		tungsten = 10 # initial distribution
 	}

@@ -1,0 +1,16 @@
+characters = {
+	RNO_poniatowski = {
+		name = "Poniatowski"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_PLACEHOLDER_large"
+			}
+		}
+
+		country_leader = {
+			ideology = centrism
+			desc = "john poniatowski"
+		}
+
+	}
+}

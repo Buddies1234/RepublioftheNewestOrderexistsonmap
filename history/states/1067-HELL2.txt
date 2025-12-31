@@ -1,0 +1,22 @@
+state={
+	id=1067
+	name="STATE_1067"
+	provinces={
+		13608 13614 13622 13626 13842 13861 
+	}
+
+	history = {
+		owner = RNO
+		add_core_of = RNO
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	state_category = "rural"
+
+	manpower=20000
+	buildings_max_level_factor=1
+	local_supplies=0
+}

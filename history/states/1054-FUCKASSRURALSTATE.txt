@@ -1,0 +1,21 @@
+state={
+	id=1054
+	name="STATE_1054"
+	provinces={
+		13396 13399 13415 13416 13432 13438 13456 13461 13468 13470 13507 13521 13552 13569 13726 13733 13775 13779 13787 13804 13817 13829 13864 13866 13908 13917 13932 13938 13942 13963 
+	}
+	manpower=2133
+	buildings_max_level_factor=1
+	local_supplies=0
+
+	history = {
+		owner = RNO
+		add_core_of = RNO
+
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	state_category = "rural"
+}

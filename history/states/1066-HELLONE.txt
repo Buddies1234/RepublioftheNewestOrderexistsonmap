@@ -1,8 +1,8 @@
 state={
-	id=1068
-	name="STATE_1068"
+	id=1066
+	name="STATE_1066"
 	provinces={
-		13595 13605 13616 13621 13627 13631 13634 13641 13668 13674 13682 13687 13695 
+		13382 13585 13589 13604 13624 
 	}
 
 	history = {
@@ -14,7 +14,7 @@ state={
 		}
 	}
 
-	state_category = "rural"
+	state_category = small_island
 
 	manpower=20000
 	buildings_max_level_factor=1

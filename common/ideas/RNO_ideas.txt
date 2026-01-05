@@ -23,8 +23,8 @@ ideas = {
 			}
             picture = AUS_habsburg_monarchy_restored
 			modifier = {
-                stability_weekly = 0.05
-                war_support_weekly = 0.05
+                stability_weekly = 0.005
+                war_support_weekly = 0.005
                 political_power_gain = 0.1
                 weekly_manpower = 1000
                 conscription_factor = 0.1 = 0.10

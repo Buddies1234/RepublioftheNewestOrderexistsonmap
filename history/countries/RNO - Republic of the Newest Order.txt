@@ -98,7 +98,7 @@ set_popularities = {
 	neutrality = 75
 }
 
-add_ideas = {
-}
-
+add_ideas = The_King_Support_Neutral
+add_ideas = The_constitution
+add_ideas = The_King
 recruit_character = RNO_poniatowski

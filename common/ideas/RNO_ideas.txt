@@ -1,0 +1,167 @@
+ideas = {
+	country = {
+		The_King_Support_Neutral = {
+		
+			allowed = {
+				tag = RNO
+			}
+			cancel = {
+			}
+            picture = HUN_hungarian_monarchy
+			modifier = {
+			}
+			
+		}
+    }
+	country = {
+		The_King_Support_Slightly_Positive = {
+		
+			allowed = {
+				tag = RNO
+			}
+			cancel = {
+			}
+            picture = AUS_habsburg_monarchy_restored
+			modifier = {
+                stability_weekly = 0.05
+                war_support_weekly = 0.05
+                political_power_gain = 0.1
+                weekly_manpower = 1000
+                conscription_factor = 0.1 = 0.10
+                non_core_manpower = 0.01
+			}
+			
+		}
+    }
+    country = {
+        The_King_Support_Positive = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = AUS_habsburg_monarchy_restored
+            modifier = {
+                stability_weekly = 0.01
+                war_support_weekly = 0.01
+                political_power_gain = 0.2
+                weekly_manpower = 2000
+                conscription_factor = 0.20
+                non_core_manpower = 0.02
+            }
+        }
+        }
+    country = {
+        The_King_Support_Very_Positive = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = AUS_habsburg_monarchy_restored
+            modifier = {
+                stability_weekly = 0.015
+                war_support_weekly = 0.015
+                political_power_gain = 0.3
+                weekly_manpower = 3000
+                conscription_factor = 0.30
+                non_core_manpower = 0.03
+            }
+            
+        }
+    }
+    country = {
+        The_King_Support_Slightly_negative = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = chi_war_of_resistance
+            modifier = {
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+                political_power_gain = -0.1
+                mobilization_speed = -0.1
+                conscription_factor = -0.10
+                non_core_manpower = -0.01
+            }
+            
+        }
+    }
+    country = {
+        The_King_Support_Negative = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = chi_war_of_resistance2
+            modifier = {
+                stability_weekly = -0.01
+                war_support_weekly = -0.01
+                political_power_gain = -0.2
+                mobilization_speed = -0.2
+                conscription_factor = -0.20
+                non_core_manpower = -0.02
+            }
+            
+        }
+    }
+    country = {
+        The_King_Support_Very_Negative = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = chi_war_of_resistance3
+            modifier = {
+                stability_weekly = -0.015
+                war_support_weekly = -0.015
+                political_power_gain = -0.3
+                mobilization_speed = -0.3
+                conscription_factor = -0.30
+                non_core_manpower = -0.03
+            }
+            
+        }
+    }
+    country = {
+        The_constitution = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_constitutional_guarantees
+            modifier = {
+                stability_factor = 0.10
+                political_power_gain = 0.05
+            }
+            
+        }
+
+    }
+    country = {
+        The_King = {
+        
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = RAJ_kingmaker
+            modifier = {
+                neutrality_drift = 0.1
+                stability_factor = 0.05
+            }
+    }
+    }
+}

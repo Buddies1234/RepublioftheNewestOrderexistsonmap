@@ -27,7 +27,7 @@ ideas = {
                 war_support_weekly = 0.005
                 political_power_gain = 0.1
                 weekly_manpower = 1000
-                conscription_factor = 0.1 = 0.10
+                conscription_factor = 0.10
                 non_core_manpower = 0.01
 			}
 			

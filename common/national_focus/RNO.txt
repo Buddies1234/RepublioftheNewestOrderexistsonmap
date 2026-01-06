@@ -1,0 +1,192 @@
+focus_tree = {
+	id = RNO_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RNO
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1000 }
+	focus = {
+		id = Dust_to_Dust
+		icon = GFX_focus_generic_democratic_europe
+		#prerequisite = { focus = }
+		x = 50
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = State_of_the_Colonies
+		icon = GFX_focus_ARG_revive_the_colonial_plan
+		#prerequisite = { focus = }
+		x = 20
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+            not = {
+            has_government = communism
+            }
+            has_completed_focus = 1937_Election
+		}
+		completion_reward = {
+            country_event = { 
+                id = RNO_Events_Colonies.1 
+                days = 1 
+                }
+		}
+	}
+	focus = {
+		id = State_of_the_Economy
+		icon = GFX_focus_AFG_a_modern_economy
+		#prerequisite = { focus = }
+		x = 0
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = Begin_the_Reforms
+		icon = GFX_focus_chi_army_reform
+		#prerequisite = { focus = }
+		x = 0
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = Ashes_To_Ashes
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = Dust_to_Dust }
+
+		relative_position_id = Dust_to_Dust
+        x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = 1937_Election
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = Ashes_To_Ashes }
+
+		relative_position_id = Ashes_To_Ashes
+        x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+
+
+######################################################################################################################
+#COLONIAL BRANCH
+######################################################################################################################
+	focus = {
+		id = The_State_of_our_Pacific_Colonies
+		icon = GFX_focus_GER_sentinels_of_the_pacific
+		prerequisite = { focus = State_of_the_Colonies }
+
+		relative_position_id = State_of_the_Colonies
+        x = 5
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+            country_event = { 
+                id = RNO_Events_Colonies.2 
+                days = 1 
+                }
+		}
+	}
+	focus = {
+		id = Office_of_Asian_Forgain_Affairs
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = The_State_of_our_Pacific_Colonies }
+
+		relative_position_id = The_State_of_our_Pacific_Colonies
+        x = 5
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+            #event chain making some desicions about the colonies
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

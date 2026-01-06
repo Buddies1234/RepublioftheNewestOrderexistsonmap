@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		The_King_Support_Neutral = {
-		
+            # "The King's Support - Neutral"
 			allowed = {
 				tag = RNO
 			}
@@ -15,7 +15,7 @@ ideas = {
     }
 	country = {
 		The_King_Support_Slightly_Positive = {
-		
+            # "The King's Support - Slightly Positive"
 			allowed = {
 				tag = RNO
 			}
@@ -35,7 +35,7 @@ ideas = {
     }
     country = {
         The_King_Support_Positive = {
-        
+            # "The King's Support - Positive"
             allowed = {
                 tag = RNO
             }
@@ -54,7 +54,7 @@ ideas = {
         }
     country = {
         The_King_Support_Very_Positive = {
-        
+            # "The King's Support - Very Positive"
             allowed = {
                 tag = RNO
             }
@@ -74,7 +74,7 @@ ideas = {
     }
     country = {
         The_King_Support_Slightly_negative = {
-        
+            # "The King's Support - Slightly Negative"
             allowed = {
                 tag = RNO
             }
@@ -94,7 +94,7 @@ ideas = {
     }
     country = {
         The_King_Support_Negative = {
-        
+            # "The King's Support - Negative"
             allowed = {
                 tag = RNO
             }
@@ -114,7 +114,7 @@ ideas = {
     }
     country = {
         The_King_Support_Very_Negative = {
-        
+            # "The King's Support - Very Negative"
             allowed = {
                 tag = RNO
             }
@@ -134,7 +134,7 @@ ideas = {
     }
     country = {
         The_constitution = {
-        
+            # "The Constitution"
             allowed = {
                 tag = RNO
             }
@@ -151,7 +151,7 @@ ideas = {
     }
     country = {
         The_King = {
-        
+            # "The King"
             allowed = {
                 tag = RNO
             }
@@ -164,4 +164,157 @@ ideas = {
             }
     }
     }
-}
+    country = {
+        The_Army = {
+            # "The Army"
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = NORDIC_army_monarchist
+            modifier = {
+                army_core_defence_factor = 0.15
+                army_core_attack_factor = 0.15
+            }
+    }
+    }
+    country = {
+        The_Navy = {
+            # "The Navy"
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = NORDIC_navy_monarchist
+            modifier = {
+                navy_fuel_consumption_factor = -0.1
+                naval_invasion_prep_speed = 0.15
+                naval_invasion_penalty = -0.1
+            }
+    }
+    }
+    country = {
+        The_Air_Force = {
+            # "The Air Force"
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = NORDIC_airforce_monarchist
+            modifier = {
+                air_fuel_consumption_factor = -0.1
+                air_range_factor = 0.15
+            }
+    }
+    }
+    country = {
+        The_Economy = {
+            # "The Economy"
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = RAJ_special_economic_zones
+            modifier = {
+
+            }
+    }
+    }
+    country = {
+        Our_Colonial_Empire = {
+            # "Our Colonial Empire"
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_exploit_mines
+            modifier = {
+                subjects_autonomy_gain = -0.1
+                war_support_factor = 0.05
+                local_resources_factor = 0.1
+            }
+    }
+    }
+
+###############################################################################################################
+#Colonial Ideas for RNO
+###############################################################################################################
+    country = {
+        Our_Colonial_Empire1 = {
+            # improving colonial conditions
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_exploit_mines
+            modifier = {
+                subjects_autonomy_gain = -0.1
+                war_support_factor = 0.05
+                local_resources_factor = 0.1
+                resistance_target = -0.1
+            }
+    }
+
+    }
+    country = {
+        Our_Colonial_Empire2 = {
+            # focusing on colonial expansion
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_exploit_mines
+            modifier = {
+                subjects_autonomy_gain = -0.1
+                war_support_factor = 0.1
+                local_resources_factor = 0.1
+                non_core_manpower = 0.05
+            }
+    }
+
+    }
+        country = {
+        Our_Colonial_Empire3 = {
+            # Serving the motherland
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_exploit_mines
+            modifier = {
+                subjects_autonomy_gain = -0.1
+                war_support_factor = 0.05
+                local_resources_factor = 0.2
+            }
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}   

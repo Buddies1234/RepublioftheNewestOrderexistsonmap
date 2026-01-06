@@ -1,0 +1,118 @@
+﻿
+
+add_namespace = RNO_Events_Colonies
+country_event = {
+	id = RNO_Events_Colonies.1
+	title = "Our Colonies"
+	desc = "We have Colonies Both in Africa and the Pacific to take care of. Amd while the African Sitouation is higly unstable and debated back home, our Pacific Colonies are both newer and intensivly supported by his Majesty and thus face less resistance when reforming. Yet what should be do with them?"
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "We should focus on improving our Colonies' conditions."
+		swap_ideas = 
+			{
+				remove_idea = Our_Colonial_Empire
+				add_idea = Our_Colonial_Empire1
+			}
+	}
+	option = {
+		name = "We should focus on Colonial Expansion."
+		swap_ideas = 
+			{
+				remove_idea = Our_Colonial_Empire
+				add_idea = Our_Colonial_Empire2
+			}
+	}
+	option = {
+		name = "The Colonies should primarly serve the Motherland."
+		swap_ideas = 
+			{
+				remove_idea = Our_Colonial_Empire
+				add_idea = Our_Colonial_Empire3
+			}
+	}
+}
+country_event = {
+	id = RNO_Events_Colonies.2
+	title = "Our Pacific Colonies"
+	desc = "Our Pacific Colonies offer as many Dangers as they do Opportunities. We must ensure there Loyalty, while also balancing the Relations between Japan and USA and fulliling the Kings Wishes Regarding Colonial Exspension. To do so the King has approved a new asian task froce with the Goal to help achive local objesctives such as Peacekepping and protecting trade routes."
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "I understand."
+
+		division_template = {
+			name = "Asian Task Force Division"
+			priority = 2
+			division_names_group = POL_INF_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+	
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+		
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 3 y = 1 }
+				infantry = { x = 3 y = 2 }
+
+				artillery_brigade = { x = 4 y = 0 }
+				artillery_brigade = { x = 4 y = 1 }
+				}
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = { x = 0 y = 1 }
+				anti_air = { x = 0 y = 2 }
+				field_hospital = { x = 0 y = 3 }
+				military_police = { x = 0 y = 4 }
+			}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 669 } #Vilnius
+				create_unit = {
+					division = "name = \"Asian Task Force Division\" division_template = \"Asian Task Force Division\" start_experience_factor = 1.0" 
+					owner = RNO
+				}
+				create_unit = {
+					division = "name = \"Asian Task Force Division\" division_template = \"Asian Task Force Division\" start_experience_factor = 1.0" 
+					owner = RNO
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 523 } #Vilnius
+				create_unit = {
+					division = "name = \"Asian Task Force Division\" division_template = \"Asian Task Force Division\" start_experience_factor = 1.0" 
+					owner = RNO
+				}
+				create_unit = {
+					division = "name = \"Asian Task Force Division\" division_template = \"Asian Task Force Division\" start_experience_factor = 1.0" 
+					owner = RNO
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 673 } #Vilnius
+				create_unit = {
+					division = "name = \"Asian Task Force Division\" division_template = \"Asian Task Force Division\" start_experience_factor = 1.0" 
+					owner = RNO
+				}
+				create_unit = {
+					division = "name = \"Asian Task Force Division\" division_template = \"Asian Task Force Division\" start_experience_factor = 1.0" 
+					owner = RNO
+				}
+			}
+	}
+}

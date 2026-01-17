@@ -116,3 +116,26 @@ country_event = {
 			}
 	}
 }
+
+#########industry events#############
+add_namespace = modernize_the_republic
+country_event = {
+	id = modernize_the_republic.1
+	title = "The modernization of the republic"
+	desc = "Our nation's industrial capacity is growing, but we must ensure it serves our strategic goals. no the parliment has decided to start modernizing our indutry"
+	picture = GFX_report_event_generic_usa_treaty
+	
+	is_triggered_only = yes
+	trigger = {
+
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	option = {
+		name = "We shall modernize our industry."
+		add_ideas = { modernized_republic  }
+	}
+}

@@ -299,6 +299,28 @@ ideas = {
     }
 
 
+    #################### indutstry ideas ####################
+    country = {
+        
+        modernized_republic = {
+
+            # modernized republic
+            picture = generic_research_bonus
+            
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_research_bonus
+            modifier = { 
+                research_speed_factor = 0.05
+            }       
+        }
+    }
+}
+        
+            
 
 
 
@@ -316,5 +338,3 @@ ideas = {
 
 
 
-
-}   

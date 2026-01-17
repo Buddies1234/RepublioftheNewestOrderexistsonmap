@@ -72,7 +72,7 @@ focus_tree = {
 		id = Begin_the_Reforms
 		icon = GFX_focus_chi_army_reform
 		#prerequisite = { focus = }
-		x = 0
+		x = 4
 		y = 0
 		#relative_position_id =
 		cost = 5
@@ -164,29 +164,40 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#################industry tree branch###########################
+	focus = {
+		id = modernize_the_republic
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
+		prerequisite = { focus = State_of_the_Economy }
+		relative_position_id = State_of_the_Economy
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			tag = RNO
+		}
+		completion_reward = {
+			country_event = modernize_the_republic.1
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

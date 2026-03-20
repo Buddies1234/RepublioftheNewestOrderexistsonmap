@@ -139,6 +139,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = "The Event will spawn in Multiple Divisions in our Pacific Colonies"
             country_event = { 
                 id = RNO_Events_Colonies.2 
                 days = 1 
@@ -160,6 +161,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = "We will get a serious of Events regarding our Colonial forgain Polocy"
             #event chain making some desicions about the colonies
 		}
 	}

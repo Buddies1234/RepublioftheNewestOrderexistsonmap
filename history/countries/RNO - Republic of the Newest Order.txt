@@ -116,10 +116,13 @@ if = {
 		has_start_date < 1936.01.02
 	}
 	set_power_balance = {
-		id = RNO_KingConstitution_balance
+		id = RNO_king_constitution_balance
 		left_side = RNO_King_side
 		right_side = RNO_Constitution_side
 		set_value = 0.0
 	}
 
+}
+activate_power_balance = {
+	id = RNO_king_constitution_balance
 }

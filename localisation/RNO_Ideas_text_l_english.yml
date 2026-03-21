@@ -33,7 +33,7 @@
  State_of_the_Economy_desc:0 "The economy needs to be improved, the factories are old and the workers are unhappy, the universities are underfunded and the scientists are leaving the country. We must set new Polocies to improve the economy and make the country prosperous again."
  Buddies_Reign:0 "Buddies Reign"
  Buddies_Reign_desc:0 "The Kind has revoked the Constitution and declared himself the sole ruler of the country long Live the King! Glory to the Kingdom!"
- RNO_KingConstitution_balance:0 "The Constitutional Struggle"
+ RNO_king_constitution_balance:0 "The Constitutional Struggle"  # FIXED: was RNO_KingConstitution_balance
  RNO_king_side:0 "§RKing's Dominance§! in Buddies"
  RNO_constitution_side:0 "§GConstitution's Dominance§! in Buddies"
  RNO_balanced_range:0 "Balanced"

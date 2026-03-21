@@ -1,4 +1,4 @@
-RNO_KingConstitution_balance = {
+RNO_king_constitution_balance = {  # FIXED: was RNO_KingConstitution_balance (caused mismatch with all internal references)
 	initial_value = 0.5
 	left_side = RNO_king_side
 	right_side = RNO_constitution_side

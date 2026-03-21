@@ -48,6 +48,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = "The Balance of Power being in Kings Supremacy will unlock the Monarchist Branch, Constitutional Supremacy will unlock the Communist Branch, while everything else will be needed for the other Paths."
 		}
 	}
 	focus = {
@@ -84,7 +85,7 @@ focus_tree = {
 		}
 		available = {
 			power_balance_value = {
-				id = RNO_KingConstitution_balance
+				id = RNO_king_constitution_balance  # FIXED: was RNO_KingConstitution_balance
 				value > 0.5
 			}
 		}
@@ -203,17 +204,9 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-
-
-
-
 #######################################################################################################################
-######## Military Branch #######################################################################################################################
-###############################################################################################################################
+######## Military Branch
+#######################################################################################################################
 	focus = {
 		id = Begin_the_Reforms
 		icon = GFX_focus_chi_army_reform
@@ -230,68 +223,4 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-

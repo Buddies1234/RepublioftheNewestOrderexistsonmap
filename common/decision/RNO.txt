@@ -26,10 +26,6 @@ RNO_balance_of_power_category = {
 
         cost = 50
 
-        modifier = {
-            mobilization_speed = 0.35
-        }
-
         complete_effect = {
             modify_power_balance = {
                 id = RNO_king_constitution_balance
@@ -144,10 +140,6 @@ RNO_balance_of_power_category = {
         days_re_enable = 360
 
         cost = 50
-
-        modifier = {
-            stability_weekly_factor = 0.005
-        }
 
         complete_effect = {
             modify_power_balance = {

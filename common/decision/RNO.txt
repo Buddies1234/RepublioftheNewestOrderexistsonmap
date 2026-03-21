@@ -1,0 +1,240 @@
+RNO_balance_of_power_category = {
+
+    ### Royalist Actions - Move balance toward King (left/negative)
+    RNO_appeal_to_royal_authority = {
+        priority = 39
+
+        icon = GFX_decision_generic_civil_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        allowed = {
+            original_tag = RNO
+        }
+
+        available = {
+
+        }
+
+        visible = {
+
+        }
+
+        days_re_enable = 360
+
+        cost = 50
+
+        modifier = {
+            mobilization_speed = 0.35
+        }
+
+        complete_effect = {
+            modify_power_balance = {
+                id = RNO_king_constitution_balance
+                shift = -0.15
+            }
+
+            custom_effect_tooltip = RNO_appeal_to_royal_authority_tt
+        }
+    }
+
+    RNO_consolidate_royalist_power = {
+        priority = 38
+
+        icon = GFX_decision_eng_propaganda_campaigns
+
+        ai_will_do = {
+            base = 1
+        }
+
+        allowed = {
+            original_tag = RNO
+        }
+
+        available = {
+
+        }
+
+        visible = {
+
+        }
+
+        days_re_enable = 360
+
+        cost = 35
+
+        complete_effect = {
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+            }
+            modify_power_balance = {
+                id = RNO_king_constitution_balance
+                shift = -0.1
+            }
+
+            custom_effect_tooltip = RNO_consolidate_royalist_power_tt
+        }
+    }
+
+    RNO_organize_royalist_support = {
+        priority = 30
+
+        icon = GFX_decision_generic_political_discourse
+
+        ai_will_do = {
+            base = 1
+        }
+
+        allowed = {
+            original_tag = RNO
+        }
+
+        available = {
+
+        }
+
+        visible = {
+
+        }
+
+        days_re_enable = 360
+
+        cost = 25
+
+        complete_effect = {
+            modify_power_balance = {
+                id = RNO_king_constitution_balance
+                shift = -0.2
+            }
+
+            add_popularity = {
+                ideology = neutrality
+                popularity = -0.05
+            }
+
+            custom_effect_tooltip = RNO_organize_royalist_support_tt
+        }
+    }
+
+    ### Constitutionalist Actions - Move balance toward Constitution (right/positive)
+    RNO_appeal_to_constitutional_values = {
+        priority = 39
+
+        icon = GFX_decision_generic_civil_support
+
+        ai_will_do = {
+            base = 1
+        }
+
+        allowed = {
+            original_tag = RNO
+        }
+
+        available = {
+
+        }
+
+        visible = {
+
+        }
+
+        days_re_enable = 360
+
+        cost = 50
+
+        modifier = {
+            stability_weekly_factor = 0.005
+        }
+
+        complete_effect = {
+            modify_power_balance = {
+                id = RNO_king_constitution_balance
+                shift = 0.15
+            }
+
+            custom_effect_tooltip = RNO_appeal_to_constitutional_values_tt
+        }
+    }
+
+    RNO_strengthen_parliament = {
+        priority = 38
+
+        icon = GFX_decision_eng_propaganda_campaigns
+
+        ai_will_do = {
+            base = 1
+        }
+
+        allowed = {
+            original_tag = RNO
+        }
+
+        available = {
+
+        }
+
+        visible = {
+
+        }
+
+        days_re_enable = 360
+
+        cost = 35
+
+        complete_effect = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.1
+            }
+            modify_power_balance = {
+                id = RNO_king_constitution_balance
+                shift = 0.1
+            }
+
+            custom_effect_tooltip = RNO_strengthen_parliament_tt
+        }
+    }
+
+    RNO_mobilize_reformists = {
+        priority = 30
+
+        icon = GFX_decision_generic_political_discourse
+
+        ai_will_do = {
+            base = 1
+        }
+
+        allowed = {
+            original_tag = RNO
+        }
+
+        available = {
+
+        }
+
+        visible = {
+
+        }
+
+        days_re_enable = 360
+
+        cost = 25
+
+        complete_effect = {
+            modify_power_balance = {
+                id = RNO_king_constitution_balance
+                shift = 0.2
+            }
+
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.05
+            }
+
+            custom_effect_tooltip = RNO_mobilize_reformists_tt
+        }
+    }
+}

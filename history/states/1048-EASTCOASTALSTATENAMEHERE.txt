@@ -14,9 +14,9 @@ state={
 		}
 	}
 
-	manpower=345555
+	manpower=89123
 	buildings_max_level_factor=1
 	local_supplies=0
 
-	state_category = "town"
+
 }

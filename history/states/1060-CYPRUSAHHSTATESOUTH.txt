@@ -14,7 +14,7 @@ state={
 		}
 	}
 
-	manpower=16000
+	manpower=82000
 	buildings_max_level_factor=1
 	local_supplies=0
 

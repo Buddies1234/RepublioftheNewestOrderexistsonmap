@@ -10,13 +10,13 @@ state={
 		add_core_of = RNO
 
 		buildings = {
-			infrastructure = 5
+			infrastructure = 2
 		}
 	}
 
-	manpower=5129870
+	manpower=119876
 	buildings_max_level_factor=1
 	local_supplies=0
+}
 
-	state_category = metropolis
 }

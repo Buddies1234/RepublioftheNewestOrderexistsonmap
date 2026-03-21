@@ -19,7 +19,7 @@ set_technology = {
 	fuel_refining = 1
 }
 
-set_grand_doctrine = new_mobile_warfare
+set_grand_doctrine = new_grand_battleplan
 set_grand_doctrine = new_convoy_raiding
 set_grand_doctrine = new_battlefield_support
 
@@ -81,23 +81,26 @@ if = {
 }
 
 set_research_slots = 3
-set_convoys = 50
-set_stability = 0.75
+set_convoys = 263
+set_stability = 0.38
+set_war_support = 0.29
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = Democratic
+	last_election = "1933.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	democratic = 0
-	fascism = 25
-	communism = 0
-	neutrality = 75
+	democratic = 32
+	fascism = 22
+	communism = 11
+	neutrality = 35
 }
-
+add_ideas = {
+	limited_conscription
+}
 add_ideas = The_King_Support_Neutral
 add_ideas = The_constitution
 add_ideas = The_King
@@ -107,3 +110,16 @@ add_ideas = The_Air_Force
 add_ideas = The_Economy
 add_ideas = Our_Colonial_Empire
 recruit_character = RNO_poniatowski
+
+if = {
+	limit = {
+		has_start_date < 1936.01.02
+	}
+	set_power_balance = {
+		id = RNO_KingConstitution_balance
+		left_side = RNO_King_side
+		right_side = RNO_Constitution_side
+		set_value = 0.0
+	}
+
+}

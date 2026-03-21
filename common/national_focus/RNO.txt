@@ -10,7 +10,9 @@ focus_tree = {
 	}
 	
 	default = no
-
+####################################################################################################################
+#Elections
+####################################################################################################################
 	continuous_focus_position = { x = 100 y = 1000 }
 	focus = {
 		id = Dust_to_Dust
@@ -28,62 +30,9 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {
-		id = State_of_the_Colonies
-		icon = GFX_focus_ARG_revive_the_colonial_plan
-		#prerequisite = { focus = }
-		x = 20
-		y = 0
-		#relative_position_id =
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-            not = {
-            has_government = communism
-            }
-            has_completed_focus = 1937_Election
-		}
-		completion_reward = {
-            country_event = { 
-                id = RNO_Events_Colonies.1 
-                days = 1 
-                }
-		}
-	}
-	focus = {
-		id = State_of_the_Economy
-		icon = GFX_focus_AFG_a_modern_economy
-		#prerequisite = { focus = }
-		x = 0
-		y = 0
-		#relative_position_id =
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = Begin_the_Reforms
-		icon = GFX_focus_chi_army_reform
-		#prerequisite = { focus = }
-		x = 4
-		y = 0
-		#relative_position_id =
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		completion_reward = {
-		}
-	}
+
+
+
 	focus = {
 		id = Ashes_To_Ashes
 		icon = GFX_focus_generic_support_the_left_right
@@ -119,11 +68,60 @@ focus_tree = {
 		}
 	}
 
+#########################################################################################################################
+#Monarchist Branch
+#########################################################################################################################
+	focus = {
+		id = Buddies_Reign
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = Ashes_To_Ashes }
+		relative_position_id = Ashes_To_Ashes
+		x = -5
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			power_balance_value = {
+				id = RNO_KingConstitution_balance
+				value > 0.5
+			}
+		}
+		completion_reward = {
 
+		}
+	}
 
 ######################################################################################################################
 #COLONIAL BRANCH
 ######################################################################################################################
+	focus = {
+		id = State_of_the_Colonies
+		icon = GFX_focus_ARG_revive_the_colonial_plan
+		#prerequisite = { focus = }
+		x = 20
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+            not = {
+            has_government = communism
+            }
+            has_completed_focus = 1937_Election
+		}
+		completion_reward = {
+			custom_effect_tooltip = "The Event will let us pick a direction for our Colonial Policy"
+            country_event = { 
+                id = RNO_Events_Colonies.1 
+                days = 1 
+                }
+		}
+	}
+
 	focus = {
 		id = The_State_of_our_Pacific_Colonies
 		icon = GFX_focus_GER_sentinels_of_the_pacific
@@ -168,6 +166,25 @@ focus_tree = {
 
 #################industry tree branch###########################
 	focus = {
+		id = State_of_the_Economy
+		icon = GFX_focus_AFG_a_modern_economy
+		#prerequisite = { focus = }
+		x = 0
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Will unlock desicions Regarding our Economic Policy."
+			#workinprogress
+		}
+	}
+
+	focus = {
 		id = modernize_the_republic
 		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
 		prerequisite = { focus = State_of_the_Economy }
@@ -185,21 +202,96 @@ focus_tree = {
 			country_event = modernize_the_republic.1
 		}
 	}
+
+
+
+
+
+
+
+
+
+#######################################################################################################################
+######## Military Branch #######################################################################################################################
+###############################################################################################################################
+	focus = {
+		id = Begin_the_Reforms
+		icon = GFX_focus_chi_army_reform
+		#prerequisite = { focus = }
+		x = 4
+		y = 0
+		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

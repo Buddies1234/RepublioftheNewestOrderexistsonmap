@@ -10,13 +10,13 @@ state={
 		add_core_of = RNO
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 	}
 
-	manpower=64567
+	manpower=94587
 	buildings_max_level_factor=1
 	local_supplies=0
+}
 
-	state_category = rural
 }

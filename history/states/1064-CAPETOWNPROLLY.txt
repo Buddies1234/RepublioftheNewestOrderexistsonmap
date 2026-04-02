@@ -5,15 +5,19 @@ state={
 		13491 13561 13635 13640 13656 13671 13677 13680 13684 13696 13697 13740 13759 13777 13790 13805 13811 13816 13847 13862 13865 13890 13920 13925 13947 13948 
 	}
 	manpower=115432
-	buildings_max_level_factor=1
+	buildings_max_level_factor=6.000
 	local_supplies=0
 
 	history = {
+		victory_points = {
+			13491 18
+		}
 		owner = RNO
 		add_core_of = RNO
 
 		buildings = {
 			infrastructure = 4
+			air_base = 3
 		}
 	}
 

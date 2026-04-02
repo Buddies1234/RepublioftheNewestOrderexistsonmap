@@ -28,6 +28,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
 		}
 	}
 
@@ -66,6 +72,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
 		}
 	}
 
@@ -101,7 +113,7 @@ focus_tree = {
 		id = State_of_the_Colonies
 		icon = GFX_focus_ARG_revive_the_colonial_plan
 		#prerequisite = { focus = }
-		x = 20
+		x = 10
 		y = 0
 		#relative_position_id =
 		cost = 5
@@ -147,9 +159,9 @@ focus_tree = {
 	}
 	focus = {
 		id = Office_of_Asian_Forgain_Affairs
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_usa_focus_on_asia
 		prerequisite = { focus = The_State_of_our_Pacific_Colonies }
-
+		
 		relative_position_id = The_State_of_our_Pacific_Colonies
         x = 5
 		y = 1
@@ -160,10 +172,17 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			custom_effect_tooltip = "We will get a serious of Events regarding our Colonial forgain Polocy"
+			hidden_effect = {
+				country_event = { 
+				id = RNO_Events_Colonies.3 
+				days = 1 
+				}
+			}
+			custom_effect_tooltip = "We will get a serious of Events regarding our Colonial forgain Polocy that will Unlock/Lock focuses in the Colonial Branch depending on our desicions."
             #event chain making some desicions about the colonies
 		}
 	}
+
 
 #################industry tree branch###########################
 	focus = {
@@ -214,6 +233,480 @@ focus_tree = {
 		x = 4
 		y = 0
 		#relative_position_id =
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
+		}
+	}
+
+######################################################################################################################
+# COLONIAL SUB-BRANCHES - Office of Asian Colonial & Foreign Policy Contacts
+######################################################################################################################
+
+	focus = {
+		id = Office_of_Asian_Colonial
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = The_State_of_our_Pacific_Colonies }
+		relative_position_id = The_State_of_our_Pacific_Colonies
+		x = -5
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+				
+		}
+	}
+
+	# --- Contact Row ---
+
+	focus = {
+		id = Contact_China
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		mutually_exclusive = { focus = Contact_Japan }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = -1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			CHI = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Contact_Japan
+		icon = GFX_focus_PER_fascist_reach_out_to_japan
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		mutually_exclusive = { focus = Contact_China }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 1
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Contact_Indochina
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		mutually_exclusive = { focus = Contact_Siam }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 5
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
+		}
+	}
+	focus = {
+		id = Contact_Siam
+		icon = GFX_focus_generic_befriend_siam
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		mutually_exclusive = { focus = Contact_Indochina }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 11
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			SIA = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = Contact_Anglo_Colonies
+		icon = GFX_focus_eng_unite_the_anglosphere
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 17
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = RNO
+					modifier = RNO_Aproch
+				}
+			}
+		}
+	}
+
+	# --- East Indies Branch ---
+
+	focus = {
+		id = Buy_the_East_Indies
+		icon = GFX_focus_RAJ_institutional_money_laundering
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		mutually_exclusive = { focus = East_Indies_for_Guarantees }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			HOL = {
+				country_event = {
+					id = RNO_Buying_East_Indies.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "Should the Dutch Accept the Trade we will get 20% Consumer goods Factor and 10% less output for a year but we will gain the East Indies."
+		}
+	}
+	focus = {
+		id = East_Indies_for_Guarantees
+		icon = GFX_focus_CHI_the_southern_mandate
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		mutually_exclusive = { focus = Buy_the_East_Indies }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 4
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	# --- USA Branch ---
+
+	focus = {
+		id = Philippines_Help_Against_Japan
+		mutually_exclusive = { focus = Buy_Philippines }
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 7
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_country_flag = RNO_leaning_towards_usa
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Buy_Philippines
+		mutually_exclusive = { focus = Philippines_Help_Against_Japan }
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
+		relative_position_id = Office_of_Asian_Forgain_Affairs
+		x = 9
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			USA = {
+				country_event = {
+					id = RNO_Buying_Philippines.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "Should the Americans Accept the Trade we will get 10% Consumer goods Factor and 5% less output for a year but we will gain the Philippines."
+		}
+	}
+
+	focus = {
+		id = Request_USA_Naval_Advisers
+		icon = GFX_focus_NORDIC_dem_selector_navy
+		prerequisite = { focus = Philippines_Help_Against_Japan }
+		relative_position_id = Philippines_Help_Against_Japan
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	# --- China Branch ---
+
+	focus = {
+		id = Offer_Help_Against_Japan_for_Chinese_Colonies
+		icon = GFX_focus_CHI_tour_the_south
+		prerequisite = { focus = Contact_China }
+		relative_position_id = Contact_China
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = Request_Chinese_Manpower
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = Offer_Help_Against_Japan_for_Chinese_Colonies }
+		relative_position_id = Offer_Help_Against_Japan_for_Chinese_Colonies
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	# --- Japan Branch ---
+
+	focus = {
+		id = Offer_Help_Against_China_for_Japanese_Islands
+		icon = GFX_SOV_pacify_the_rim_ccp_2d_sov_compatibility
+		prerequisite = { focus = Contact_Japan }
+		relative_position_id = Contact_Japan
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Request_Japanese_Naval_Advisers
+		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
+		prerequisite = { focus = Offer_Help_Against_China_for_Japanese_Islands }
+		relative_position_id = Offer_Help_Against_China_for_Japanese_Islands
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	# --- Indochina Branch ---
+
+	focus = {
+		id = Guarantees_for_Indochina
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = Contact_Indochina }
+		mutually_exclusive = { focus = Payment_for_Indochina }
+		relative_position_id = Contact_Indochina
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Payment_for_Indochina
+		icon = GFX_focus_JAP_occupy_indochina
+		prerequisite = { focus = Contact_Indochina }
+		mutually_exclusive = { focus = Guarantees_for_Indochina }
+		relative_position_id = Contact_Indochina
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			FRA = {
+				country_event = {
+					id = RNO_Buying_Indochina.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "If the French accept our offer, they will transfer Indochina for payment to us"
+		}
+	}
+
+	# --- Siam Branch ---
+
+	focus = {
+		id = Offer_Deal_Puppet_Indochina
+		icon = GFX_focus_generic_attack_siam
+		prerequisite = { focus = Contact_Siam }
+		relative_position_id = Contact_Siam
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Buy_Resource_Rights
+		icon = GFX_focus_GER_south_east_asian_natural_wealth
+		prerequisite = { focus = Contact_Siam }
+		relative_position_id = Contact_Siam
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			SIA = {
+				country_event = {
+					id = RNO_Buying_Resource_Rights.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "For payment we secure resource rights in Siam"
+		}
+	}
+
+	# --- Anglo Colonies Branch ---
+
+	focus = {
+		id = Malaya_for_Joining_Allies
+		icon = GFX_focus_ARG_join_the_allies
+		prerequisite = { focus = Contact_Anglo_Colonies }
+		relative_position_id = Contact_Anglo_Colonies
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Burma_for_Payment
+		icon = GFX_focus_RAJ_institutional_money_laundering
+		prerequisite = { focus = Contact_Anglo_Colonies }
+		relative_position_id = Contact_Anglo_Colonies
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = RNO_Buying_Burma.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "Should the British Accept the Trade we will get 20% Consumer goods Factor and 10% less output for a year but we will gain Burma."
+		}
+	}
+
+	focus = {
+		id = Request_Anglo_Military_Support
+		icon = GFX_focus_NORDIC_dem_selector_airforce
+		prerequisite = { focus = Malaya_for_Joining_Allies }
+		relative_position_id = Malaya_for_Joining_Allies
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 10

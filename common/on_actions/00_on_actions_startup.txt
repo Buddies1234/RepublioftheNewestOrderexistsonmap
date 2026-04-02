@@ -1,0 +1,10 @@
+on_actions = {
+	# country
+	on_startup = {		
+		effect = {
+			RNO = {	
+				country_event = { id = RNO_Events_Lore.1 }
+			}
+		}
+	}
+}

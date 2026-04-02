@@ -1,105 +1,287 @@
 ﻿division_template = {
-	name = "Infanterie-Division"
-
-	division_names_group = GER_Inf_01
-
+	name = "Republican Infantry Division"
+	priority = 1
+	division_names_group = ENG_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 3 }
+
+		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
 	}
-	
 	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 }
 
 division_template = {
-	name = "Panzer-Division"
-
-	division_names_group = GER_Arm_01
-
+	name = "Republican Garison Division"
+	priority = 0
+	division_names_group = ENG_INF_01
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-        light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-        motorized = { x = 2 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 	support = {
-        mot_recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 }
 
 division_template = {
-	name = "Infanterie-Division (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
-
-	division_names_group = GER_MOT_02
-
+	name = "Republican Marine Division"
+	priority = 2
+	division_names_group = ENG_INF_01
 	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
-	    motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+		marine = { x = 2 y = 3 }
+
+		marine = { x = 3 y = 0 }
+		marine = { x = 3 y = 1 }
+		marine = { x = 3 y = 2 }
+		marine = { x = 3 y = 3 }
+
+		marine = { x = 4 y = 0 }
+		marine = { x = 4 y = 1 }
 	}
 	support = {
-        mot_recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
 	}
 }
-
-division_template = {
-	name = "Gebirgs-Brigade"		# Gebirgsbrigade
-	#Note: precursor to Gebirgs-Divisions
-	division_names_group = GER_Mnt_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-	}
-}
-
-division_template = {
-	name = "Kavallerie-Brigade"
-
-	division_names_group = GER_Cav_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
-	}
-}
-
 units = {
+	# Infantry Divisions - Strategic Victory Points
+	division = {
+		name = "1st Republican Infantry Division"
+		location = 13571 # State 1063 - Republica (50 VP)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Republican Infantry Division"
+		location = 13769 # State 1062 - Kings Palace (50 VP)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Republican Infantry Division"
+		location = 13390 # State 1056 - Capital (17 VP)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4th Republican Infantry Division"
+		location = 13396 # State 1054 - Major VP (22 points)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5th Republican Infantry Division"
+		location = 13704 # State 1059 - Port & VP (21 points)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "6th Republican Infantry Division"
+		location = 13419 # State 1051 - Major VP (19 points)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "7th Republican Infantry Division"
+		location = 13491 # State 1064 - Air Base & VP (18 points)
+		division_template = "Republican Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
 
+	# Garrison Divisions - Core Defense & Ports (All 17 Restored)
+	division = {
+		name = "1st Republican Garrison Division"
+		location = 13384 # State 1047 - Dockyard & VP (12 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Republican Garrison Division"
+		location = 13408 # State 1048 - Port & VP (8 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Republican Garrison Division"
+		location = 13383 # State 1050 - Naval Base & VP
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "4th Republican Garrison Division"
+		location = 13476 # State 1061 - Industrial VP (14 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "5th Republican Garrison Division"
+		location = 13391 # State 1052 - VP (11 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "6th Republican Garrison Division"
+		location = 13586 # State 1060 - VP (10 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7th Republican Garrison Division"
+		location = 13388 # State 1055 - VP (9 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "8th Republican Garrison Division"
+		location = 13508 # State 1058 - VP (5 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "9th Republican Garrison Division"
+		location = 13489 # State 1049 - Peninsula VP (15 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "10th Republican Garrison Division"
+		location = 13402 # State 1057 - VP (13 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "11th Republican Garrison Division"
+		location = 13386 # State 1053 - VP (6 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "12th Republican Garrison Division"
+		location = 13878 # State 1062 - Naval Base & VP (50 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "13th Republican Garrison Division"
+		location = 13571 # State 1063 - Republica VP (50 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "14th Republican Garrison Division"
+		location = 13420 # State 1048 - Coastal Port
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "15th Republican Garrison Division"
+		location = 13423 # State 1048 - Coastal Port
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "16th Republican Garrison Division"
+		location = 13704 # State 1059 - Naval Base & VP (21 points)
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "17th Republican Garrison Division"
+		location = 13418 # State 1050 - Naval Base
+		division_template = "Republican Garison Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+
+	# Marine Divisions - Coastal Defense & Amphibious
+	division = {
+		name = "1st Republican Marine Division"
+		location = 13878 # State 1062 - Major Naval Base (8)
+		division_template = "Republican Marine Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Republican Marine Division"
+		location = 13704 # State 1059 - Naval Base (3)
+		division_template = "Republican Marine Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Republican Marine Division"
+		location = 13418 # State 1050 - Naval Base
+		division_template = "Republican Marine Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "4th Republican Marine Division"
+		location = 13420 # State 1048 - Coastal Port
+		division_template = "Republican Marine Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "5th Republican Marine Division"
+		location = 13423 # State 1048 - Coastal Port
+		division_template = "Republican Marine Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1.0
+	}
 }
 
 ### Air oob in its own file
@@ -114,56 +296,51 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = GER
+			creator = RNO
 		}
 		requested_factories = 10
 		progress = 0.1
 		efficiency = 50
-		industrial_manufacturer = mio:GER_mauser_organization
 	}
 
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = GER
+			creator = RNO
 		}
 		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
-		industrial_manufacturer = mio:GER_carl_walther_organization
 	}
 
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = GER 
+			creator = RNO 
 		}
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
-		industrial_manufacturer = mio:GER_rheinmetall_organization
 	}
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_2
-			creator = GER
+			type = light_tank_equipment_1
+			creator = RNO
 		}
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
-		industrial_manufacturer = mio:GER_henschel_organization
 	}
 
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = GER 
+			creator = RNO 
 		}
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
-		industrial_manufacturer = mio:GER_opel_organization
 	}
 	
 }

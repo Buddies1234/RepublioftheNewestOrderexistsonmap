@@ -244,6 +244,7 @@ ideas = {
 ###############################################################################################################
 #Colonial Ideas for RNO
 ###############################################################################################################
+ 
     country = {
         Our_Colonial_Empire1 = {
             # improving colonial conditions
@@ -297,7 +298,166 @@ ideas = {
     }
 
     }
-
+    country = {
+        Payments_From_East_Indies = {
+            # Payments from the East Indies
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = -0.1
+                industrial_capacity_dockyard = 0.1
+                industrial_capacity_factory = 0.1
+            }
+    }
+    }
+    country = {
+        Payments_From_East_Burma = {
+            # Payments from the East Indies
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = -0.2
+                industrial_capacity_dockyard = 0.1
+                industrial_capacity_factory = 0.1
+            }
+    }
+    }
+    country = {
+        Buying_The_East_Indies = {
+            # Buying the East Indies
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.2
+                industrial_capacity_dockyard = -0.1
+                industrial_capacity_factory = -0.1
+            }
+    }
+    }
+    country = {
+        Payments_From_Indochina = {
+            # Payments from Indochina
+            allowed = {
+                tag = FRA
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = -0.1
+                industrial_capacity_dockyard = 0.05
+                industrial_capacity_factory = 0.05
+            }
+    }
+    }
+    country = {
+        Buying_Indochina = {
+            # Buying Indochina
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.1
+                industrial_capacity_dockyard = -0.05
+                industrial_capacity_factory = -0.05
+            }
+    }
+    }
+    country = {
+        Payments_From_Resource_Rights = {
+            # Payments from resource sale
+            allowed = {
+                tag = SIA
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = -0.5
+                industrial_capacity_dockyard = 0.5
+                industrial_capacity_factory = 0.5
+            }
+    }
+    }
+    country = {
+        Buying_Resource_Rights = {
+            # Buying resource rights
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.1
+                industrial_capacity_dockyard = -0.05
+                industrial_capacity_factory = -0.05
+            }
+    }
+    }
+    country = {
+        Buying_Burma = {
+            # Buying Burma
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.2
+                industrial_capacity_dockyard = -0.1
+                industrial_capacity_factory = -0.1
+            }
+    }
+    }
+    country = {
+        Payments_From_Philippines = {
+            # Payments from the Philippines
+            allowed = {
+                tag = USA
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = -0.1
+                industrial_capacity_dockyard = 0.05
+                industrial_capacity_factory = 0.05
+            }
+    }
+    }
+    country = {
+        Buying_Philippines = {
+            # Buying the Philippines
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.1
+                industrial_capacity_dockyard = -0.05
+                industrial_capacity_factory = -0.05
+            }
+    }
+    }
 
     #################### indutstry ideas ####################
     country = {
@@ -318,6 +478,8 @@ ideas = {
             }       
         }
     }
+
+
 }
         
             

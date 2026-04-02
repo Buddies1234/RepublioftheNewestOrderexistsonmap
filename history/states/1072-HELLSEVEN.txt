@@ -12,11 +12,15 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+			13662 = {
+				naval_base = 1
+
+			}
 	}
 
 	state_category = small_island
 
 	manpower=64000
-	buildings_max_level_factor=1
+	buildings_max_level_factor=6.000
 	local_supplies=0
 }

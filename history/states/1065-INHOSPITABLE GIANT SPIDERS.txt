@@ -6,16 +6,24 @@ state={
 	}
 
 	history = {
+		victory_points = {
+			13587 16
+		}
 		owner = RNO
 		add_core_of = RNO
 
 		buildings = {
 			infrastructure = 0
+			air_base = 2
+			13612 = {
+				naval_base = 1
+
+			}
 		}
 	}
 	
 	manpower=60432
-	buildings_max_level_factor=1
+	buildings_max_level_factor=6.000
 	local_supplies=0
 
 	state_category = small_island

@@ -4,7 +4,7 @@ add_namespace = RNO_Events_Colonies
 country_event = {
 	id = RNO_Events_Colonies.1
 	title = "Our Colonies"
-	desc = "We have Colonies Both in Africa and the Pacific to take care of. Amd while the African Sitouation is higly unstable and debated back home, our Pacific Colonies are both newer and intensivly supported by his Majesty and thus face less resistance when reforming. Yet what should be do with them?"
+	desc = "We have Colonies Both in Africa and the Pacific to take care of. And while the African Sitouation is higly unstable and debated back home due to there recent purchase, our Pacific Colonies are both newer and intensivly supported by his Majesty and thus face less resistance when reforming. Yet what should be do with them?"
 	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 	fire_only_once = yes	
@@ -116,26 +116,377 @@ country_event = {
 			}
 	}
 }
-
+country_event = {
+	id = RNO_Events_Colonies.3
+	title = "A Game of Majors"
+	desc = "The Pacif and Asia as a whole currently Offers 3 Majors Power, the Japanise, the Chinise and the USA. Each of them has their own interests in the region, and if we turn to strongly to one side we might lose the support of the other two, still a desicion regarding out forgain polocy has to be made after all neutrality didn´t save us in the first Great War."
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		custom_effect_tooltip = "This will unlock focuses regarding cooperation with the USA and lock all cooperation with Japan."
+		name = "We should turn to the USA for support."
+		set_country_flag = RNO_leaning_towards_usa
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = RNO_Events_Colonies.4
+				days = 1
+			}
+		}
+	}
+	option = {
+		custom_effect_tooltip = "This will unlock focuses regarding cooperation with Japan and lock some cooperation with the USA and all cooperation with China."
+		name = "We should turn to Japan for support."
+		set_country_flag = RNO_leaning_towards_japan
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = RNO_Events_Colonies.4
+				days = 1
+			}
+		}
+	}
+	option = {
+		custom_effect_tooltip = "This will lock all focuses in the Colonial Branch regarding cooperation with Japan but keep all other options open."
+		name = "We should turn to China for support."
+		set_country_flag = RNO_leaning_towards_china
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = RNO_Events_Colonies.4
+				days = 1
+			}
+		}
+	}
+}
 #########industry events#############
 add_namespace = modernize_the_republic
 country_event = {
 	id = modernize_the_republic.1
 	title = "The modernization of the republic"
-	desc = "Our nation's industrial capacity is growing, but we must ensure it serves our strategic goals. no the parliment has decided to start modernizing our indutry"
+	desc = "Our nation's industrial capacity is growing, but we must ensure it serves our strategic goals. Now the parliament has decided to start modernizing our industry"
 	picture = GFX_report_event_generic_usa_treaty
-	
 	is_triggered_only = yes
-	trigger = {
-
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
 	fire_only_once = yes
 	option = {
 		name = "We shall modernize our industry."
 		add_ideas = { modernized_republic  }
+	}
+}
+############### LORE #################
+add_namespace = RNO_Events_Lore
+country_event = {
+	id = RNO_Events_Lore.1
+	title = "General Overview of The Newest Order History"
+	desc = "The Republic and its history are a strange phenomenon — it simply appeared in the middle of the Atlantic Ocean, seemingly out of nowhere, in the year 1916. Its people already possessed a full understanding of the world, its history, and its cultures, as though they were native to it, and appeared entirely oblivious to the fact that their very existence defied all explanation.
+	At the time of its arrival, the Republic was still known as the Kingdom of Poniatowski, and was quickly forced to choose a side in the Great War. It was thrown into the Entente, only to receive minimal recognition and meager reparations for its efforts. Following the war, a string of incompetent decisions by the Poniatowski crown eroded public trust to a breaking point, ultimately giving rise to a widely popular and broadly supported coup led by the allies of the reigning King. In its wake, power was — for the first time — shared with the people. The Crown still holds considerable authority, but it is no longer entirely unchecked.
+	The young Republic now stands just one year from its first election since its founding, and with it, both its political future and its place in the world remain deeply uncertain. Some voices call for the restoration of a total monarchy under the new King, while others demand an end to the Crown entirely. But the monarchy is far from the only question haunting the country.
+	As the nature of the Republic's mysterious appearance slowly becomes public knowledge, a burning desire has emerged to understand — and perhaps harness — the power behind its magical origins. Some have gone further still, seeing themselves as members of a superior race by virtue of it. The Republic stands at a crossroads on many fronts, and where it goes from here remains to be seen.
+	(You will find more lore about the Republic and its origins as you explore the different focus trees — and maybe, just maybe, there really are magical energies the Republic can learn to harness.)"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		name = "For the Republic!"
+		hidden_effect = {
+			every_core_state = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 5
+			}
+		}
+	}
+}
+############ Buying Stuff ############
+add_namespace = RNO_Buying_East_Indies
+country_event = {
+	id = RNO_Buying_East_Indies.1
+	title = "The Republic of the Newest Order Offers to buy the Dutch East Indies"
+	desc = "The Republic of the Newest Order has offered to buy the Dutch East Indies from us"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+			name = "We need the Money"
+		ai_chance = {
+			factor = 100
+		}
+			custom_effect_tooltip = "We will lose the East Indies but gain gain a a lot of funds we can put back into our economy."
+			add_ideas = { Payments_From_East_Indies }
+			RNO = {
+				country_event = {
+					id = RNO_Buying_East_Indies.3
+					days = 1
+				}
+			}
+		}
+		option = {
+			name = "Its Not Worth it."
+			ai_chance = { factor = 0 }
+			custom_effect_tooltip = "The East Indies are worth to much"
+			RNO = {
+				country_event = {
+					id = RNO_Buying_East_Indies.2
+					days = 1
+				}
+			}
+	}
+}
+country_event = {
+	id = RNO_Buying_East_Indies.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Dutch Refuse to Sell the East Indies"
+	desc = "The Dutch have refused to sell the East Indies to the Republic of the Newest Order"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		name = "Shame"
+	}
+}
+country_event = {
+	id = RNO_Buying_East_Indies.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Dutch Accept to Sell the East Indies"
+	desc = "The Dutch have accepted to sell the East Indies to the Republic of the Newest Order"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		puppet = INS
+		name = "Great!"
+		add_timed_idea = {
+			idea = Buying_The_East_Indies
+			days = 360
+		}
+	}
+}
+add_namespace = RNO_buying_Burma
+country_event = {
+	id = RNO_Buying_Burma.1
+	title = "The Republic of the Newest Order Offers to buy Burma"
+	desc = "The Republic of the Newest Order has offered to buy Burma from us"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = "We need the Money"
+		custom_effect_tooltip = "We will lose Burma but gain a lot of funds we can put back into our economy."
+		add_timed_idea = {
+			idea = Payments_From_East_Burma
+			days = 360
+		}
+		RNO = {
+			country_event = {
+				id = RNO_Buying_Burma.3
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = "Its Not Worth it."
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "Burma is worth too much"
+		RNO = {
+			country_event = {
+				id = RNO_Buying_Burma.2
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = RNO_Buying_Burma.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The British Refuse to Sell Burma"
+	desc = "The British have refused to sell Burma to the Republic of the Newest Order"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		name = "Shame"
+	}
+}
+country_event = {
+	id = RNO_Buying_Burma.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The British Accept to Sell Burma"
+	desc = "The British have accepted to sell Burma to the Republic of the Newest Order"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		puppet = BRM
+		name = "Great!"
+		add_timed_idea = {
+			idea = Buying_Burma
+			days = 360
+		}
+	}
+}
+add_namespace = RNO_buying_Philippines
+country_event = {
+	id = RNO_Buying_Philippines.1
+	title = "The Republic of the Newest Order Offers to buy the Philippines"
+	desc = "The Republic of the Newest Order has offered to buy the Philippines from us"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = "We need the Money"
+		custom_effect_tooltip = "We will lose the Philippines but gain a lot of funds we can put back into our economy."
+		add_timed_idea = {
+			idea = Payments_From_Philippines
+			days = 360
+		}
+		RNO = {
+			country_event = {
+				id = RNO_Buying_Philippines.3
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = "Its Not Worth it."
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "The Philippines are worth too much"
+		RNO = {
+			country_event = {
+				id = RNO_Buying_Philippines.2
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = RNO_Buying_Philippines.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Americans Refuse to Sell the Philippines"
+	desc = "The Americans have refused to sell the Philippines to the Republic of the Newest Order"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		name = "Shame"
+	}
+}
+country_event = {
+	id = RNO_Buying_Philippines.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Americans Accept to Sell the Philippines"
+	desc = "The Americans have accepted to sell the Philippines to the Republic of the Newest Order"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		puppet = PHI
+		name = "Great!"
+		add_timed_idea = {
+			idea = Buying_Philippines
+			days = 360
+		}
+	}
+}
+add_namespace = RNO_buying_Indochina
+country_event = {
+	id = RNO_Buying_Indochina.1
+	title = "The Republic of the Newest Order Offers to buy Indochina"
+	desc = "We are being approached by the Republic for a potential sale of Indochinea ."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = "We need the Money"
+		RNO = {
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 1017
+			transfer_state = 286
+			transfer_state = 741
+		}
+
+		add_ideas = { Payments_From_Indochina }
+		RNO = {
+			country_event = { id = RNO_Buying_Indochina.3 days = 1 }
+		}
+	}
+	option = {
+		name = "Not worth it"
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "We can´t give up Indochina, its too important to our influence in the region."
+		RNO = {
+			country_event = { id = RNO_Buying_Indochina.2 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = RNO_Buying_Indochina.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "France Refuses the Sale"
+	desc = "France has refused to sell Indochina to the Republic."
+	picture = GFX_report_event_generic_sign_treaty3
+	option = { name = "A disappointment" }
+}
+country_event = {
+	id = RNO_Buying_Indochina.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "France Agrees to Transfer Indochina"
+	desc = "France has agreed to sell key states in Indochina to the Republic."
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		name = "Excellent"
+		add_timed_idea = { idea = Buying_Indochina days = 360 }
+	}
+}
+add_namespace = RNO_buying_Resource_Rights
+country_event = {
+	id = RNO_Buying_Resource_Rights.1
+	title = "RNO wants to be granted resource rights in our Territory"
+	desc = "The Republic of the Newest Order has approached us with an offer to buy resource rights in us "
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = "We need the money"
+		custom_effect_tooltip = "Selling resource rights helps us now."
+		add_ideas = { Payments_From_Resource_Rights }
+		RNO = { country_event = { id = RNO_Buying_Resource_Rights.3 days = 1 } }
+	}
+	option = {
+		name = "Too risky"
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "Giving resource rights would weaken our control over state 724."
+		RNO = { country_event = { id = RNO_Buying_Resource_Rights.2 days = 1 } }
+	}
+}
+country_event = {
+	id = RNO_Buying_Resource_Rights.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "Siam Refuses the Resource Deal"
+	desc = "Siam refuses to sell resource rights in state 724."
+	picture = GFX_report_event_generic_sign_treaty3
+	option = { name = "Too bad" }
+}
+country_event = {
+	id = RNO_Buying_Resource_Rights.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "Siam Grants Resource Rights"
+	desc = "Siam grants us resource rights, expanding economic influence."
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		SIA = {
+		give_resource_rights = { receiver = RNO state = 724 }
+		}
+		name = "Good business"
+		add_timed_idea = { idea = Buying_Resource_Rights days = 360 }
 	}
 }

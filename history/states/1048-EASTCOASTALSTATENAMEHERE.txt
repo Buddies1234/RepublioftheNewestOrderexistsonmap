@@ -6,16 +6,20 @@ state={
 	}
 
 	history = {
+		victory_points = {
+			13408 8
+		}
 		owner = RNO
 		add_core_of = RNO
 
 		buildings = {
+			industrial_complex = 2
 			infrastructure = 2
 		}
 	}
 
 	manpower=89123
-	buildings_max_level_factor=1
+	buildings_max_level_factor=6.000
 	local_supplies=0
 
 

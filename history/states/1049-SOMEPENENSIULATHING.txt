@@ -6,6 +6,9 @@ state={
 	}
 
 	history = {
+		victory_points = {
+			13489 15
+		}
 		owner = RNO
 		add_core_of = RNO
 
@@ -15,8 +18,8 @@ state={
 	}
 
 	manpower=58762
-	buildings_max_level_factor=1
+	buildings_max_level_factor=6.000
 	local_supplies=0
 }
 
-}
+

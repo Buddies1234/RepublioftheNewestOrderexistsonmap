@@ -1,0 +1,32 @@
+on_actions = {
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { has_idea = RNO_Guarantee_Dutch }
+                }
+                RNO = {
+                    country_event = {
+                        id = RNO_Guarantees_East_Indies.4   
+                        days = 1
+                    }
+                }
+            }
+        }
+    }
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { has_idea = RNO_Guarantee_FRA }
+                }
+                RNO = {
+                    country_event = {
+                        id = RNO_Guarantees_Indochina.4 
+                        days = 1
+                    }
+                }
+            }
+        }
+    }
+}

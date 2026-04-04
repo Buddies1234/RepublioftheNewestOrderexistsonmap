@@ -1,6 +1,4 @@
-﻿
-
-add_namespace = RNO_Events_Colonies
+﻿add_namespace = RNO_Events_Colonies
 country_event = {
 	id = RNO_Events_Colonies.1
 	title = "Our Colonies"
@@ -41,12 +39,13 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes	
 	option = {
+		ai_chance = { factor = 100 }
 		name = "I understand."
 
 		division_template = {
 			name = "Asian Task Force Division"
 			priority = 2
-			division_names_group = POL_INF_01
+			division_names_group = RNO_INF_01
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -196,6 +195,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 	is_triggered_only = yes
 	option = {
+		ai_chance = { factor = 100 }
 		name = "For the Republic!"
 		hidden_effect = {
 			every_core_state = {
@@ -488,5 +488,497 @@ country_event = {
 		}
 		name = "Good business"
 		add_timed_idea = { idea = Buying_Resource_Rights days = 360 }
+	}
+}
+add_namespace = RNO_Guarantees_East_Indies
+country_event = {
+	id = RNO_Guarantees_East_Indies.1
+	title = "The Republic of the Newest Order Offers Guarantees for the East Indies"
+	desc = "The Republic of the Newest Order has offered us guarantees for the East Indies, promising to join a defensive war if we accept. Us going to war will forfeit the guarantee."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = "We accept the guarantee"
+		custom_effect_tooltip = "The Republic will join our defensive wars."
+		add_ideas = { RNO_Guarantee_Dutch }
+		RNO = { country_event = { id = RNO_Guarantees_East_Indies.3 days = 1 } }
+	}
+	option = {
+		name = "Its Not Worth it."
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "We dont need their guarantee"
+		RNO = { country_event = { id = RNO_Guarantees_East_Indies.2 days = 1 } }
+	}
+}
+country_event = {
+	id = RNO_Guarantees_East_Indies.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Dutch Refuse the Guarantee"
+	desc = "The Dutch have refused our guarantee offer for the East Indies"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = { name = "Shame" }
+}
+country_event = {
+	id = RNO_Guarantees_East_Indies.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Dutch Accept our Guarantee"
+	desc = "The Dutch have accepted our guarantee for the East Indies"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = { 
+		puppet = INS
+		name = "Great!" 
+		}
+}
+country_event = {
+	id = RNO_Guarantees_East_Indies.4
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Dutch are under attack"
+	desc = "The Dutch are under attack and our guarantee will be put to the test."
+	picture = GFX_report_event_generic_sign_treaty3
+option = {
+    name = "Time to fulfill our obligations"
+    HOL = {
+        give_military_access = RNO
+        give_navy_access = RNO
+    }
+    RNO = {
+        give_military_access = HOL
+        give_navy_access = HOL
+	HOL = {
+		every_enemy_country = {
+			limit = {
+				is_in_war = {
+					attacker = THIS
+					defender = HOL
+				}
+			}
+			RNO = {
+				add_to_war = {
+					targeted_alliance = HOL
+					enemy = PREV
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}
+}
+	option = {
+		name = "We should stay out of it"
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "This WILL have severe diplomatic and Political consequences and can ruin out relations with other countries."
+			add_timed_idea = {
+				idea = Guarantee_Refused
+				days = 360
+			}
+	}
+}
+
+add_namespace = RNO_Guarantees_Indochina
+country_event = {
+	id = RNO_Guarantees_Indochina.1
+	title = "The Republic of the Newest Order Offers Guarantees for Indochina"
+	desc = "The Republic of the Newest Order has offered us guarantees for Indochina, promising to join a defensive war if we accept. Us going to war will forfeit the guarantee."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = "We accept the guarantee"
+		custom_effect_tooltip = "The Republic will join our defensive wars."
+		add_ideas = { RNO_Guarantee_FRA }
+		RNO = { country_event = { id = RNO_Guarantees_Indochina.3 days = 1 } }
+	}
+	option = {
+		name = "Its Not Worth it."
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "We dont need their guarantee"
+		RNO = { country_event = { id = RNO_Guarantees_Indochina.2 days = 1 } }
+	}
+}
+country_event = {
+	id = RNO_Guarantees_Indochina.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "France Refuses the Guarantee"
+	desc = "France has refused our guarantee offer for Indochina"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = { name = "Shame" }
+}
+country_event = {
+	id = RNO_Guarantees_Indochina.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "France Accepts our Guarantee"
+	desc = "France has accepted our guarantee for Indochina"
+	picture = GFX_report_event_generic_sign_treaty3
+	option = {
+		name = "Great!" 
+		RNO = {
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 1017
+			transfer_state = 286
+			transfer_state = 741
+		}
+		}
+}
+country_event = {
+	id = RNO_Guarantees_Indochina.4
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "France under Attack"
+	desc = "France is under attack and our guarantee will be put to the test."
+	picture = GFX_report_event_generic_sign_treaty3
+option = {
+    name = "Time to fulfill our obligations"
+    FRA = {
+        give_military_access = RNO
+        give_navy_access = RNO
+    }
+    RNO = {
+        give_military_access = FRA
+        give_navy_access = FRA
+	}
+	FRA = {
+		every_enemy_country = {
+			limit = {
+				is_in_war = {
+					attacker = THIS
+					defender = FRA
+				}
+			}
+			RNO = {
+				add_to_war = {
+					targeted_alliance = FRA
+					enemy = PREV
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}
+}
+	option = {
+		name = "We should stay out of it"
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = "This WILL have severe diplomatic and Political consequences and can ruin out relations with other countries."
+			add_timed_idea = {
+				idea = Guarantee_Refused
+				days = 360
+			}
+	}
+}
+add_namespace = RNO_Help_China_Japan
+country_event = {
+	id = RNO_Help_China_Japan.1
+	title = "The Republic of the Newest Order Offers Help Against Japan"
+	desc = "The Republic of the Newest Order has approached us with an offer to join our war against Japan. In exchange, they request that we give them free hand with the southern Walords. This could turn the tide of the war, but at what cost to our sovereignty?"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	
+	option = {
+		name = "We accept their help. Better to be alive than proud."
+		ai_chance = {
+			factor = 100
+		}
+    CHI = {
+        give_military_access = RNO
+        give_navy_access = RNO
+    }
+		RNO = {
+			puppet = GXC
+			puppet = GDC
+			country_event = {
+				id = RNO_Help_China_Japan.3
+				days = 1
+			}
+			set_country_flag = RNO_china_accepted_help
+		}
+		
+		# RNO joins China's war against Japan
+		if = {
+			limit = {
+				CHI = {
+					is_in_war = yes
+					has_war_with = JAP
+				}
+			}
+			RNO = {
+				add_to_war = {
+					targeted_alliance = CHI
+					enemy = JAP
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We refuse. China will stand alone!"
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = "China refuses the offer and remains independent."
+		
+		RNO = {
+			country_event = {
+				id = RNO_Help_China_Japan.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = RNO_Help_China_Japan.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "China Refuses Our Offer"
+	desc = "China has refused our offer of military assistance against Japan. They prefer to fight alone rather than accept our terms."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "A pity. Perhaps they will reconsider when desperation sets in."
+	}
+}
+
+country_event = {
+	id = RNO_Help_China_Japan.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "China Accepts Our Offer"
+	desc = "China has accepted our terms. We will join their war against Japan. The Guangxi Clique and the Guangdong Government are now under our protection."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "Excellent! Our influence in Asia grows."
+	}
+}
+
+add_namespace = RNO_Help_Japan_China
+country_event = {
+	id = RNO_Help_Japan_China.1
+	title = "The Republic of the Newest Order Offers Help Against China"
+	desc = "The Republic of the Newest Order has offered us support against China in exchange for recognition of their claims on the Japanise Pacific Holdings. Accepting will deepen our partnership and bring us closer to victory."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+
+	option = {
+		name = "We accept. We will take what is ours if we win."
+		ai_chance = {
+			factor = 100
+		}
+    JAP = {
+        give_military_access = RNO
+        give_navy_access = RNO
+    }
+    RNO = {
+        give_military_access = JAP
+        give_navy_access = JAP
+	}
+		RNO = {
+			set_country_flag = RNO_japan_accepted_help
+			country_event = {
+				id = RNO_Help_Japan_China.3
+				days = 1
+			}
+		}
+		
+		if = {
+			limit = {
+				JAP = {
+					is_in_war = yes
+					has_war_with = CHI
+				}
+			}
+			RNO = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = CHI
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+		RNO = {
+			transfer_state = 524
+			transfer_state = 526
+			transfer_state = 684
+			transfer_state = 646
+			transfer_state = 633
+			transfer_state = 745
+		}
+	}
+	option = {
+		name = "We don´t need it. "
+		RNO = {
+			country_event = {
+				id = RNO_Help_Japan_China.2
+				days = 1
+			}
+
+		}
+	}
+}
+country_event = {
+	id = RNO_Help_Japan_China.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "Japan Declines Our Offer"
+	desc = "Japan has refused our offer of military assistance against China. They are unwilling to share control of the Pacific holdings for the moment."
+	picture = GFX_report_event_generic_sign_treaty3
+
+	option = {
+		name = "A disappointment."
+	}
+}
+
+country_event = {
+	id = RNO_Help_Japan_China.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "Japan Accepts Our Offer"
+	desc = "Japan has accepted our offer. We now hold claim over the Japanise Pacific Holdings and will support their campaign against China."
+	picture = GFX_report_event_generic_sign_treaty3
+
+	option = {
+		name = "Good. Our foothold in the Pacific grows."
+	}
+}
+
+add_namespace = RNO_Request_Chinese_Manpower
+country_event = {
+	id = RNO_Request_Chinese_Manpower.1
+	title = "The Republic Requests Chinese Manpower"
+	desc = "The Republic of the Newest Order has requested that we provide them with 500,000 manpower in exchange for temporary financial support. This will weaken our military capabilities but strengthen our allies."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	
+	option = {
+		name = "We agree to provide the manpower."
+		ai_chance = {
+			factor = 100
+		}
+		
+		add_manpower = -500000
+		add_timed_idea = {
+			idea = payments_from_RNO
+			days = 360
+		}
+		RNO = {
+			country_event = {
+				id = RNO_Request_Chinese_Manpower.3
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot spare the manpower."
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = "China refuses the request."
+		
+		RNO = {
+			country_event = {
+				id = RNO_Request_Chinese_Manpower.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = RNO_Request_Chinese_Manpower.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "China Refuses Our Manpower Request"
+	desc = "China has refused our request for manpower, stating they cannot spare the troops."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "A disappointment."
+	}
+}
+
+country_event = {
+	id = RNO_Request_Chinese_Manpower.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "China Provides Manpower"
+	desc = "China has agreed to provide us with 500,000 manpower. However this has severly weakened our Military cohesion and we even more payments outstanding"
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		add_manpower = 500000
+		name = "Thank you for the support."
+		add_timed_idea = {
+			idea = Paying_China_for_Manpower
+			days = 360
+		}
+		add_ideas = { Chinese_Manpower_Organization_Penalty }
+	}
+}
+add_namespace = RNO_Request_Japanese_Naval_Advisors
+country_event = {
+	id = RNO_Request_Japanese_Naval_Advisors.1
+	title = "The Republic Requests Japanese Naval Advisors"
+	desc = "The Republic of the Newest Order has requested that we provide them with naval advisors."
+	option = {
+		name = "They have proven to be good allies, we should help them."
+		ai_chance = {
+			factor = 100
+		}
+		RNO = {
+			add_ideas = { RNO_Japanese_Naval_Advisors }
+		}
+
+		RNO = {
+			country_event = {
+				id = RNO_Request_Japanese_Naval_Advisors.3
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = "We cannot spare the advisors."
+		ai_chance = {
+			factor = 0
+		}
+		
+		RNO = {
+			country_event = {
+				id = RNO_Request_Japanese_Naval_Advisors.2
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = RNO_Request_Japanese_Naval_Advisors.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "Japan Refuses Our Naval Advisor Request"
+	desc = "Japan has refused our request for naval advisors, stating they cannot spare the personnel."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "A disappointment."
+	}
+}
+country_event = {
+	id = RNO_Request_Japanese_Naval_Advisors.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "Japan Provides Naval Advisors"
+	desc = "Japan has agreed to provide us with naval advisors, improving our naval capabilities."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "Thank you for the support."
 	}
 }

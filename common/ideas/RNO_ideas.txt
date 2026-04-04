@@ -1,3 +1,5 @@
+
+#####King's Support Ideas for RNO#####
 ideas = {
 	country = {
 		The_King_Support_Neutral = {
@@ -132,6 +134,7 @@ ideas = {
             
         }
     }
+###### Starting Ideas for RNO ######
     country = {
         The_constitution = {
             # "The Constitution"
@@ -148,6 +151,24 @@ ideas = {
             
         }
 
+    }
+    country = {
+        Remnents_of_the_Revolution = {
+            # "Remnents of the Revolution"
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ROM_king_carol_ii_handled
+            modifier = {
+                stability_weekly = -0.005
+                political_power_gain = -0.05
+                conscription_factor = -0.05
+                consumer_goods_factor = 0.05
+            }
+            
+        }
     }
     country = {
         The_King = {
@@ -478,10 +499,97 @@ ideas = {
             }       
         }
     }
-
-
+############### Guarantee on action ideas ###############
+country = {
+    RNO_Guarantee_Dutch = {
+        allowed = {
+            has_war = no
+        }
+        cancel = {
+            has_war = yes
+        }
+        picture = generic_constitutional_guarantees
+        modifier = {
+        }
+    }
 }
-        
+country = {
+    RNO_Guarantee_FRA = {
+        allowed = {
+            has_war = no
+        }
+        cancel = {
+            has_war = yes
+        }
+        picture = generic_constitutional_guarantees
+        modifier = {
+        }
+    }
+}
+    country = {
+        Guarantee_Refused = {
+            allowed = {
+            }
+            picture = generic_constitutional_guarantees
+            modifier = {
+                war_support_weekly = -0.015
+                stability_weekly = -0.005
+                political_power_gain = -0.05
+            }
+        }
+    }
+country = {
+        Chinese_Manpower_Organization_Penalty = {
+            allowed = {
+                tag = RNO
+            }
+            picture = SPR_disbanded_army
+            modifier = {
+                army_org_factor = -0.1
+            }
+        }
+    }
+    country = {
+        Paying_China_for_Manpower = {
+            allowed = {
+                tag = RNO
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.1
+                industrial_capacity_dockyard = -0.05
+                industrial_capacity_factory = -0.05
+            }
+        }
+    }
+    country = {
+        payments_from_RNO = {
+            allowed = {
+                tag = CHI
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = -0.1
+                industrial_capacity_dockyard = 0.05
+                industrial_capacity_factory = 0.05
+            }
+        }
+    }
+    country = {
+        RNO_Japanese_Naval_Advisors = {
+            allowed = {
+                tag = RNO
+            }
+            picture = generic_navy_bonus
+            modifier = {
+                naval_invasion_prep_speed = 0.25
+                navy_fuel_consumption_factor = -0.1
+                naval_detection = 0.1
+                naval_damage_factor = 0.1
+            }
+        }
+    }
+}
             
 
 

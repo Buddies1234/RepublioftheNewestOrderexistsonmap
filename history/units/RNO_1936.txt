@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Republican Infantry Division"
 	priority = 1
-	division_names_group = ENG_INF_01
+	division_names_group = RNO_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,9 +21,10 @@
 }
 
 division_template = {
+	template_counter = 77
 	name = "Republican Garison Division"
 	priority = 0
-	division_names_group = ENG_INF_01
+	division_names_group = RNO_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -73,7 +74,65 @@ division_template = {
 		anti_air = { x = 0 y = 2 }
 	}
 }
+division_template = {
+	template_counter = 61
+	name = "Royal Guard Division"
+	priority = 2
+	division_names_group = ENG_INF_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		ranger_battalion = { x = 2 y = 2 }
+		ranger_battalion = { x = 2 y = 3 }
+
+		ranger_battalion = { x = 3 y = 0 }
+		ranger_battalion = { x = 3 y = 1 }
+		ranger_battalion = { x = 3 y = 2 }
+		ranger_battalion = { x = 3 y = 3 }
+
+		ranger_battalion = { x = 4 y = 0 }
+		ranger_battalion = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		military_police = { x = 0 y = 4 }
+	}
+}
 units = {
+	division = {
+		name = "1st Royal Guard Division"
+		location = 13769 # State 1056 - Capital (17 VP)
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Royal Guard Division"
+		location = 13769 # State 1054 - Major VP (22 points)
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "3rd Royal Guard Division"
+		location = 13571 # State 1059 - Port & VP (21 points)
+		division_template = "Royal Guard Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
 	# Infantry Divisions - Strategic Victory Points
 	division = {
 		name = "1st Republican Infantry Division"
@@ -263,21 +322,21 @@ units = {
 	}
 	division = {
 		name = "3rd Republican Marine Division"
-		location = 13418 # State 1050 - Naval Base
+		location = 13952 # State 1050 - Naval Base
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "4th Republican Marine Division"
-		location = 13420 # State 1048 - Coastal Port
+		location = 13612 # State 1048 - Coastal Port
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "5th Republican Marine Division"
-		location = 13423 # State 1048 - Coastal Port
+		location = 13382 # State 1048 - Coastal Port
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0

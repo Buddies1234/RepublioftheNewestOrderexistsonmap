@@ -1,0 +1,2743 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+
+# If we run out of all historical names, the names will be assigned in the old way.
+
+#
+
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files.
+
+#
+
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+
+#
+
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+
+#
+
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+
+#
+
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+
+#                 mechanics to be used for fallbacks, then just skip this option.
+
+#
+
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+
+#             this option is available here mainly for a mods.
+
+#
+
+# ordered - Is a list of all historical names. 
+
+#           Numbers must start from 1 and up. 
+
+#           Numbers can't repeat in one scope.
+
+#           If you script the name for this group, at the same number, the name will be override.
+
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+
+#           1st argument = The name. It must contain either: 
+
+#                          %d
+
+#                          %s.
+
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+
+#                                      where you choose the historical division name.
+
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+
+#                                      the current game version.
+
+RNO_INF_01 = {
+
+	name = "Republican Infantry Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "infantry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Infantry Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Infantry Division" }
+
+		2 = { "%dnd Republican  Infantry Division" }
+
+		3 = { "%drd Republican  Infantry Division" }
+
+		4 = { "%dth  Republican Infantry Division" }
+
+		5 = { "%dth  Republican Infantry Division" }
+
+		42 = { "%dnd Republican  Infantry Division" }
+
+		43 = { "%drd Republican  Infantry Division" }
+
+		44 = { "%dth  Republican Division" }
+
+		48 = { "%dth  Republican Infantry Division" }
+
+		49 = { "%dth  Republican Infantry Division" }
+
+		50 = { "%dth  Republican Infantry Division" }
+
+		51 = { "%dst Republican Infantry Division" }
+
+		52 = { "%dnd Republican  Infantry Division" }
+
+		53 = { "%drd Republican  Infantry Division" }
+
+		54 = { "%dth  Republican Infantry Division" }
+
+		55 = { "%dth  Republican Infantry Division" }
+
+		7 = { "%dth  Republican Infantry Division" }
+
+		8 = { "%dth  Republican Infantry Division" }
+
+		9 = { "%dth  Republican Infantry Division" }
+
+		15 = { "%dth  Republican Infantry Division" }
+
+		18 = { "%dth  Republican Infantry Division" }
+
+		38 = { "%dth  Republican Infantry Division" }
+
+		45 = { "%dth  Republican Infantry Division" }
+
+		59 = { "%dth  Republican Infantry Division" }
+
+		61 = { "%dst Republican Infantry Division" }
+
+		66 = { "%dth  Republican Infantry Division" }
+
+		12 = { "%dth  Republican Infantry Division" }
+
+		23 = { "%drd Republican  Infantry Division" }
+
+		46 = { "%dth  Republican Infantry Division" }
+
+		6 = { "%dth  Republican Infantry Division" }
+
+		11 = { "%dth  Republican Infantry Division" }
+
+		812 = { "12th Infantry Division" }
+
+		47 = { "%dth  Republican Infantry Division" }
+
+		56 = { "%dth  Republican Infantry Division" }
+
+		70 = { "%dth  Republican Infantry Division" }
+
+		76 = { "%dth  Republican Infantry Division" }
+
+		77 = { "%dth  Republican Infantry Division" }
+
+		78 = { "%dth  Republican Infantry Division" }
+
+		80 = { "%dth  Republican Infantry Division" }
+
+		81 = { "%dst Republican Infantry Division" }
+
+		82 = { "%dnd Republican  Infantry Division" }
+
+		36 = { "%dth  Republican Infantry Division" }
+
+		801 = { "Guards Infantry Division" }
+
+		40 = { "%dth  Republican Infantry Division" }				# phantom division organizations
+
+		57 = { "%dth  Republican Infantry Div." }
+
+		58 = { "%dth  Republican Infantry Division" }
+
+		28 = { "%dth  Republican Infantry Division" }				# inactive and fictional units
+
+		33 = { "%drd Republican  Infantry Division" }
+
+		34 = { "%dth  Republican Infantry Division" }
+
+		37 = { "%dth  Republican Infantry Division" }
+
+		41 = { "%dst Republican Infantry Division" }
+
+		60 = { "%dth  Republican Infantry Division" }
+
+		62 = { "%dnd Republican  Infantry Division" }
+
+		63 = { "%drd Republican  Infantry Division" }
+
+		67 = { "%dth  Republican Infantry Division" }
+
+		68 = { "%dth  Republican Infantry Division" }
+
+		69 = { "%dth  Republican Infantry Division" }
+
+		71 = { "%dst Republican Infantry Division" }
+
+		72 = { "%dnd Republican  Infantry Division" }
+
+		73 = { "%drd Republican  Infantry Division" }
+
+		74 = { "%dth  Republican Infantry Division" }
+
+		75 = { "%dth  Republican Infantry Division" }
+
+		97 = { "%dth  Republican Infantry Division" }
+
+		98 = { "%dth  Republican Infantry Division" }
+
+		99 = { "%dth  Republican Infantry Division" }
+
+		100 = { "%dth  Republican Infantry Division" }
+
+		101 = { "%dst Republican Infantry Division" }
+
+		102 = { "%dnd Republican  Infantry Division" }
+
+		103 = { "%drd Republican  Infantry Division" }
+
+		104 = { "%dth  Republican Infantry Division" }
+
+		105 = { "%dth  Republican Infantry Division" }
+
+		106 = { "%dth  Republican Infantry Division" }
+
+		107 = { "%dth  Republican Infantry Division" }
+
+		108 = { "%dth  Republican Infantry Division" }
+
+		109 = { "%dth  Republican Infantry Division" }
+
+		110 = { "%dth  Republican Infantry Division" }
+
+		111 = { "%dth  Republican Infantry Division" }
+
+		112 = { "%dth  Republican Infantry Division" }
+
+		113 = { "%dth  Republican Infantry Division" }
+
+		114 = { "%dth  Republican Infantry Division" }
+
+		115 = { "%dth  Republican Infantry Division" }
+
+		116 = { "%dth  Republican Infantry Division" }
+
+		117 = { "%dth  Republican Infantry Division" }
+
+		118 = { "%dth  Republican Infantry Division" }
+
+		119 = { "%dth  Republican Infantry Division" }
+
+		120 = { "%dth  Republican Infantry Division" }
+
+		121 = { "%dst Republican Infantry Division" }
+
+		122 = { "%dnd Republican  Infantry Division" }
+
+		123 = { "%drd Republican  Infantry Division" }
+
+		124 = { "%dth  Republican Infantry Division" }
+
+		125 = { "%dth  Republican Infantry Division" }
+
+		126 = { "%dth  Republican Infantry Division" }
+
+		127 = { "%dth  Republican Infantry Division" }
+
+		128 = { "%dth  Republican Infantry Division" }
+
+		129 = { "%dth  Republican Infantry Division" }
+
+		130 = { "%dth  Republican Infantry Division" }
+
+		131 = { "%dst Republican Infantry Division" }
+
+		132 = { "%dnd Republican  Infantry Division" }
+
+		133 = { "%drd Republican  Infantry Division" }
+
+		134 = { "%dth  Republican Infantry Division" }
+
+		135 = { "%dth  Republican Infantry Division" }
+
+		136 = { "%dth  Republican Infantry Division" }
+
+		137 = { "%dth  Republican Infantry Division" }
+
+		138 = { "%dth  Republican Infantry Division" }
+
+		139 = { "%dth  Republican Infantry Division" }
+
+		140 = { "%dth  Republican Infantry Division" }
+
+		141 = { "%dst Republican Infantry Division" }
+
+		142 = { "%dnd Republican  Infantry Division" }
+
+		143 = { "%drd Republican  Infantry Division" }
+
+		144 = { "%dth  Republican Infantry Division" }
+
+		145 = { "%dth  Republican Infantry Division" }
+
+		146 = { "%dth  Republican Infantry Division" }
+
+		147 = { "%dth  Republican Infantry Division" }
+
+		148 = { "%dth  Republican Infantry Division" }
+
+		149 = { "%dth  Republican Infantry Division" }
+
+		150 = { "%dth  Republican Infantry Division" }
+
+	}
+
+}
+
+
+
+RNO_INF_02 = {
+
+	name = "Infantry Brigade"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "infantry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_02 }
+
+
+
+	fallback_name = "%d Infantry Brigade"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Infantry Brigade" }
+
+		2 = { "%dnd Republican  Infantry Brigade" }
+
+		3 = { "%drd Republican  Infantry Brigade" }
+
+		4 = { "%dth  Republican Infantry Brigade" }
+
+		5 = { "%dth  Republican Infantry Brigade" }
+
+		6 = { "%dth  Republican Infantry Brigade" }
+
+		7 = { "%dth  Republican Infantry Brigade" }
+
+		8 = { "%dth  Republican Infantry Brigade" }
+
+		9 = { "%dth  Republican Infantry Brigade" }
+
+		10 = { "%dth  Republican Infantry Brigade" }
+
+		11 = { "%dth  Republican Infantry Brigade" }
+
+		12 = { "%dth  Republican Infantry Brigade" }
+
+		13 = { "%dth  Republican Infantry Brigade" }
+
+		14 = { "%dth  Republican Infantry Brigade" }
+
+		15 = { "%dth  Republican Infantry Brigade" }
+
+		16 = { "%dth  Republican Infantry Brigade" }
+
+		17 = { "%dth  Republican Infantry Brigade" }
+
+		18 = { "%dth  Republican Infantry Brigade" }
+
+		19 = { "%dth  Republican Infantry Brigade" }
+
+		20 = { "%dth  Republican Infantry Brigade" }
+
+		21 = { "%dst Republican Infantry Brigade" }
+
+		22 = { "%dnd Republican  Infantry Brigade" }
+
+		23 = { "%drd Republican  Infantry Brigade" }
+
+		24 = { "%dth  Republican Infantry Brigade" }
+
+		25 = { "%dth  Republican Infantry Brigade" }
+
+		26 = { "%dth  Republican Infantry Brigade" }
+
+		27 = { "%dth  Republican Infantry Brigade" }
+
+		28 = { "%dth  Republican Infantry Brigade" }
+
+		29 = { "%dth  Republican Infantry Brigade" }
+
+		30 = { "%dth  Republican Infantry Brigade" }
+
+	}
+
+}
+
+
+
+RNO_INF_03 = { 
+
+	name = "Light Division" 
+
+
+
+	for_countries = { RNO } 
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "infantry" "mechanized" } 
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_03 } 
+
+
+
+	fallback_name = "%d Division" 
+
+
+
+	# Names with numbers.
+
+	# It's okay to have gaps in numbering.
+
+	ordered = { 
+
+		14 = { "%dth  Republican Division" } # raised in 1914 for Kitchener's Army
+
+		20 = { "%dth  Republican Division" } # raised in 1914 for Kitchener's Army
+
+		1 = { "%dst Republican Division" }
+
+		2 = { "%dnd Republican  Division" }
+
+		3 = { "%drd Republican  Division" }
+
+		4 = { "%dth  Republican Division" }
+
+		5 = { "%dth  Republican Division" }
+
+		6 = { "%dth  Republican Division" }
+
+		7 = { "%dth  Republican Division" }
+
+		8 = { "%dth  Republican Division" }
+
+		9 = { "%dth  Republican Division" }
+
+		10 = { "%dth  Republican Division" }
+
+		11 = { "%dth  Republican Division" }
+
+		12 = { "%dth  Republican Division" }
+
+		13 = { "%dth  Republican Division" }
+
+		15 = { "%dth  Republican Division" }
+
+		16 = { "%dth  Republican Division" }
+
+		17 = { "%dth  Republican Division" }
+
+		18 = { "%dth  Republican Division" }
+
+		19 = { "%dth  Republican Division" }
+
+		21 = { "%dst Republican Division" }
+
+		22 = { "%dnd Republican  Division" }
+
+		23 = { "%drd Republican  Division" }
+
+		24 = { "%dth  Republican Division" }
+
+		25 = { "%dth  Republican Division" }
+
+		26 = { "%dth  Republican Division" }
+
+		27 = { "%dth  Republican Division" }
+
+		28 = { "%dth  Republican Division" }
+
+		29 = { "%dth  Republican Division" }
+
+		30 = { "%dth  Republican Division" }
+
+	} 
+
+}
+
+
+
+RNO_CAV_01 = {
+
+	name = "Cavalry Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "cavalry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Cavalry Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered = {
+
+		18 = { "%dth  Republican Cavalry Division" }
+
+		1 = { "%dst Republican Cavalry Division" }
+
+		2 = { "%dnd Republican  Cavalry Division" }
+
+		3 = { "%drd Republican  Cavalry Division" }
+
+		4 = { "%dth  Republican Cavalry Division" }
+
+		5 = { "%dth  Republican Cavalry Division" }
+
+		6 = { "%dth  Republican Cavalry Division" }
+
+		7 = { "%dth  Republican Cavalry Division" }
+
+		8 = { "%dth  Republican Cavalry Division" }
+
+		9 = { "%dth  Republican Cavalry Division" }
+
+		10 = { "%dth  Republican Cavalry Division" }
+
+		11 = { "%dth  Republican Cavalry Division" }
+
+		12 = { "%dth  Republican Cavalry Division" }
+
+		13 = { "%dth  Republican Cavalry Division" }
+
+		14 = { "%dth  Republican Cavalry Division" }
+
+		15 = { "%dth  Republican Cavalry Division" }
+
+		16 = { "%dth  Republican Cavalry Division" }
+
+		17 = { "%dth  Republican Cavalry Division" }
+
+		19 = { "%dth  Republican Cavalry Division" }
+
+		20 = { "%dth  Republican Cavalry Division" }
+
+		21 = { "%dst Republican Cavalry Division" }
+
+		22 = { "%dnd Republican  Cavalry Division" }
+
+		23 = { "%drd Republican  Cavalry Division" }
+
+		24 = { "%dth  Republican Cavalry Division" }
+
+		25 = { "%dth  Republican Cavalry Division" }
+
+		26 = { "%dth  Republican Cavalry Division" }
+
+		27 = { "%dth  Republican Cavalry Division" }
+
+		28 = { "%dth  Republican Cavalry Division" }
+
+		29 = { "%dth  Republican Cavalry Division" }
+
+		30 = { "%dth  Republican Cavalry Division" }
+
+	}
+
+}
+
+
+
+RNO_CAV_02 = {
+
+	name = "Cavalry Brigade"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "cavalry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_CAV_02 }
+
+
+
+	fallback_name = "%d Cavalry Brigade"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered = {
+
+		1 = { "%dst Republican Cavalry Brigade" }
+
+		2 = { "%dnd Republican  Cavalry Brigade" }
+
+		3 = { "%drd Republican  Cavalry Brigade" }
+
+		4 = { "%dth  Republican Cavalry Brigade" }
+
+		5 = { "%dth  Republican Cavalry Brigade" }
+
+		6 = { "%dth  Republican Cavalry Brigade" }
+
+		7 = { "%dth  Republican Cavalry Brigade" }
+
+		8 = { "%dth  Republican Cavalry Brigade" }
+
+		9 = { "%dth  Republican Cavalry Brigade" }
+
+		10 = { "%dth  Republican Cavalry Brigade" }
+
+		11 = { "%dth  Republican Cavalry Brigade" }
+
+		12 = { "%dth  Republican Cavalry Brigade" }
+
+		13 = { "%dth  Republican Cavalry Brigade" }
+
+		14 = { "%dth  Republican Cavalry Brigade" }
+
+		15 = { "%dth  Republican Cavalry Brigade" }
+
+		16 = { "%dth  Republican Cavalry Brigade" }
+
+		17 = { "%dth  Republican Cavalry Brigade" }
+
+		18 = { "%dth  Republican Cavalry Brigade" }
+
+		19 = { "%dth  Republican Cavalry Brigade" }
+
+		20 = { "%dth  Republican Cavalry Brigade" }
+
+		21 = { "%dst Republican Cavalry Brigade" }
+
+		22 = { "%dnd Republican  Cavalry Brigade" }
+
+		23 = { "%drd Republican  Cavalry Brigade" }
+
+		24 = { "%dth  Republican Cavalry Brigade" }
+
+		25 = { "%dth  Republican Cavalry Brigade" }
+
+		26 = { "%dth  Republican Cavalry Brigade" }
+
+		27 = { "%dth  Republican Cavalry Brigade" }
+
+		28 = { "%dth  Republican Cavalry Brigade" }
+
+		29 = { "%dth  Republican Cavalry Brigade" }
+
+		30 = { "%dth  Republican Cavalry Brigade" }
+
+	}
+
+}
+
+
+
+RNO_MOT_01 = {
+
+	name = "Motorised Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "motorized" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Infantry Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered = {
+
+		50 = { "%dth  Republican Infantry Division" }			# actual motorized divisions
+
+		55 = { "%dth  Republican Infantry Division" }
+
+		59 = { "%dth  Republican Infantry Division" }
+
+		23 = { "%drd Republican  Infantry Division" }
+
+		47 = { "%dth  Republican Infantry Division" }
+
+		56 = { "%dth  Republican Infantry Division" }
+
+		7 = { "%dth  Republican Infantry Division" }				# potentially motorized divisions
+
+		8 = { "%dth  Republican Infantry Division" }
+
+		1 = { "%dst Republican Infantry Division" }
+
+		2 = { "%dnd Republican  Infantry Division" }
+
+		3 = { "%drd Republican  Infantry Division" }
+
+		4 = { "%dth  Republican Infantry Division" }
+
+		5 = { "%dth  Republican Infantry Division" }
+
+		6 = { "%dth  Republican Infantry Division" }
+
+		42 = { "%dnd Republican  Infantry Division" }
+
+		43 = { "%drd Republican  Infantry Division" }
+
+		44 = { "%dth  Republican Infantry Division" }
+
+		48 = { "%dth  Republican Infantry Division" }
+
+		49 = { "%dth  Republican Infantry Division" }
+
+		51 = { "%dst Republican Infantry Division" }
+
+		52 = { "%dnd Republican  Infantry Division" }
+
+		53 = { "%drd Republican  Infantry Division" }
+
+		54 = { "%dth  Republican Infantry Division" }
+
+		9 = { "%dth  Republican Infantry Division" }
+
+		15 = { "%dth  Republican Infantry Division" }
+
+		18 = { "%dth  Republican Infantry Division" }
+
+		38 = { "%dth  Republican Infantry Division" }
+
+		45 = { "%dth  Republican Infantry Division" }
+
+		61 = { "%dst Republican Infantry Division" }
+
+		66 = { "%dth  Republican Infantry Division" }
+
+		12 = { "%dth  Republican Infantry Division" }
+
+		46 = { "%dth  Republican Infantry Division" }
+
+		801 = { "Guards Infantry Division" }
+
+		40 = { "%dth  Republican Infantry Division" }
+
+		57 = { "%dth  Republican Infantry Div." }
+
+		58 = { "%dth  Republican Infantry Division" }
+
+		28 = { "%dth  Republican Infantry Division" }
+
+		33 = { "%drd Republican  Infantry Division" }
+
+		100 = { "%dth  Republican Infantry Division" }
+
+		101 = { "%dst Republican Infantry Division" }
+
+		102 = { "%dnd Republican  Infantry Division" }
+
+		103 = { "%drd Republican  Infantry Division" }
+
+		104 = { "%dth  Republican Infantry Division" }
+
+		105 = { "%dth  Republican Infantry Division" }
+
+		106 = { "%dth  Republican Infantry Division" }
+
+		107 = { "%dth  Republican Infantry Division" }
+
+		108 = { "%dth  Republican Infantry Division" }
+
+		109 = { "%dth  Republican Infantry Division" }
+
+		110 = { "%dth  Republican Infantry Division" }
+
+		111 = { "%dth  Republican Infantry Division" }
+
+		112 = { "%dth  Republican Infantry Division" }
+
+		113 = { "%dth  Republican Infantry Division" }
+
+		114 = { "%dth  Republican Infantry Division" }
+
+		115 = { "%dth  Republican Infantry Division" }
+
+		116 = { "%dth  Republican Infantry Division" }
+
+		117 = { "%dth  Republican Infantry Division" }
+
+		118 = { "%dth  Republican Infantry Division" }
+
+		119 = { "%dth  Republican Infantry Division" }
+
+		120 = { "%dth  Republican Infantry Division" }
+
+		121 = { "%dst Republican Infantry Division" }
+
+		122 = { "%dnd Republican  Infantry Division" }
+
+		123 = { "%drd Republican  Infantry Division" }
+
+		124 = { "%dth  Republican Infantry Division" }
+
+		125 = { "%dth  Republican Infantry Division" }
+
+		126 = { "%dth  Republican Infantry Division" }
+
+		127 = { "%dth  Republican Infantry Division" }
+
+		128 = { "%dth  Republican Infantry Division" }
+
+		129 = { "%dth  Republican Infantry Division" }
+
+		130 = { "%dth  Republican Infantry Division" }
+
+		131 = { "%dst Republican Infantry Division" }
+
+		132 = { "%dnd Republican  Infantry Division" }
+
+		133 = { "%drd Republican  Infantry Division" }
+
+		134 = { "%dth  Republican Infantry Division" }
+
+		135 = { "%dth  Republican Infantry Division" }
+
+		136 = { "%dth  Republican Infantry Division" }
+
+		137 = { "%dth  Republican Infantry Division" }
+
+		138 = { "%dth  Republican Infantry Division" }
+
+		139 = { "%dth  Republican Infantry Division" }
+
+		140 = { "%dth  Republican Infantry Division" }
+
+		141 = { "%dst Republican Infantry Division" }
+
+		142 = { "%dnd Republican  Infantry Division" }
+
+		143 = { "%drd Republican  Infantry Division" }
+
+		144 = { "%dth  Republican Infantry Division" }
+
+		145 = { "%dth  Republican Infantry Division" }
+
+		146 = { "%dth  Republican Infantry Division" }
+
+		147 = { "%dth  Republican Infantry Division" }
+
+		148 = { "%dth  Republican Infantry Division" }
+
+		149 = { "%dth  Republican Infantry Division" }
+
+		150 = { "%dth  Republican Infantry Division" }
+
+	}
+
+}
+
+
+
+RNO_MOT_02 = {
+
+	name = "Motor Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "motorized" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_MOT_01 }
+
+
+
+	fallback_name = "%d Motor Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered = {
+
+		1 = { "%dst Republican Motor Division" }
+
+		2 = { "%dnd Republican  Motor Division" }
+
+		3 = { "%drd Republican  Motor Division" }
+
+		4 = { "%dth  Republican Motor Division" }
+
+		5 = { "%dth  Republican Motor Division" }
+
+		6 = { "%dth  Republican Motor Division" }
+
+		7 = { "%dth  Republican Motor Division" }
+
+		8 = { "%dth  Republican Motor Division" }
+
+		9 = { "%dth  Republican Motor Division" }
+
+		10 = { "%dth  Republican Motor Division" }
+
+		11 = { "%dth  Republican Motor Division" }
+
+		12 = { "%dth  Republican Motor Division" }
+
+		13 = { "%dth  Republican Motor Division" }
+
+		14 = { "%dth  Republican Motor Division" }
+
+		15 = { "%dth  Republican Motor Division" }
+
+		16 = { "%dth  Republican Motor Division" }
+
+		17 = { "%dth  Republican Motor Division" }
+
+		18 = { "%dth  Republican Motor Division" }
+
+		19 = { "%dth  Republican Motor Division" }
+
+		20 = { "%dth  Republican Motor Division" }
+
+		21 = { "%dst Republican Motor Division" }
+
+		22 = { "%dnd Republican  Motor Division" }
+
+		23 = { "%drd Republican  Motor Division" }
+
+		24 = { "%dth  Republican Motor Division" }
+
+		25 = { "%dth  Republican Motor Division" }
+
+		26 = { "%dth  Republican Motor Division" }
+
+		27 = { "%dth  Republican Motor Division" }
+
+		28 = { "%dth  Republican Motor Division" }
+
+		29 = { "%dth  Republican Motor Division" }
+
+		30 = { "%dth  Republican Motor Division" }
+
+	}
+
+}
+
+
+
+RNO_MEC_01 = {
+
+	name = "Mechanised Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "mechanized" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Infantry Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		50 = { "%dth  Republican Infantry Division" }			# actual motorized divisions
+
+		55 = { "%dth  Republican Infantry Division" }
+
+		59 = { "%dth  Republican Infantry Division" }
+
+		23 = { "%drd Republican  Infantry Division" }
+
+		47 = { "%dth  Republican Infantry Division" }
+
+		56 = { "%dth  Republican Infantry Division" }
+
+		7 = { "%dth  Republican Infantry Division" }				# potentially motorized divisions
+
+		8 = { "%dth  Republican Infantry Division" }
+
+		1 = { "%dst Republican Infantry Division" }
+
+		2 = { "%dnd Republican  Infantry Division" }
+
+		3 = { "%drd Republican  Infantry Division" }
+
+		4 = { "%dth  Republican Infantry Division" }
+
+		5 = { "%dth  Republican Infantry Division" }
+
+		6 = { "%dth  Republican Infantry Division" }
+
+		42 = { "%dnd Republican  Infantry Division" }
+
+		43 = { "%drd Republican  Infantry Division" }
+
+		44 = { "%dth  Republican Infantry Division" }
+
+		48 = { "%dth  Republican Infantry Division" }
+
+		49 = { "%dth  Republican Infantry Division" }
+
+		51 = { "%dst Republican Infantry Division" }
+
+		52 = { "%dnd Republican  Infantry Division" }
+
+		53 = { "%drd Republican  Infantry Division" }
+
+		54 = { "%dth  Republican Infantry Division" }
+
+		9 = { "%dth  Republican Infantry Division" }
+
+		15 = { "%dth  Republican Infantry Division" }
+
+		18 = { "%dth  Republican Infantry Division" }
+
+		38 = { "%dth  Republican Infantry Division" }
+
+		45 = { "%dth  Republican Infantry Division" }
+
+		61 = { "%dst Republican Infantry Division" }
+
+		66 = { "%dth  Republican Infantry Division" }
+
+		12 = { "%dth  Republican Infantry Division" }
+
+		46 = { "%dth  Republican Infantry Division" }
+
+		801 = { "Guards Infantry Division" }
+
+		40 = { "%dth  Republican Infantry Division" }
+
+		57 = { "%dth  Republican Infantry Div." }
+
+		58 = { "%dth  Republican Infantry Division" }
+
+		28 = { "%dth  Republican Infantry Division" }
+
+		33 = { "%drd Republican  Infantry Division" }
+
+		100 = { "%dth  Republican Infantry Division" }
+
+		101 = { "%dst Republican Infantry Division" }
+
+		102 = { "%dnd Republican  Infantry Division" }
+
+		103 = { "%drd Republican  Infantry Division" }
+
+		104 = { "%dth  Republican Infantry Division" }
+
+		105 = { "%dth  Republican Infantry Division" }
+
+		106 = { "%dth  Republican Infantry Division" }
+
+		107 = { "%dth  Republican Infantry Division" }
+
+		108 = { "%dth  Republican Infantry Division" }
+
+		109 = { "%dth  Republican Infantry Division" }
+
+		110 = { "%dth  Republican Infantry Division" }
+
+		111 = { "%dth  Republican Infantry Division" }
+
+		112 = { "%dth  Republican Infantry Division" }
+
+		113 = { "%dth  Republican Infantry Division" }
+
+		114 = { "%dth  Republican Infantry Division" }
+
+		115 = { "%dth  Republican Infantry Division" }
+
+		116 = { "%dth  Republican Infantry Division" }
+
+		117 = { "%dth  Republican Infantry Division" }
+
+		118 = { "%dth  Republican Infantry Division" }
+
+		119 = { "%dth  Republican Infantry Division" }
+
+		120 = { "%dth  Republican Infantry Division" }
+
+		121 = { "%dst Republican Infantry Division" }
+
+		122 = { "%dnd Republican  Infantry Division" }
+
+		123 = { "%drd Republican  Infantry Division" }
+
+		124 = { "%dth  Republican Infantry Division" }
+
+		125 = { "%dth  Republican Infantry Division" }
+
+		126 = { "%dth  Republican Infantry Division" }
+
+		127 = { "%dth  Republican Infantry Division" }
+
+		128 = { "%dth  Republican Infantry Division" }
+
+		129 = { "%dth  Republican Infantry Division" }
+
+		130 = { "%dth  Republican Infantry Division" }
+
+		131 = { "%dst Republican Infantry Division" }
+
+		132 = { "%dnd Republican  Infantry Division" }
+
+		133 = { "%drd Republican  Infantry Division" }
+
+		134 = { "%dth  Republican Infantry Division" }
+
+		135 = { "%dth  Republican Infantry Division" }
+
+		136 = { "%dth  Republican Infantry Division" }
+
+		137 = { "%dth  Republican Infantry Division" }
+
+		138 = { "%dth  Republican Infantry Division" }
+
+		139 = { "%dth  Republican Infantry Division" }
+
+		140 = { "%dth  Republican Infantry Division" }
+
+		141 = { "%dst Republican Infantry Division" }
+
+		142 = { "%dnd Republican  Infantry Division" }
+
+		143 = { "%drd Republican  Infantry Division" }
+
+		144 = { "%dth  Republican Infantry Division" }
+
+		145 = { "%dth  Republican Infantry Division" }
+
+		146 = { "%dth  Republican Infantry Division" }
+
+		147 = { "%dth  Republican Infantry Division" }
+
+		148 = { "%dth  Republican Infantry Division" }
+
+		149 = { "%dth  Republican Infantry Division" }
+
+		150 = { "%dth  Republican Infantry Division" }
+
+	}
+
+}
+
+
+
+RNO_CAR_01 = {
+
+	name = "Armored Car Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "armored_car" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	link_numbering_with = { RNO_MOT_02 }
+
+
+
+	fallback_name = "No.%d Armoured Car Company"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered = {
+
+		
+
+		1 = { "No.%d Armoured Car Company" }
+
+		2 = { "No.%d Armoured Car Company" }
+
+		3 = { "No.%d Armoured Car Company" }
+
+		4 = { "No.%d Armoured Car Company" }
+
+		5 = { "No.%d Armoured Car Company" }
+
+		6 = { "No.%d Armoured Car Company" }
+
+		7 = { "No.%d Armoured Car Company" }	
+
+		8 = { "No.%d Armoured Car Company" }
+
+		9 = { "No.%d Armoured Car Company" }
+
+		10 = { "No.%d Armoured Car Company" }
+
+	}
+
+}
+
+
+
+RNO_ARM_01 = {
+
+	name = "Armoured Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Armoured Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Armoured Division" } # formed as Mobile Division
+
+		7 = { "%dth  Republican Armoured Division" } # AKA 'Desert Rats', formed as Mobile Division
+
+		2 = { "%dnd Republican  Armoured Division" }
+
+		6 = { "%dth  Republican Armoured Division" }
+
+		8 = { "%dth  Republican Armoured Division" }
+
+		9 = { "%dth  Republican Armoured Division" }
+
+		31 = { "Guards Armoured Division" }
+
+		10 = { "%dth  Republican Armoured Division" }
+
+		11 = { "%dth  Republican Armoured Division" }
+
+		42 = { "%dnd Republican  Armoured Division" }
+
+		79 = { "%dth  Republican Armoured Division" }
+
+		5 = { "%dth  Republican Armoured Division" }		# phantom division	
+
+		3 = { "%drd Republican  Armoured Division" }		# fictional divisions
+
+		4 = { "%dth  Republican Armoured Division" }
+
+		12 = { "%dth  Republican Armoured Division" }
+
+		13 = { "%dth  Republican Armoured Division" }
+
+		14 = { "%dth  Republican Armoured Division" }
+
+		15 = { "%dth  Republican Armoured Division" }
+
+		16 = { "%dth  Republican Armoured Division" }
+
+		17 = { "%dth  Republican Armoured Division" }
+
+		18 = { "%dth  Republican Armoured Division" }
+
+		19 = { "%dth  Republican Armoured Division" }
+
+		20 = { "%dth  Republican Armoured Division" }
+
+		21 = { "%dst Republican Armoured Division" }
+
+		22 = { "%dnd Republican  Armoured Division" }
+
+		23 = { "%drd Republican  Armoured Division" }
+
+		24 = { "%dth  Republican Armoured Division" }
+
+		25 = { "%dth  Republican Armoured Division" }
+
+		26 = { "%dth  Republican Armoured Division" }
+
+		27 = { "%dth  Republican Armoured Division" }
+
+		28 = { "%dth  Republican Armoured Division" }
+
+		29 = { "%dth  Republican Armoured Division" }
+
+		30 = { "%dth  Republican Armoured Division" }
+
+	}
+
+}
+
+
+
+RNO_ARM_02 = {
+
+	name = "Tank Brigade"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "light_armor" "medium_armor" "modern_armor" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_ARM_02 }
+
+
+
+	fallback_name = "%d Army Tank Brigade"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Army Tank Brigade" }
+
+		2 = { "%dnd Republican  Army Tank Brigade" }
+
+		21 = { "%dst Republican Army Tank Brigade" }
+
+		22 = { "%dnd Republican  Army Tank Brigade" }
+
+		23 = { "%drd Republican  Army Tank Brigade" }
+
+		24 = { "%dth  Republican Army Tank Brigade" }
+
+		25 = { "%dth  Republican Army Tank Brigade" }
+
+		3 = { "%drd Republican  Army Tank Brigade" }
+
+		6 = { "%dth  Republican Army Tank Brigade" }
+
+		8 = { "%dth  Republican Army Tank Brigade" }
+
+		9 = { "%dth  Republican Army Tank Brigade" }
+
+		10 = { "%dth  Republican Army Tank Brigade" }
+
+		11 = { "%dth  Republican Army Tank Brigade" }
+
+		32 = { "%dnd Republican  Army Tank Brigade" }
+
+		31 = { "%dst Republican Army Tank Brigade" }
+
+		5 = { "%dth  Republican Army Tank Brigade" }		
+
+		7 = { "%dth  Republican Army Tank Brigade" }		
+
+		4 = { "%dth  Republican Army Tank Brigade" }
+
+		12 = { "%dth  Republican Army Tank Brigade" }
+
+		13 = { "%dth  Republican Army Tank Brigade" }
+
+		14 = { "%dth  Republican Army Tank Brigade" }
+
+		15 = { "%dth  Republican Army Tank Brigade" }
+
+		16 = { "%dth  Republican Army Tank Brigade" }
+
+		17 = { "%dth  Republican Army Tank Brigade" }
+
+		18 = { "%dth  Republican Army Tank Brigade" }
+
+		19 = { "%dth  Republican Army Tank Brigade" }
+
+		20 = { "%dth  Republican Army Tank Brigade" }
+
+		26 = { "%dth  Republican Army Tank Brigade" }
+
+		27 = { "%dth  Republican Army Tank Brigade" }
+
+		28 = { "%dth  Republican Army Tank Brigade" }
+
+		29 = { "%dth  Republican Army Tank Brigade" }
+
+		30 = { "%dth  Republican Army Tank Brigade" }
+
+	}
+
+}
+
+
+
+RNO_ARM_03 = {
+
+	name = "Heavy Armoured Brigade"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "heavy_armor" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_ARM_03 }
+
+
+
+	fallback_name = "%d Heavy Armoured Brigade"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Heavy Armoured Brigade" }
+
+		2 = { "%dnd Republican  Heavy Armoured Brigade" }
+
+		3 = { "%drd Republican  Heavy Armoured Brigade" }
+
+		4 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		5 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		6 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		7 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		8 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		9 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		10 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		11 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		12 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		13 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		14 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		15 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		16 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		17 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		18 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		19 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		20 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		21 = { "%dst Republican Heavy Armoured Brigade" }
+
+		22 = { "%dnd Republican  Heavy Armoured Brigade" }
+
+		23 = { "%drd Republican  Heavy Armoured Brigade" }
+
+		24 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		25 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		26 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		27 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		28 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		29 = { "%dth  Republican Heavy Armoured Brigade" }
+
+		30 = { "%dth  Republican Heavy Armoured Brigade" }
+
+	}
+
+}
+
+
+
+RNO_PAR_01 = {
+
+	name = "Airborne Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "paratrooper" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Airborne Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Airborne Division" }
+
+		6 = { "%dth  Republican Airborne Division" }
+
+		2 = { "%dnd Republican  Airborne Division" }		# phantom divisions
+
+		4 = { "%dth  Republican Airborne Division" }
+
+		5 = { "%dth  Republican Airborne Division" }
+
+		7 = { "%dth  Republican Airborne Division" }		# fictional divisions
+
+		8 = { "%dth  Republican Airborne Division" }
+
+		3 = { "%drd Republican  Airborne Division" }
+
+		9 = { "%dth  Republican Airborne Division" }
+
+		10 = { "%dth  Republican Airborne Division" }
+
+		11 = { "%dth  Republican Airborne Division" }
+
+		12 = { "%dth  Republican Airborne Division" }
+
+		13 = { "%dth  Republican Airborne Division" }
+
+		14 = { "%dth  Republican Airborne Division" }
+
+		15 = { "%dth  Republican Airborne Division" }
+
+		16 = { "%dth  Republican Airborne Division" }
+
+		17 = { "%dth  Republican Airborne Division" }
+
+		18 = { "%dth  Republican Airborne Division" }
+
+		19 = { "%dth  Republican Airborne Division" }
+
+		20 = { "%dth  Republican Airborne Division" }
+
+		21 = { "%dst Republican Airborne Division" }
+
+		22 = { "%dnd Republican  Airborne Division" }
+
+		23 = { "%drd Republican  Airborne Division" }
+
+		24 = { "%dth  Republican Airborne Division" }
+
+		25 = { "%dth  Republican Airborne Division" }
+
+		26 = { "%dth  Republican Airborne Division" }
+
+		27 = { "%dth  Republican Airborne Division" }
+
+		28 = { "%dth  Republican Airborne Division" }
+
+		29 = { "%dth  Republican Airborne Division" }
+
+		30 = { "%dth  Republican Airborne Division" }
+
+	}
+
+}
+
+
+
+RNO_PAR_02 = {
+
+	name = "Parachute Regiment"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "paratrooper" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_PAR_02 }
+
+
+
+	fallback_name = "%d Parachute Regiment"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Parachute Regiment" }
+
+		2 = { "%dnd Republican  Parachute Regiment" }
+
+		3 = { "%drd Republican  Parachute Regiment" }
+
+		4 = { "%dth  Republican Parachute Regiment" }
+
+		5 = { "%dth  Republican Parachute Regiment" }
+
+		6 = { "%dth  Republican Parachute Regiment" }
+
+		7 = { "%dth  Republican Parachute Regiment" }
+
+		8 = { "%dth  Republican Parachute Regiment" }
+
+		9 = { "%dth  Republican Parachute Regiment" }
+
+		10 = { "%dth  Republican Parachute Regiment" }
+
+		11 = { "%dth  Republican Parachute Regiment" }
+
+		12 = { "%dth  Republican Parachute Regiment" }
+
+		13 = { "%dth  Republican Parachute Regiment" }
+
+		14 = { "%dth  Republican Parachute Regiment" }
+
+		15 = { "%dth  Republican Parachute Regiment" }
+
+		16 = { "%dth  Republican Parachute Regiment" }
+
+		17 = { "%dth  Republican Parachute Regiment" }
+
+		18 = { "%dth  Republican Parachute Regiment" }
+
+		19 = { "%dth  Republican Parachute Regiment" }
+
+		20 = { "%dth  Republican Parachute Regiment" }
+
+		21 = { "%dst Republican Parachute Regiment" }
+
+		22 = { "%dnd Republican  Parachute Regiment" }
+
+		23 = { "%drd Republican  Parachute Regiment" }
+
+		24 = { "%dth  Republican Parachute Regiment" }
+
+		25 = { "%dth  Republican Parachute Regiment" }
+
+		26 = { "%dth  Republican Parachute Regiment" }
+
+		27 = { "%dth  Republican Parachute Regiment" }
+
+		28 = { "%dth  Republican Parachute Regiment" }
+
+		29 = { "%dth  Republican Parachute Regiment" }
+
+		30 = { "%dth  Republican Parachute Regiment" }
+
+	}
+
+}
+
+
+
+RNO_MAR_01 = {
+
+	name = "Marines Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "marine" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Marines Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Marines Division" }
+
+		2 = { "%dnd Republican  Marines Division" }
+
+		3 = { "%drd Republican  Marines Division" }
+
+		4 = { "%dth  Republican Marines Division" }
+
+		5 = { "%dth  Republican Marines Division" }
+
+		6 = { "%dth  Republican Marines Division" }
+
+		7 = { "%dth  Republican Marines Division" }
+
+		8 = { "%dth  Republican Marines Division" }
+
+		9 = { "%dth  Republican Marines Division" }
+
+		10 = { "%dth  Republican Marines Division" }
+
+		11 = { "%dth  Republican Marines Division" }
+
+		12 = { "%dth  Republican Marines Division" }
+
+		13 = { "%dth  Republican Marines Division" }
+
+		14 = { "%dth  Republican Marines Division" }
+
+		15 = { "%dth  Republican Marines Division" }
+
+		16 = { "%dth  Republican Marines Division" }
+
+		17 = { "%dth  Republican Marines Division" }
+
+		18 = { "%dth  Republican Marines Division" }
+
+		19 = { "%dth  Republican Marines Division" }
+
+		20 = { "%dth  Republican Marines Division" }
+
+		21 = { "%dst Republican Marines Division" }
+
+		22 = { "%dnd Republican  Marines Division" }
+
+		23 = { "%drd Republican  Marines Division" }
+
+		24 = { "%dth  Republican Marines Division" }
+
+		25 = { "%dth  Republican Marines Division" }
+
+		26 = { "%dth  Republican Marines Division" }
+
+		27 = { "%dth  Republican Marines Division" }
+
+		28 = { "%dth  Republican Marines Division" }
+
+		29 = { "%dth  Republican Marines Division" }
+
+		30 = { "%dth  Republican Marines Division" }
+
+	}
+
+}
+
+
+
+RNO_MNT_01 = {
+
+	name = "Mountain Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "mountaineers" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Infantry Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		52 = { "%dnd Republican  Infantry Division" }
+
+		9 = { "%dth  Republican Infantry Division" }
+
+		15 = { "%dth  Republican Infantry Division" }
+
+		51 = { "%dst Republican Infantry Division" }
+
+		64 = { "%dth  Republican Infantry Mountain Div." }
+
+		65 = { "%dth  Republican Infantry Mountain Div." }
+
+		36 = { "%dth  Republican Infantry Division" }
+
+		801 = { "Guards Infantry Division" }
+
+		46 = { "%dth  Republican Infantry Division" }
+
+		18 = { "%dth  Republican Infantry Division" }
+
+		38 = { "%dth  Republican Infantry Division" }
+
+		45 = { "%dth  Republican Infantry Division" }
+
+		61 = { "%dst Republican Infantry Division" }
+
+		66 = { "%dth  Republican Infantry Division" }
+
+		62 = { "%dnd Republican  Infantry Division" }
+
+		63 = { "%drd Republican  Infantry Division" }
+
+		67 = { "%dth  Republican Infantry Division" }
+
+		68 = { "%dth  Republican Infantry Division" }
+
+		69 = { "%dth  Republican Infantry Division" }
+
+		12 = { "%dth  Republican Infantry Division" }
+
+		42 = { "%dnd Republican  Infantry Division" }
+
+		43 = { "%drd Republican  Infantry Division" }
+
+		44 = { "%dth  Republican Infantry Division" }
+
+		48 = { "%dth  Republican Infantry Division" }
+
+		49 = { "%dth  Republican Infantry Division" }
+
+		53 = { "%drd Republican  Infantry Division" }
+
+		54 = { "%dth  Republican Infantry Division" }
+
+		127 = { "%dth  Republican Infantry Division" }
+
+		128 = { "%dth  Republican Infantry Division" }
+
+		129 = { "%dth  Republican Infantry Division" }
+
+		130 = { "%dth  Republican Infantry Division" }
+
+		131 = { "%dst Republican Infantry Division" }
+
+		132 = { "%dnd Republican  Infantry Division" }
+
+		133 = { "%drd Republican  Infantry Division" }
+
+		134 = { "%dth  Republican Infantry Division" }
+
+		135 = { "%dth  Republican Infantry Division" }
+
+		136 = { "%dth  Republican Infantry Division" }
+
+		137 = { "%dth  Republican Infantry Division" }
+
+		138 = { "%dth  Republican Infantry Division" }
+
+		139 = { "%dth  Republican Infantry Division" }
+
+		140 = { "%dth  Republican Infantry Division" }
+
+		141 = { "%dst Republican Infantry Division" }
+
+		142 = { "%dnd Republican  Infantry Division" }
+
+	}
+
+}
+
+
+
+
+
+
+RNO_GAR_01 = {
+
+	name = "Garrison Division"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "infantry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Garrison Division"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		201 = { "1st Western County Division" }			# Home Counties Divisions
+
+		202 = { "2nd Southern County Division" }
+
+		203 = { "3rd Northern County Division" }
+
+		204 = { "4th Southeast County Division" }
+
+		205 = { "5th Southern County Division" }
+
+		206 = { "6th Eastern County Division" }
+
+		207 = { "7th Eastern County Division" }
+
+		208 = { "8th Northern County Division" }
+
+		209 = { "9th Central County Division" }
+
+		210 = { "10th Home County Division" }
+
+		100 = { "%dth  Republican Infantry Division" }					# fictional divisions
+
+		101 = { "%dst Republican Infantry Division" }
+
+		102 = { "%dnd Republican  Infantry Division" }
+
+		103 = { "%drd Republican  Infantry Division" }
+
+		104 = { "%dth  Republican Infantry Division" }
+
+		105 = { "%dth  Republican Infantry Division" }
+
+		106 = { "%dth  Republican Infantry Division" }
+
+		107 = { "%dth  Republican Infantry Division" }
+
+		108 = { "%dth  Republican Infantry Division" }
+
+		109 = { "%dth  Republican Infantry Division" }
+
+		110 = { "%dth  Republican Infantry Division" }
+
+		111 = { "%dth  Republican Infantry Division" }
+
+		112 = { "%dth  Republican Infantry Division" }
+
+		113 = { "%dth  Republican Infantry Division" }
+
+		114 = { "%dth  Republican Infantry Division" }
+
+		115 = { "%dth  Republican Infantry Division" }
+
+		116 = { "%dth  Republican Infantry Division" }
+
+		117 = { "%dth  Republican Infantry Division" }
+
+		118 = { "%dth  Republican Infantry Division" }
+
+		119 = { "%dth  Republican Infantry Division" }
+
+		120 = { "%dth  Republican Infantry Division" }
+
+		121 = { "%dst Republican Infantry Division" }
+
+		122 = { "%dnd Republican  Infantry Division" }
+
+		123 = { "%drd Republican  Infantry Division" }
+
+		124 = { "%dth  Republican Infantry Division" }
+
+		125 = { "%dth  Republican Infantry Division" }
+
+		126 = { "%dth  Republican Infantry Division" }
+
+		127 = { "%dth  Republican Infantry Division" }
+
+		128 = { "%dth  Republican Infantry Division" }
+
+		129 = { "%dth  Republican Infantry Division" }
+
+		130 = { "%dth  Republican Infantry Division" }
+
+		131 = { "%dst Republican Infantry Division" }
+
+		132 = { "%dnd Republican  Infantry Division" }
+
+		133 = { "%drd Republican  Infantry Division" }
+
+		134 = { "%dth  Republican Infantry Division" }
+
+		135 = { "%dth  Republican Infantry Division" }
+
+		136 = { "%dth  Republican Infantry Division" }
+
+		137 = { "%dth  Republican Infantry Division" }
+
+		138 = { "%dth  Republican Infantry Division" }
+
+		139 = { "%dth  Republican Infantry Division" }
+
+		140 = { "%dth  Republican Infantry Division" }
+
+		141 = { "%dst Republican Infantry Division" }
+
+		142 = { "%dnd Republican  Infantry Division" }
+
+		143 = { "%drd Republican  Infantry Division" }
+
+		144 = { "%dth  Republican Infantry Division" }
+
+		145 = { "%dth  Republican Infantry Division" }
+
+		146 = { "%dth  Republican Infantry Division" }
+
+		147 = { "%dth  Republican Infantry Division" }
+
+		148 = { "%dth  Republican Infantry Division" }
+
+		149 = { "%dth  Republican Infantry Division" }
+
+		150 = { "%dth  Republican Infantry Division" }
+
+	}
+
+}
+
+
+
+
+
+
+RNO_AIR_01 = { 
+
+	name = "Anti-Aircraft Division" 
+
+
+
+	for_countries = { RNO } 
+
+
+
+	can_use = { always = yes } 
+
+
+
+	division_types = { "infantry" } 
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_AIR_01 } 
+
+
+
+	fallback_name = "%d Anti-Aircraft Division" 
+
+
+
+	# Names with numbers.
+
+	# It's okay to have gaps in numbering.
+
+	ordered = { 
+
+		1 = { "%dst Republican Anti-Aircraft Division" } # formed 1935
+
+		2 = { "%dnd Republican  Anti-Aircraft Division" } # formed 1935
+
+		3 = { "%drd Republican  Anti-Aircraft Division" } # formed 1938
+
+		4 = { "%dth  Republican Anti-Aircraft Division" } # formed 1938
+
+		5 = { "%dth  Republican Anti-Aircraft Division" } # formed 1938
+
+		6 = { "%dth  Republican Anti-Aircraft Division" } # formed 1939
+
+		7 = { "%dth  Republican Anti-Aircraft Division" } # formed 1939
+
+		8 = { "%dth  Republican Anti-Aircraft Division" } # formed 1940
+
+		9 = { "%dth  Republican Anti-Aircraft Division" } # formed 1940
+
+		10 = { "%dth  Republican Anti-Aircraft Division" } # formed 1940
+
+		11 = { "%dth  Republican Anti-Aircraft Division" } # formed 1940
+
+		12 = { "%dth  Republican Anti-Aircraft Division" } # formed 1940
+
+		13 = { "%dth  Republican Anti-Aircraft Division" } # fictional names start here
+
+		14 = { "%dth  Republican Anti-Aircraft Division" }
+
+		15 = { "%dth  Republican Anti-Aircraft Division" }
+
+		16 = { "%dth  Republican Anti-Aircraft Division" }
+
+		17 = { "%dth  Republican Anti-Aircraft Division" }
+
+		18 = { "%dth  Republican Anti-Aircraft Division" }
+
+		19 = { "%dth  Republican Anti-Aircraft Division" }
+
+		20 = { "%dth  Republican Anti-Aircraft Division" }
+
+		21 = { "%dst Republican Anti-Aircraft Division" }
+
+		22 = { "%dnd Republican  Anti-Aircraft Division" }
+
+		23 = { "%drd Republican  Anti-Aircraft Division" }
+
+		24 = { "%dth  Republican Anti-Aircraft Division" }
+
+		25 = { "%dth  Republican Anti-Aircraft Division" }
+
+		26 = { "%dth  Republican Anti-Aircraft Division" }
+
+		27 = { "%dth  Republican Anti-Aircraft Division" }
+
+		28 = { "%dth  Republican Anti-Aircraft Division" }
+
+		29 = { "%dth  Republican Anti-Aircraft Division" }
+
+		30 = { "%dth  Republican Anti-Aircraft Division" }
+
+		31 = { "%dst Republican Anti-Aircraft Division" }
+
+		32 = { "%dnd Republican  Anti-Aircraft Division" }
+
+		33 = { "%drd Republican  Anti-Aircraft Division" }
+
+		34 = { "%dth  Republican Anti-Aircraft Division" }
+
+		35 = { "%dth  Republican Anti-Aircraft Division" }
+
+		36 = { "%dth  Republican Anti-Aircraft Division" }
+
+		37 = { "%dth  Republican Anti-Aircraft Division" }
+
+		38 = { "%dth  Republican Anti-Aircraft Division" }
+
+		39 = { "%dth  Republican Anti-Aircraft Division" }
+
+		40 = { "%dth  Republican Anti-Aircraft Division" }
+
+		41 = { "%dst Republican Anti-Aircraft Division" }
+
+		42 = { "%dnd Republican  Anti-Aircraft Division" }
+
+		43 = { "%drd Republican  Anti-Aircraft Division" }
+
+		44 = { "%dth  Republican Anti-Aircraft Division" }
+
+		45 = { "%dth  Republican Anti-Aircraft Division" }
+
+		46 = { "%dth  Republican Anti-Aircraft Division" }
+
+		47 = { "%dth  Republican Anti-Aircraft Division" }
+
+		48 = { "%dth  Republican Anti-Aircraft Division" }
+
+		49 = { "%dth  Republican Anti-Aircraft Division" }
+
+		50 = { "%dth  Republican Anti-Aircraft Division" }
+
+	} 
+
+}
+
+
+
+RNO_DEM_01 = 
+
+{
+
+	name = "Loyalist Brigade"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes } # used to populate spawned divisions in civil war
+
+
+
+	division_types = { "infantry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Loyalist Brigade"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Loyalist Brigade" }
+
+		2 = { "%dnd Republican  Loyalist Brigade" }
+
+		3 = { "%drd Republican  Loyalist Brigade" }
+
+		4 = { "%dth  Republican Loyalist Brigade" }
+
+		5 = { "%dth  Republican Loyalist Brigade" }
+
+		6 = { "%dth  Republican Loyalist Brigade" }
+
+		7 = { "%dth  Republican Loyalist Brigade" }
+
+		8 = { "%dth  Republican Loyalist Brigade" }
+
+		9 = { "%dth  Republican Loyalist Brigade" }
+
+		10 = { "%dth  Republican Loyalist Brigade" }
+
+		11 = { "%dth  Republican Loyalist Brigade" }
+
+		12 = { "%dth  Republican Loyalist Brigade" }
+
+		13 = { "%dth  Republican Loyalist Brigade" }
+
+		14 = { "%dth  Republican Loyalist Brigade" }
+
+		15 = { "%dth  Republican Loyalist Brigade" }
+
+		16 = { "%dth  Republican Loyalist Brigade" }
+
+		17 = { "%dth  Republican Loyalist Brigade" }
+
+		18 = { "%dth  Republican Loyalist Brigade" }
+
+		19 = { "%dth  Republican Loyalist Brigade" }
+
+		20 = { "%dth  Republican Loyalist Brigade" }
+
+		21 = { "%dst Republican Loyalist Brigade" }
+
+		22 = { "%dnd Republican  Loyalist Brigade" }
+
+		23 = { "%drd Republican  Loyalist Brigade" }
+
+		24 = { "%dth  Republican Loyalist Brigade" }
+
+		25 = { "%dth  Republican Loyalist Brigade" }
+
+		26 = { "%dth  Republican Loyalist Brigade" }
+
+		27 = { "%dth  Republican Loyalist Brigade" }
+
+		28 = { "%dth  Republican Loyalist Brigade" }
+
+		29 = { "%dth  Republican Loyalist Brigade" }
+
+		30 = { "%dth  Republican Loyalist Brigade" }
+
+	}
+
+}
+
+
+
+RNO_FAS_01 = 
+
+{
+
+	name = "Blackshirt Brigade"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes } # used to populate divisions spawned in civil war
+
+
+
+	division_types = { "infantry" }
+
+
+
+	# Number reservation system will tie to another group.
+
+	#link_numbering_with = { RNO_INF_01 }
+
+
+
+	fallback_name = "%d Blackshirt Brigade"
+
+
+
+	# Names with numbers. 
+
+	# It's okay to have gaps in numbering.
+
+	ordered =
+
+	{
+
+		1 = { "%dst Republican Blackshirt Brigade" }
+
+		2 = { "%dnd Republican  Blackshirt Brigade" }
+
+		3 = { "%drd Republican  Blackshirt Brigade" }
+
+		4 = { "%dth  Republican Blackshirt Brigade" }
+
+		5 = { "%dth  Republican Blackshirt Brigade" }
+
+		6 = { "%dth  Republican Blackshirt Brigade" }
+
+		7 = { "%dth  Republican Blackshirt Brigade" }
+
+		8 = { "%dth  Republican Blackshirt Brigade" }
+
+		9 = { "%dth  Republican Blackshirt Brigade" }
+
+		10 = { "%dth  Republican Blackshirt Brigade" }
+
+		11 = { "%dth  Republican Blackshirt Brigade" }
+
+		12 = { "%dth  Republican Blackshirt Brigade" }
+
+		13 = { "%dth  Republican Blackshirt Brigade" }
+
+		14 = { "%dth  Republican Blackshirt Brigade" }
+
+		15 = { "%dth  Republican Blackshirt Brigade" }
+
+		16 = { "%dth  Republican Blackshirt Brigade" }
+
+		17 = { "%dth  Republican Blackshirt Brigade" }
+
+		18 = { "%dth  Republican Blackshirt Brigade" }
+
+		19 = { "%dth  Republican Blackshirt Brigade" }
+
+		20 = { "%dth  Republican Blackshirt Brigade" }
+
+		21 = { "%dst Republican Blackshirt Brigade" }
+
+		22 = { "%dnd Republican  Blackshirt Brigade" }
+
+		23 = { "%drd Republican  Blackshirt Brigade" }
+
+		24 = { "%dth  Republican Blackshirt Brigade" }
+
+		25 = { "%dth  Republican Blackshirt Brigade" }
+
+		26 = { "%dth  Republican Blackshirt Brigade" }
+
+		27 = { "%dth  Republican Blackshirt Brigade" }
+
+		28 = { "%dth  Republican Blackshirt Brigade" }
+
+		29 = { "%dth  Republican Blackshirt Brigade" }
+
+		30 = { "%dth  Republican Blackshirt Brigade" }
+
+	}
+
+}
+
+RNO_RGR_01 = {
+
+	name = "Ranger Divisions"
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { always = yes }
+
+
+
+	division_types = { "ranger_battalion"  }
+
+
+
+	fallback_name = "%d Ranger Division"
+
+
+
+	# Names with numbers
+
+	ordered = {
+
+	1 = { "%dst Republican Ranger Division" }
+
+	2 = { "%dnd Republican  Ranger Division" }
+
+	3 = { "%drd Republican  Ranger Division" }
+
+	4 = { "%dth  Republican Ranger Division" }
+
+	5 = { "%dth  Republican Ranger Division" }
+
+	6 = { "%dth  Republican Ranger Division" }
+
+	7 = { "%dth  Republican Ranger Division" }
+
+	8 = { "%dth  Republican Ranger Division" }
+
+	9 = { "%dth  Republican Ranger Division" }
+
+	10 = { "%dth  Republican Ranger Division" }
+
+	11 = { "%dth  Republican Ranger Division" }
+
+	12 = { "%dth  Republican Ranger Division" }
+
+	13 = { "%dth  Republican Ranger Division" }
+
+	14 = { "%dth  Republican Ranger Division" }
+
+	15 = { "%dth  Republican Ranger Division" }
+
+	16 = { "%dth  Republican Ranger Division" }
+
+	17 = { "%dth  Republican Ranger Division" }
+
+	18 = { "%dth  Republican Ranger Division" }
+
+	19 = { "%dth  Republican Ranger Division" }
+
+	20 = { "%dth  Republican Ranger Division" }
+
+	21 = { "%dst Republican Ranger Division" }
+
+	22 = { "%dnd Republican  Ranger Division" }
+
+	23 = { "%drd Republican  Ranger Division" }
+
+	24 = { "%dth  Republican Ranger Division" }
+
+	25 = { "%dth  Republican Ranger Division" }
+
+	26 = { "%dth  Republican Ranger Division" }
+
+	27 = { "%dth  Republican Ranger Division" }
+
+	28 = { "%dth  Republican Ranger Division" }
+
+	29 = { "%dth  Republican Ranger Division" }
+
+	30 = { "%dth  Republican Ranger Division" }
+
+	31 = { "%dst Republican Ranger Division" }
+
+	32 = { "%dnd Republican  Ranger Division" }
+
+	33 = { "%drd Republican  Ranger Division" }
+
+	34 = { "%dth  Republican Ranger Division" }
+
+	35 = { "%dth  Republican Ranger Division" }
+
+	36 = { "%dth  Republican Ranger Division" }
+
+	37 = { "%dth  Republican Ranger Division" }
+
+	38 = { "%dth  Republican Ranger Division" }
+
+	39 = { "%dth  Republican Ranger Division" }
+
+	40 = { "%dth  Republican Ranger Division" }
+
+	41 = { "%dst Republican Ranger Division" }
+
+	42 = { "%dnd Republican  Ranger Division" }
+
+	43 = { "%drd Republican  Ranger Division" }
+
+	44 = { "%dth  Republican Ranger Division" }
+
+	45 = { "%dth  Republican Ranger Division" }
+
+	46 = { "%dth  Republican Ranger Division" }
+
+	47 = { "%dth  Republican Ranger Division" }
+
+	48 = { "%dth  Republican Ranger Division" }
+
+	49 = { "%dth  Republican Ranger Division" }
+
+	50 = { "%dth  Republican Ranger Division" }
+
+	51 = { "%dst Republican Ranger Division" }
+
+	52 = { "%dnd Republican  Ranger Division" }
+
+	53 = { "%drd Republican  Ranger Division" }
+
+		
+
+	}
+
+}

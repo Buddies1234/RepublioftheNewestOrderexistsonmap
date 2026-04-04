@@ -16,6 +16,9 @@ state={
 		add_core_of = RNO
 
 		buildings = {
+				13408 = {
+					naval_base = 1
+				}
 			infrastructure = 1
 		dockyard = 1
 		}

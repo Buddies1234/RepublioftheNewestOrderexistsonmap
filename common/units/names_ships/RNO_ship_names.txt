@@ -1,0 +1,1440 @@
+##### Republican NAME LISTS #####
+
+### REGULAR DESTROYER NAMES###
+
+RNO_DD_HISTORICAL = {
+
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = {
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_light destroyer }			
+
+
+
+	prefix = "RRN "							
+
+	fallback_name = "Destroyer %s"					
+
+
+
+	unique = {											
+
+		# Starting with G-class ships
+
+		"Gallant" "Garland" "Gipsy" "Glowworm" "Grenade" "Grenville" "Greyhound" "Griffin" "Hardy" "Hasty" "Havock" "Hereward" "Hero" "Hostile" "Hotspur" "Hunter" "Hyperion" 
+
+		"Cossack" 
+
+		"Icarus" "Ilex" "Imogen" "Imperial" "Impulsive" "Inglefield" "Intrepid" "Isis" "Ivanhoe" "Harvester" "Havant" "Hesperus" "Hurricane"
+
+		"Jervis" "Jackal" "Jaguar" "Juno" "Janus" "Javelin" "Jersey" "Jupiter" "Kelly" "Kandahar" "Kashmir" "Kelvin" "Khartoum" "Kimberley" "Kingston" "Kipling" "Napier" "Nestor" "Norman" "Nepal" 
+
+		"Laforey" "Lance" "Lively" "Legion" "Lightning" "Lookout" "Loyal" "Milne" "Musketeer" "Myrmidon" "Matchless" "Meteor" "Marne" "Martin" 
+
+		"Onslow" "Offa" "Onslaught" "Oribi" "Obdurate" "Obedient" "Opportune" "Orwell" "Pakenham" "Paladin" "Panther" "Partridge" "Pathfinder" "Penn" "Petard" "Porcupine" 
+
+		"Ithuriel" 
+
+		"Queenborough" "Quadrant" "Quail" "Quality" "Quentin" "Quiberon" "Quickmatch" "Quilliam" "Rotherham" "Racehorse" "Raider" "Rapid" "Redoubt" "Relentless" "Rocket" "Roebuck" 
+
+		"Saumarez" "Savage" "Scorpion" "Scourge" "Serapis" "Shark" "Success" "Swift" "Teazer" "Tenacious" "Termagant" "Terpsichore" "Troubridge" "Tumult" "Tuscan" "Tyrian" 
+
+		"Grenville" "Ulster" "Ulysses" "Undaunted" "Undine" "Ursa" "Urchin" "Urania" "Venus" "Verulam" "Vigilant" "Virago" "Hardy" "Valentine" "Vixen" "Volage" 
+
+		"Kempenfelt" "Wager" "Wakeful" "Wessex" "Whelp" "Whirlwind" "Wizard" "Wrangler" 
+
+		"Myngs" "Zephyr" "Zambesi" "Zealous" "Zebra" "Zenith" "Zest" "Zodiac" "Caprice" "Cassandra" "Caesar" "Cambrian" "Carron" "Cavalier" "Carysfort" 
+
+		"Chaplet" "Charity" "Chequers" "Chieftain" "Chevron" "Cheviot" "Childers" "Chivalrous" "Comus" "Concord" "Contest" "Consort" "Cockade" "Comet" "Constance" "Cossack" 
+
+		"Crescent" "Crusader" "Croziers" "Crystal" "Crispin" "Creole" "Cromwell" "Crown" 
+
+		
+
+		
+
+		"Battleaxe" "Broadsword" "Crossbow" "Scorpion" "Daring" "Dainty" "Defender" "Decoy" "Diana" "Duchess" 
+
+		# Older ships (A-F classes)
+
+		"Amazon" "Ambuscade" "Codrington" "Acasta" "Achates" "Acheron" "Active" "Antelope" "Anthony" "Ardent" "Arrow" "Keith" "Basilisk" "Beagle" "Blanche" "Boadicea" "Boreas" 
+
+		"Brazen" "Brilliant" "Bulldog" "Duncan" "Dainty" "Daring" "Decoy" "Defender" "Delight" "Diamond" "Diana" "Duchess" 
+
+		"Echo" "Eclipse" "Electra" "Encounter" "Escapade" "Escort" "Esk" "Express" "Fame" "Fearless" "Firedrake" "Forester" "Foresight" "Fortune" "Foxhound" "Fury" "Exmouth" "Faulknor"
+
+		# Older ships (R/S and V/W classes)
+
+		"Skate" "Wallace" "Keppel" "Broke" "Bruce" "Douglas" "Montrose" "Campbell" "Mackay" "Malcolm" "Scimitar" "Scout" "Sabre" "Saladin" "Shikari" "Tenedos" "Thanet" "Stronghold"
+
+		"Sardonyx" "Sturdy" "Thracian" 
+
+		"Valentine" "Valorous" "Vanoc" "Vanquisher" "Verdun" "Vega" "Vortigern" "Venetia" "Versatile" "Vivacious" "Velox" "Vesper" "Vimy" "Vivien" "Vidette" 
+
+		"Vanessa" "Vanity" "Viceroy" "Viscount" "Wakeful" "Watchman" "Walker" "Whirlwind" "Winchelsea" "Warwick" "Winchester" "Walpole" "Westcott" "Westminster" "Wrestler" "Wessex" 
+
+		"Wolfhound" "Whitley" "Wryneck" "Windsor" "Wolsey" "Woolston" "Venomous" "Verity" "Volunteer" "Vansittart" "Wanderer" "Whitehall" "Wren" "Wishart" "Witch" "Witherington" 
+
+		"Whitshed" "Wivern" "Veteran" "Wild Swan" "Wolverine" "Worcester"
+
+		"Restless" "Sable" "Senator" "Thruster" "Tempest" "Torrid" "Thisbe" "Tyrant" "Spencer" "Swallow" "Shamrock" "Trojan" "Seafire" "Searcher" 
+
+		"Sportive" "Trusty" "Serene" "Spindrift" "Turbulent" "Valkyrie" "Violent" "Vectis" "Venturous" "Walrus" 
+
+		# Cancelled/Not completed
+
+		"Noble" "Nerissa" "Nonpareil" 
+
+		"Cutlass" "Dagger" "Culverin" "Howitzer" "Longbow" "Sword" "Musket" "Lance" "Carronade" "Claymore" "Dirk" "Grenade" "Halberd" "Poniard" "Rifle" "Spear"
+
+		
+
+		
+
+		
+
+		
+
+	}
+
+}
+
+
+
+### DESTROYER ESCORT NAMES###
+
+RNO_DE_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_DE
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_light destroyer }			
+
+
+
+	prefix = "RRN "							
+
+	fallback_name = "Destroyer Escort %s"					
+
+
+
+	unique = {											
+
+		# Starting with Hunt class ships
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		# Cancelled/Not completed
+
+		
+
+		
+
+		
+
+		
+
+		# US-Made Escorts
+
+		"Bayntun" "Bazely" "Berry" "Blackwood" "Burges" "Cockburn" "Capel" "Cooke" "Dacres" "Domett" "Foley" "Garlies" "Gould" "Grindall" "Gardiner" "Goodall" "Goodson" "Gore" "Keats" "Kempthorne" 
+
+		"Kingsmill" "Lawford" "Louis" "Lawson" "Pasley" "Loring" "Mitchell" "Manners" "Mounsey" "Inglis" "Inman" 
+
+		"Bentinck" "Byard" "Calder" "Duckworth" "Duff" "Affleck" "Aylmer" "Balfour" "Bentley" "Bickerton" "Blight" "Braithwaite" "Bullen" "Byron" "Conn" "Cotton" "Cranstoun" "Cubitt" "Curzon" "Dakins" 
+
+		"Deane" "Ekins" "Fitzroy" "Redmill" "Halsted" "Riou" "Rutherford" "Cosby" "Rowley" "Rupert" "Stockham" "Seymour" "Spragge" "Stayner" "Thornborough" "Trollope" "Tyler" "Torrington" "Narbrough" 
+
+		"Waldegrave" "Whitaker" "Holmes" "Hargood" "Hotham" 
+
+	}
+
+}
+
+
+
+### LIGHT CRUISER NAMES###
+
+RNO_CL_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_CL
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Light Cruiser %s"
+
+
+
+	unique = {
+
+		# Starting with Leander class (less HMNZS ships)
+
+		"Amphion" "Apollo" "Penelope" "Aurora" 
+
+		"Swiftsure" "Minotaur" "Superb"  
+
+		"Tiger" "Lion" "Bellerophon" 
+
+		# Starting with Dido class
+
+		"Bonaventure" "Dido" "Naiad" "Phoebe" "Hermione" "Euryalus" "Charybdis" "Cleopatra" "Sirius" "Scylla" "Argonaut" "Bellona" "Black Prince" "Diadem" "Royalist" "Spartan" 
+
+		"Tiger" "Lion" 
+
+		##reusing WW1 ship names from here##
+
+		"Constance" "Centaur" "Concord" "Phaeton" "Caroline" "Calypso" "Ceres" 
+
+		"Curacoa" "Curlew" "Cairo" "Carlisle" "Danae" "Dauntless" "Dragon" "Despatch" "Diomede" "Emerald" 
+
+		"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion" "Arethusa" "Galatea" 
+
+	}
+
+}
+
+
+
+### A-A LIGHT CRUISER NAMES###
+
+RNO_CLAA_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_CLAA
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Light Cruiser (AA) %s"
+
+
+
+	unique = {
+
+		# Starting with Dido class
+
+		"Bonaventure" "Dido" "Naiad" "Phoebe" "Hermione" "Euryalus" "Charybdis" "Cleopatra" "Sirius" "Scylla" "Argonaut" "Bellona" "Black Prince" "Diadem" "Royalist" "Spartan" 
+
+		"Tiger" "Lion" 
+
+		##reusing WW1 ship names from here##
+
+		"Constance" "Centaur" "Concord" "Phaeton" "Caroline" "Calypso" "Ceres" 
+
+		"Curacoa" "Curlew" "Cairo" "Carlisle" "Danae" "Dauntless" "Dragon" "Despatch" "Diomede" "Emerald" 
+
+		"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion" 
+
+	}
+
+}
+
+
+
+### HEAVY CRUISER NAMES###
+
+RNO_CA_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_CA
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Heavy Cruiser %s"
+
+
+
+	unique = {
+
+		"Imperieuse" "Orlando" 
+
+		
+
+		
+
+		###
+
+		"Endymion" "Crescent" "Powerful" "Terrible" 
+
+		"Diadem" "Niobe" "Amphitrite" "Ariadne" "Spartiate" "Bacchante" "Euryalus" 
+
+	}
+
+}
+
+
+
+
+
+### MINELAYER NAMES###
+
+RNO_MINELAYERS_HISTORICAL = {
+
+	name = NAME_THEME_HISTORICAL_MINELAYERS
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Miner %s"
+
+
+
+	unique = {
+
+		# Cruiser and DD Minelayers
+
+		"Plover" "Abdiel" "Latona" "Apollo" "Ariadne" 
+
+		# Older and smaller minelayer names
+
+		"Adventure" "Linnet" "Redstart" "Ringdove" 
+
+	}
+
+}
+
+
+
+### BATTLESHIP NAMES ###
+
+RNO_BB_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_BB
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_heavy battleship }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Battleship %s"		
+
+
+
+	unique = {
+
+        "Lion" "Temeraire" "Conqueror" "Thunderer" "Vanguard" "Resistance"
+
+        "Bellerophon" "Superb" "Neptune" "Colossus" "Hercules" "Orion" "Monarch" "Centurion" "Audacious" "Ajax" 
+
+		
+
+        "Warspite" "Valiant" "Revenge" "Resolution" "Ramillies" "Renown" "Repulse" 
+
+	}
+
+}
+
+
+
+### MONITOR NAMES ###
+
+RNO_BM_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_BM
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_heavy battleship }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "M%d"		
+
+
+
+	unique = {
+
+        "Erebus" "Terror" "Gorgon" "Glatton" "Prince Eugene" 
+
+	}
+
+}
+
+
+
+### BATTLECRUISER NAMES ###
+
+RNO_BC_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_BC
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_heavy battle_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Battlecruiser %s"		
+
+
+
+	unique = {
+
+           "Resistance" "Incomparable" "Invincible" "Inflexible" "Indomitable" "Indefatigable" "Tiger"
+
+            "Renown" "Repulse" "Courageous" "Glorious" "Furious" 
+
+ 	}
+
+}
+
+
+
+### AIRCRAFT CARRIER NAMES ###
+
+RNO_CV_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_CARRIERS
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_carrier carrier }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Carrier %s"		
+
+
+
+	unique = {
+
+		"Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" 
+
+		"Audacious" 
+
+		"Glorious" "Courageous" "Furious" "Eagle" 
+
+		"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus" 
+
+	}
+
+}
+
+
+
+### LIGHT CARRIER NAMES ###
+
+RNO_CVL_HISTORICAL = {
+
+name = NAME_THEME_HISTORICAL_CVL
+
+
+
+for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_carrier carrier }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Carrier %s"	
+
+
+
+	unique = {
+
+		# CVL Names
+
+		"Unicorn" "Colossus" "Venerable" "Vengeance" "Glory" "Pioneer" "Ocean" "Perseus" "Theseus" "Triumph" "Warrior" 
+
+		"Magnificent" "Powerful" "Terrible" "Majestic" "Hercules" "Leviathan"  "Argus" "Hermes" 
+
+		"Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Europa" "Andromeda" 
+
+		# CVE Names
+
+	}
+
+}
+
+
+
+### SUBMARINES ###
+
+RNO_SS_HISTORICAL = {
+
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		not = { has_government = communism }
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_submarine submarine }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Submarine %s"
+
+	
+
+	unique = {
+
+			# Starting with S-class ships 
+
+			"Swordfish" "Sturgeon" "Seahorse" "Starfish" "Sealion" "Shark" "Snapper" "Salmon" "Seawolf" "Spearfish" "Sunfish" "Sterlet" 
+
+			"Porpoise" "Grampus" "Narwhal" "Rorqual" "Cachalot" "Seal" "Triton" "Thetis" "Tribune" "Trident" "Triumph" 
+
+			"Undine" "Unity" "Ursula" "Umpire" "Una" "Unbeaten" "Undaunted" "Union" "Unique" "Upholder" "Upright" "Urchin" "Urge" "Usk" "Utmost" 
+
+			"Taku" "Tarpon" "Thistle" "Tigris" "Triad" "Truant" "Tuna" "Talisman" "Tetrarch" "Torbay" "Tempest" "Thorn" "Thrasher" "Traveller" "Trooper" "Trusty" "Turbulent" 
+
+			"Uproar" "Ultimatum" "Umbra" "Unbending" 
+
+			"Safari" "Sahib" "Saracen" "Satyr" "Sceptre" "Seadog" "Sibyl" "Sea Rover" "Seraph" "Sea Nymph" "Sickle" "Simoom" "Sirdar" "Spiteful" "Splendid" "Sportsman" 
+
+			"Unbroken" "Unison" "United" "Unrivalled" "Unruffled" "Unruly" "Unseen" "Ultor" "Unshaken" 
+
+			"P311" "Trespasser" "Tactician" "Truculent" "Templar" "Tally-Ho" "Tantalus" "Tantivy" 
+
+			"Stoic" "Stonehenge" "Storm" "Stratagem" "Strongbow" "Spark" "Scythian" "Stubborn" "Surf" "Syrtis" "Shalimar" "Sea Devil" "Spirit" "Statesman" 
+
+			"Unsparing" "Usurper" "Universal" "Untamed" "Untiring" "Varangian" "Uther" "Unswerving" "Vandal" "Upstart" "Varne" "Vox" 
+
+			"Sturdy" "Stygian" "Subtle" "Supreme" "Sea Scout" "Selene" "Seneschal" "Sentinel" "Sidon" "Sleuth" "Solent" "Spearhead" 
+
+			"Venturer" "Viking" "Vampire" "Vox" "Vigorous" "Virtue" "Visigoth" "Vivid" "Voracious" "Vulpine" "Varne" "Upshot" "Urtica" "Vengeful" "Vortex" "Virulent" "Volatile" 
+
+			"Springer" "Telemachus" "Terrapin" "Thorough" "Thule" "Tudor" "Tireless" "Token" "Tradewind" "Trenchant" "Tiptoe" "Trump" "Taciturn" "Tapir" "Talent" "Teredo" 
+
+			"Saga" "Scorcher" "Spur" "Sanguine" "Votary" "Vagabond" "Amphion" "Astute" "Auriga" "Aurochs" "Alcide" "Alliance" "Ambush" "Anchorite" "Affray" "Aeneas" 
+
+			"Alaric" "Tabard" "Totem" "Truncheon" "Turpin" "Thermopylae" "Artemis" "Artful" "Acheron" "Ace" "Achates" 
+
+			###older ship names (unnumbered)
+
+			"Oberon" "Otway" "Oxley" "Odin" "Olympus" "Orpheus" "Osiris" "Oswald" "Otus" "Pandora" "Parthian" "Perseus" "Phoenix" "Proteus" "Rainbow" "Regent" "Regulus" "Rover" 
+
+			
+
+			###planned but cancelled, etc.
+
+			"Vantage"  "Vehement" "Venom" "Verve" "Unbridled" "Upward" "Sea Robin" "Sprightly" "Surface" "Surge" "Poseidon" "Veto" "Virile" "Visitan" "Upas" "Ulex" "Utopia" 
+
+			"Andromache" "Answer" "Antagonist" "Antaeus" "Aphrodite" "Approach" "Arcadian" "Ardent" "Argosy" "Atlantis" "Admirable" "Asperity" "Austere" "Adversary" "Aztec" "Abelard" 
+
+			"Acasta" "Agate" "Aggressor" "Agile" "Aladdin" "Alcestis" "Asgard" "Assurance" "Astarte" 
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### Britain NAME LISTS COMMUNISM #####
+
+### REGULAR DESTROYER NAMES###
+
+RNO_DD_COMMUNIST = {
+
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_light destroyer }			
+
+
+
+	prefix = "RRN "							
+
+	fallback_name = "Destroyer %s"					
+
+
+
+	unique = {											
+
+		# Starting with G-class ships
+
+		"Gallant" "Garland" "Gipsy" "Glowworm" "Grenade" "Grenville" "Greyhound" "Griffin" "Hardy" "Hasty" "Havock" "Hereward" "Hero" "Hostile" "Hotspur" "Hunter" "Hyperion" 
+
+		"Cossack" 
+
+		"Icarus" "Ilex" "Imogen" "Imperial" "Impulsive" "Inglefield" "Intrepid" "Isis" "Ivanhoe" "Harvester" "Havant" "Hesperus" "Hurricane"
+
+		"Jervis" "Jackal" "Jaguar" "Juno" "Janus" "Javelin" "Jersey" "Jupiter" "Kelly" "Kandahar" "Kashmir" "Kelvin" "Khartoum" "Kimberley" "Kingston" "Kipling" "Napier" "Nestor" "Norman" "Nepal" 
+
+		"Laforey" "Lance" "Lively" "Legion" "Lightning" "Lookout" "Loyal" "Milne" "Musketeer" "Myrmidon" "Matchless" "Meteor" "Marne" "Martin" 
+
+		"Onslow" "Offa" "Onslaught" "Oribi" "Obdurate" "Obedient" "Opportune" "Orwell" "Pakenham" "Paladin" "Panther" "Partridge" "Pathfinder" "Penn" "Petard" "Porcupine" 
+
+		"Ithuriel" 
+
+		"Queenborough" "Quadrant" "Quail" "Quality" "Quentin" "Quiberon" "Quickmatch" "Quilliam" "Rotherham" "Racehorse" "Raider" "Rapid" "Redoubt" "Relentless" "Rocket" "Roebuck" 
+
+		"Saumarez" "Savage" "Scorpion" "Scourge" "Serapis" "Shark" "Success" "Swift" "Teazer" "Tenacious" "Termagant" "Terpsichore" "Troubridge" "Tumult" "Tuscan" "Tyrian" 
+
+		"Grenville" "Ulster" "Ulysses" "Undaunted" "Undine" "Ursa" "Urchin" "Urania" "Venus" "Verulam" "Vigilant" "Virago" "Hardy" "Valentine" "Vixen" "Volage" 
+
+		"Kempenfelt" "Wager" "Wakeful" "Wessex" "Whelp" "Whirlwind" "Wizard" "Wrangler" 
+
+		"Myngs" "Zephyr" "Zambesi" "Zealous" "Zebra" "Zenith" "Zest" "Zodiac" "Caprice" "Cassandra" "Caesar" "Cambrian" "Carron" "Cavalier" "Carysfort" 
+
+		"Chaplet" "Charity" "Chequers" "Chieftain" "Chevron" "Cheviot" "Childers" "Chivalrous" "Comus" "Concord" "Contest" "Consort" "Cockade" "Comet" "Constance" "Cossack" 
+
+		"Crescent" "Crusader" "Croziers" "Crystal" "Crispin" "Creole" "Cromwell" "Crown" 
+
+		
+
+		
+
+		"Battleaxe" "Broadsword" "Crossbow" "Scorpion" "Daring" "Dainty" "Defender" "Decoy" "Diana" "Duchess" 
+
+		# Older ships (A-F classes)
+
+		"Amazon" "Ambuscade" "Codrington" "Acasta" "Achates" "Acheron" "Active" "Antelope" "Anthony" "Ardent" "Arrow" "Keith" "Basilisk" "Beagle" "Blanche" "Boadicea" "Boreas" 
+
+		"Brazen" "Brilliant" "Bulldog" "Duncan" "Dainty" "Daring" "Decoy" "Defender" "Delight" "Diamond" "Diana" "Duchess" 
+
+		"Echo" "Eclipse" "Electra" "Encounter" "Escapade" "Escort" "Esk" "Express" "Fame" "Fearless" "Firedrake" "Forester" "Foresight" "Fortune" "Foxhound" "Fury" "Exmouth" "Faulknor"
+
+		# Older ships (R/S and V/W classes)
+
+		"Skate" "Wallace" "Keppel" "Broke" "Bruce" "Douglas" "Montrose" "Campbell" "Mackay" "Malcolm" "Scimitar" "Scout" "Sabre" "Saladin" "Shikari" "Tenedos" "Thanet" "Stronghold"
+
+		"Sardonyx" "Sturdy" "Thracian" 
+
+		"Valentine" "Valorous" "Vanoc" "Vanquisher" "Verdun" "Vega" "Vortigern" "Venetia" "Versatile" "Vivacious" "Velox" "Vesper" "Vimy" "Vivien" "Vidette" 
+
+		"Vanessa" "Vanity" "Viceroy" "Viscount" "Wakeful" "Watchman" "Walker" "Whirlwind" "Winchelsea" "Warwick" "Winchester" "Walpole" "Westcott" "Westminster" "Wrestler" "Wessex" 
+
+		"Wolfhound" "Whitley" "Wryneck" "Windsor" "Wolsey" "Woolston" "Venomous" "Verity" "Volunteer" "Vansittart" "Wanderer" "Whitehall" "Wren" "Wishart" "Witch" "Witherington" 
+
+		"Whitshed" "Wivern" "Veteran" "Wild Swan" "Wolverine" "Worcester"
+
+		"Restless" "Sable" "Senator" "Thruster" "Tempest" "Torrid" "Thisbe" "Tyrant" "Spencer" "Swallow" "Shamrock" "Trojan" "Seafire" "Searcher" 
+
+		"Sportive" "Trusty" "Serene" "Spindrift" "Turbulent" "Valkyrie" "Violent" "Vectis" "Venturous" "Walrus" 
+
+		# Cancelled/Not completed
+
+		"Noble" "Nerissa" "Nonpareil" 
+
+		"Cutlass" "Dagger" "Culverin" "Howitzer" "Longbow" "Sword" "Musket" "Lance" "Carronade" "Claymore" "Dirk" "Grenade" "Halberd" "Poniard" "Rifle" "Spear"
+
+		
+
+		
+
+		
+
+		
+
+	}
+
+}
+
+
+
+### DESTROYER ESCORT NAMES###
+
+RNO_DE_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_DE
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_light destroyer }			
+
+
+
+	prefix = "RRN "							
+
+	fallback_name = "Destroyer Escort %s"					
+
+
+
+	unique = {											
+
+		# Starting with Hunt class ships
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		# Cancelled/Not completed
+
+		
+
+		
+
+		
+
+		
+
+		# US-Made Escorts
+
+		"Bayntun" "Bazely" "Berry" "Blackwood" "Burges" "Cockburn" "Capel" "Cooke" "Dacres" "Domett" "Foley" "Garlies" "Gould" "Grindall" "Gardiner" "Goodall" "Goodson" "Gore" "Keats" "Kempthorne" 
+
+		"Kingsmill" "Lawford" "Louis" "Lawson" "Pasley" "Loring" "Mitchell" "Manners" "Mounsey" "Inglis" "Inman" 
+
+		"Bentinck" "Byard" "Calder" "Duckworth" "Duff" "Affleck" "Aylmer" "Balfour" "Bentley" "Bickerton" "Blight" "Braithwaite" "Bullen" "Byron" "Conn" "Cotton" "Cranstoun" "Cubitt" "Curzon" "Dakins" 
+
+		"Deane" "Ekins" "Fitzroy" "Redmill" "Halsted" "Riou" "Rutherford" "Cosby" "Rowley" "Rupert" "Stockham" "Seymour" "Spragge" "Stayner" "Thornborough" "Trollope" "Tyler" "Torrington" "Narbrough" 
+
+		"Waldegrave" "Whitaker" "Holmes" "Hargood" "Hotham" 
+
+	}
+
+}
+
+
+
+### LIGHT CRUISER NAMES###
+
+RNO_CL_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_CL
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Light Cruiser %s"
+
+
+
+	unique = {
+
+		# Starting with Leander class (less HMNZS ships)
+
+		"Amphion" "Apollo" "Penelope" "Aurora" 
+
+		"Swiftsure" "Minotaur" "Superb"  
+
+		"Tiger" "Lion" "Bellerophon" 
+
+		# Starting with Dido class
+
+		"Bonaventure" "Dido" "Naiad" "Phoebe" "Hermione" "Euryalus" "Charybdis" "Cleopatra" "Sirius" "Scylla" "Argonaut" "Bellona" "Black Prince" "Diadem" "Royalist" "Spartan" 
+
+		"Tiger" "Lion" 
+
+		##reusing WW1 ship names from here##
+
+		"Constance" "Centaur" "Concord" "Phaeton" "Caroline" "Calypso" "Ceres" 
+
+		"Curacoa" "Curlew" "Cairo" "Carlisle" "Danae" "Dauntless" "Dragon" "Despatch" "Diomede" "Emerald" 
+
+		"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion" "Arethusa" "Galatea" 
+
+	}
+
+}
+
+
+
+### A-A LIGHT CRUISER NAMES###
+
+RNO_CLAA_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_CLAA
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser light_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Light Cruiser (AA) %s"
+
+
+
+	unique = {
+
+		# Starting with Dido class
+
+		"Bonaventure" "Dido" "Naiad" "Phoebe" "Hermione" "Euryalus" "Charybdis" "Cleopatra" "Sirius" "Scylla" "Argonaut" "Bellona" "Black Prince" "Diadem" "Royalist" "Spartan" 
+
+		"Tiger" "Lion" 
+
+		##reusing WW1 ship names from here##
+
+		"Constance" "Centaur" "Concord" "Phaeton" "Caroline" "Calypso" "Ceres" 
+
+		"Curacoa" "Curlew" "Cairo" "Carlisle" "Danae" "Dauntless" "Dragon" "Despatch" "Diomede" "Emerald" 
+
+		"Enterprise" "Achilles" "Ajax" "Leander" "Neptune" "Orion" 
+
+	}
+
+}
+
+
+
+### HEAVY CRUISER NAMES###
+
+RNO_CA_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_CA
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Heavy Cruiser %s"
+
+
+
+	unique = {
+
+		"Imperieuse" "Orlando" 
+
+		
+
+		
+
+		###
+
+		"Endymion" "Crescent" "Powerful" "Terrible" 
+
+		"Diadem" "Niobe" "Amphitrite" "Ariadne" "Spartiate" "Bacchante" "Euryalus" 
+
+	}
+
+}
+
+
+
+
+
+### MINELAYER NAMES###
+
+RNO_MINELAYERS_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_MINELAYERS
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Miner %s"
+
+
+
+	unique = {
+
+		# Cruiser and DD Minelayers
+
+		"Plover" "Abdiel" "Latona" "Apollo" "Ariadne" 
+
+		# Older and smaller minelayer names
+
+		"Adventure" "Linnet" "Redstart" "Ringdove" 
+
+	}
+
+}
+
+
+
+### BATTLESHIP NAMES ###
+
+RNO_BB_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_BB
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_heavy battleship }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Battleship %s"		
+
+
+
+	unique = {
+
+        "Lion" "Temeraire" "Liberator" "Thunderer" "Vanguard" "Resistance"
+
+        "Bellerophon" "Superb" "Neptune" "Colossus" "Hercules" "Orion" "Worker" "Centurion" "Audacious" "Ajax" 
+
+		
+
+         "Warspite" "Valiant" "Revenge" "Resolution" "Ramillies" "Renown" "Repulse" 
+
+	}
+
+}
+
+
+
+### BATTLECRUISER NAMES ###
+
+RNO_BC_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_BC
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_heavy battle_cruiser }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Battlecruiser %s"		
+
+
+
+	unique = {
+
+           "Resistance" "Incomparable" "Invincible" "Inflexible" "Indomitable" "Indefatigable" "Tiger"
+
+            "Renown" "Repulse" "Courageous" "Glorious" "Furious" 
+
+ 	}
+
+}
+
+
+
+### AIRCRAFT CARRIER NAMES ###
+
+RNO_CV_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_carrier carrier }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Carrier %s"		
+
+
+
+	unique = {
+
+		"Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" "Inevitable"
+
+		"Audacious" 
+
+		"Glorious" "Courageous" "Furious" "Eagle" 
+
+		"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus" 
+
+	}
+
+}
+
+
+
+### LIGHT CARRIER NAMES ###
+
+RNO_CVL_COMMUNISM = {
+
+	name = NAME_THEME_HISTORICAL_CVL
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_carrier carrier }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Carrier %s"	
+
+
+
+	unique = {
+
+		# CVL Names
+
+		"Unicorn" "Colossus" "Venerable" "Vengeance" "Glory" "Pioneer" "Ocean" "Perseus" "Theseus" "Triumph" "Warrior" 
+
+		"Magnificent" "Powerful" "Terrible" "Hercules" "Leviathan"  "Argus" "Hermes" 
+
+		"Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Europa" "Andromeda" 
+
+		# CVE Names
+
+	}
+
+}
+
+
+
+### SUBMARINES ###
+
+RNO_SS_COMMUNISM= {
+
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+
+
+	for_countries = { RNO }
+
+
+
+	can_use = { 
+
+		has_government = communism
+
+	}
+
+
+
+	type = ship
+
+	ship_types = { ship_hull_submarine submarine }
+
+	
+
+	prefix = "RRN "							
+
+	fallback_name = "Submarine %s"
+
+	
+
+	unique = {
+
+			# Starting with S-class ships 
+
+			"Swordfish" "Sturgeon" "Seahorse" "Starfish" "Sealion" "Shark" "Snapper" "Salmon" "Seawolf" "Spearfish" "Sunfish" "Sterlet" 
+
+			"Porpoise" "Grampus" "Narwhal" "Rorqual" "Cachalot" "Seal" "Triton" "Thetis" "Tribune" "Trident" "Triumph" 
+
+			"Undine" "Unity" "Ursula" "Umpire" "Una" "Unbeaten" "Undaunted" "Union" "Unique" "Upholder" "Upright" "Urchin" "Urge" "Usk" "Utmost" 
+
+			"Taku" "Tarpon" "Thistle" "Tigris" "Triad" "Truant" "Tuna" "Talisman" "Tetrarch" "Torbay" "Tempest" "Thorn" "Thrasher" "Traveller" "Trooper" "Trusty" "Turbulent" 
+
+			"Uproar" "Ultimatum" "Umbra" "Unbending" 
+
+			"Safari" "Sahib" "Saracen" "Satyr" "Sceptre" "Seadog" "Sibyl" "Sea Rover" "Seraph" "Sea Nymph" "Sickle" "Simoom" "Sirdar" "Spiteful" "Splendid" "Sportsman" 
+
+			"Unbroken" "Unison" "United" "Unrivalled" "Unruffled" "Unruly" "Unseen" "Ultor" "Unshaken" 
+
+			"P311" "Trespasser" "Tactician" "Truculent" "Templar" "Tally-Ho" "Tantalus" "Tantivy" 
+
+			"Stoic" "Stonehenge" "Storm" "Stratagem" "Strongbow" "Spark" "Scythian" "Stubborn" "Surf" "Syrtis" "Shalimar" "Sea Devil" "Spirit" "Statesman" 
+
+			"Unsparing" "Usurper" "Universal" "Untamed" "Untiring" "Varangian" "Uther" "Unswerving" "Vandal" "Upstart" "Varne" "Vox" 
+
+			"Sturdy" "Stygian" "Subtle" "Supreme" "Sea Scout" "Selene" "Seneschal" "Sentinel" "Sidon" "Sleuth" "Solent" "Spearhead" 
+
+			"Venturer" "Viking" "Vampire" "Vox" "Vigorous" "Virtue" "Visigoth" "Vivid" "Voracious" "Vulpine" "Varne" "Upshot" "Urtica" "Vengeful" "Vortex" "Virulent" "Volatile" 
+
+			"Springer" "Telemachus" "Terrapin" "Thorough" "Thule" "Tudor" "Tireless" "Token" "Tradewind" "Trenchant" "Tiptoe" "Trump" "Taciturn" "Tapir" "Talent" "Teredo" 
+
+			"Saga" "Scorcher" "Spur" "Sanguine" "Votary" "Vagabond" "Amphion" "Astute" "Auriga" "Aurochs" "Alcide" "Alliance" "Ambush" "Anchorite" "Affray" "Aeneas" 
+
+			"Alaric" "Tabard" "Totem" "Truncheon" "Turpin" "Thermopylae" "Artemis" "Artful" "Acheron" "Ace" "Achates" 
+
+			###older ship names (unnumbered)
+
+			"Oberon" "Otway" "Oxley" "Odin" "Olympus" "Orpheus" "Osiris" "Oswald" "Otus" "Pandora" "Parthian" "Perseus" "Phoenix" "Proteus" "Rainbow" "Regent" "Regulus" "Rover" 
+
+			
+
+			###planned but cancelled, etc.
+
+			"Vantage"  "Vehement" "Venom" "Verve" "Unbridled" "Upward" "Sea Robin" "Sprightly" "Surface" "Surge" "Poseidon" "Veto" "Virile" "Visitan" "Upas" "Ulex" "Utopia" 
+
+			"Andromache" "Answer" "Antagonist" "Antaeus" "Aphrodite" "Approach" "Arcadian" "Ardent" "Argosy" "Atlantis" "Admirable" "Asperity" "Austere" "Adversary" "Aztec" "Abelard" 
+
+			"Acasta" "Agate" "Aggressor" "Agile" "Aladdin" "Alcestis" "Asgard" "Assurance" "Astarte" 
+
+	}
+
+}

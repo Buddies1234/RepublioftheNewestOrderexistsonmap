@@ -1,1 +1,213 @@
-﻿
+﻿units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Republican First Strike Force"			
+		naval_base = 13878 # Buenos Aires
+		task_force = {
+			name = "Impirial Will"
+			location = 13878 # Buenos Aires
+			ship = { name = "RRN Crown's Glory" pride_of_the_fleet = yes definition = carrier start_experience_factor = 0.33 equipment = { ship_hull_carrier_1 = { amount = 1 owner = RNO version_name = "Crown Class" } } }
+			ship = { name = "RRN Sovereign Seas" definition = carrier start_experience_factor = 0.34 equipment = { ship_hull_carrier_1 = { amount = 1 owner = RNO version_name = "Crown Class" } } }
+			ship = { name = "RRN Republican Might" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_1 = { amount = 1 owner = RNO version_name = "Crown Class" } } }
+			ship = { name = "RRN Celestial Crown" definition = carrier start_experience_factor = 0.36 equipment = { ship_hull_carrier_1 = { amount = 1 owner = RNO version_name = "Crown Class" } } }
+			ship = { name = "RRN Liberty's Hammer" definition = battleship start_experience_factor = 0.34 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RNO version_name = "Republican Class" } } }
+			ship = { name = "RRN Constitution's Fist" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RNO version_name = "Republican Class" } } }
+			ship = { name = "RRN Freedom's Thunder" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RNO version_name = "Republican Class" } } }
+			ship = { name = "RRN Democracy's Shield" definition = battleship start_experience_factor = 0.36 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RNO version_name = "Republican Class" } } }
+			ship = { name = "RRN Justice's Sword" definition = battleship start_experience_factor = 0.35 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RNO version_name = "Republican Class" } } }
+			ship = { name = "RRN Valor's Banner" definition = battleship start_experience_factor = 0.34 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RNO version_name = "Republican Class" } } }
+			ship = { name = "RRN Amphion" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Apollo" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Penelope" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Swiftsure" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Minotaur" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Superb" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Tiger" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Lion" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Bellerophon" definition = light_cruiser start_experience_factor = 0.28 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Bonaventure" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Dido" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Naiad" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Phoebe" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Hermione" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Euryalus" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Charybdis" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Cleopatra" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Sirius" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Scylla" definition = light_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Argonaut" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Bellona" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Black Prince" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Diadem" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Royalist" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Spartan" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Constance" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Centaur" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Concord" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Phaeton" definition = light_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Caroline" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Calypso" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Ceres" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Curacoa" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Curlew" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Cairo" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Carlisle" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Danae" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Dauntless" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Dragon" definition = light_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Despatch" definition = light_cruiser start_experience_factor = 0.32 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Diomede" definition = light_cruiser start_experience_factor = 0.32 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Emerald" definition = light_cruiser start_experience_factor = 0.32 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Enterprise" definition = light_cruiser start_experience_factor = 0.32 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Sentinel Class" } } }
+			ship = { name = "RRN Imperieuse" definition = heavy_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Orlando" definition = heavy_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Endymion" definition = heavy_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Crescent" definition = heavy_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Powerful" definition = heavy_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Terrible" definition = heavy_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Diadem" definition = heavy_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Niobe" definition = heavy_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Amphitrite" definition = heavy_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Ariadne" definition = heavy_cruiser start_experience_factor = 0.29 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Spartiate" definition = heavy_cruiser start_experience_factor = 0.30 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+			ship = { name = "RRN Bacchante" definition = heavy_cruiser start_experience_factor = 0.31 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RNO version_name = "Vanguard Class" } } }
+		}								
+	}
+    fleet = {
+        name = "Republican First Submarine Flotilla"
+        naval_base = 13793 # Mar del Plata
+        task_force = {				
+            name = "1st Submarine Squadron - Shadow Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Leviathans Whisper" definition = submarine start_experience_factor = 0.28 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Silent Hunter" definition = submarine start_experience_factor = 0.15 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Deep Shadow" definition = submarine start_experience_factor = 0.22 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Iron Resolve" definition = submarine start_experience_factor = 0.30 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "2nd Submarine Squadron - Storm Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Crimson Tide" definition = submarine start_experience_factor = 0.18 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Steel Tempest" definition = submarine start_experience_factor = 0.24 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Phantom Strike" definition = submarine start_experience_factor = 0.12 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Void Walker" definition = submarine start_experience_factor = 0.27 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "3rd Submarine Squadron - Night Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Night Stalker" definition = submarine start_experience_factor = 0.20 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Ocean Guardian" definition = submarine start_experience_factor = 0.16 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Thunder Deep" definition = submarine start_experience_factor = 0.29 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Sea Wraith" definition = submarine start_experience_factor = 0.14 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "4th Submarine Squadron - Abyss Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Abyssal King" definition = submarine start_experience_factor = 0.26 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Dark Horizon" definition = submarine start_experience_factor = 0.19 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Storm Bringer" definition = submarine start_experience_factor = 0.23 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Silent Death" definition = submarine start_experience_factor = 0.17 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "5th Submarine Squadron - Iron Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Iron Shark" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Neptune's Fury" definition = submarine start_experience_factor = 0.21 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Deep Vengeance" definition = submarine start_experience_factor = 0.13 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Shadow Meridian" definition = submarine start_experience_factor = 0.28 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "6th Submarine Squadron - Void Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Crimson Depths" definition = submarine start_experience_factor = 0.11 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Steel Leviathan" definition = submarine start_experience_factor = 0.24 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Void Emperor" definition = submarine start_experience_factor = 0.30 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Night Fury" definition = submarine start_experience_factor = 0.16 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "7th Submarine Squadron - Thunder Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Ocean Reaper" definition = submarine start_experience_factor = 0.22 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Thunder Strike" definition = submarine start_experience_factor = 0.27 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Sea Phantom" definition = submarine start_experience_factor = 0.15 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Abyssal Horror" definition = submarine start_experience_factor = 0.20 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "8th Submarine Squadron - Ghost Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Dark Matter" definition = submarine start_experience_factor = 0.18 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Storm Shadow" definition = submarine start_experience_factor = 0.26 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Silent Assassin" definition = submarine start_experience_factor = 0.14 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Iron Tide" definition = submarine start_experience_factor = 0.23 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+        task_force = {				
+            name = "9th Submarine Squadron - Predator Pack"			
+            location = 13793 # Mar del Plata
+            ship = { name = "RRN Neptune's Wrath" definition = submarine start_experience_factor = 0.19 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Deep Predator" definition = submarine start_experience_factor = 0.29 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Shadow Blade" definition = submarine start_experience_factor = 0.12 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+            ship = { name = "RRN Crimson Ghost" definition = submarine start_experience_factor = 0.21 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RNO version_name = "Impirial Servant Class" } } }
+        }
+}
+    fleet = {
+        name = "Republican First Shield"
+        naval_base = 13878 # Buenos Aires
+        task_force = {
+            name = "1st Destroyer Squadron - Guardian Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Vigilant Warden" definition = destroyer start_experience_factor = 0.30 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Steadfast Guard" definition = destroyer start_experience_factor = 0.28 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Sentinel's Watch" definition = destroyer start_experience_factor = 0.32 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Bastion's Hope" definition = destroyer start_experience_factor = 0.26 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+        task_force = {
+            name = "2nd Destroyer Squadron - Defender Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Aegis Bound" definition = destroyer start_experience_factor = 0.29 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Shield Bearer" definition = destroyer start_experience_factor = 0.31 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Rampart's Pride" definition = destroyer start_experience_factor = 0.27 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Bulwark's Might" definition = destroyer start_experience_factor = 0.33 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+        task_force = {
+            name = "3rd Destroyer Squadron - Protector Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Guardian's Oath" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Defender's Call" definition = destroyer start_experience_factor = 0.30 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Protector's Vow" definition = destroyer start_experience_factor = 0.28 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Warden's Honor" definition = destroyer start_experience_factor = 0.32 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+        task_force = {
+            name = "4th Destroyer Squadron - Storm Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Tempest's Edge" definition = destroyer start_experience_factor = 0.27 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Hurricane's Fang" definition = destroyer start_experience_factor = 0.29 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Cyclone's Wrath" definition = destroyer start_experience_factor = 0.31 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Typhoon's Strike" definition = destroyer start_experience_factor = 0.26 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+        task_force = {
+            name = "5th Destroyer Squadron - Iron Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Steel Resolute" definition = destroyer start_experience_factor = 0.30 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Iron Bulwark" definition = destroyer start_experience_factor = 0.28 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Adamant Shield" definition = destroyer start_experience_factor = 0.33 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Fortress's Will" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+        task_force = {
+            name = "6th Destroyer Squadron - Swift Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Quick Silver" definition = destroyer start_experience_factor = 0.29 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Fleet Footed" definition = destroyer start_experience_factor = 0.31 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Darting Blade" definition = destroyer start_experience_factor = 0.27 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Zephyr's Kiss" definition = destroyer start_experience_factor = 0.32 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+        task_force = {
+            name = "7th Destroyer Squadron - Thunder Pack"
+            location = 13878 # Buenos Aires
+            ship = { name = "RRN Lightning's Edge" definition = destroyer start_experience_factor = 0.30 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Thunder's Roar" definition = destroyer start_experience_factor = 0.28 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Storm's Hammer" definition = destroyer start_experience_factor = 0.33 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+            ship = { name = "RRN Bolt Striker" definition = destroyer start_experience_factor = 0.26 equipment = { ship_hull_light_1 = { amount = 1 owner = RNO version_name = "Warden Class" } } }
+        }
+}
+}

@@ -286,6 +286,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			has_country_flag = RNO_leaning_towards_china
 		}
 		completion_reward = {
 			CHI = {
@@ -310,6 +311,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			has_country_flag = RNO_leaning_towards_japan
 		}
 		completion_reward = {
 			JAP = {
@@ -432,6 +434,13 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			HOL = {
+				country_event = {
+					id = RNO_Guarantees_East_Indies.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "If accepted they get our guarantee spirit and we join one defensive war. Should they start an offsensive war our Guarantee will be forfeit."
 		}
 	}
 	
@@ -469,6 +478,9 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			not = {
+				has_country_flag = RNO_leaning_towards_japan
+				}
 		}
 		completion_reward = {
 			USA = {
@@ -512,8 +524,18 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			CHI = {
+				has_war_with = JAP
+			}
 		}
 		completion_reward = {
+			CHI = {
+				country_event = {
+					id = RNO_Help_China_Japan.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "We will offer China our help against Japan in exchange for puppets over The Guangxi Clique and the Guangdong Government."
 		}
 	}
 	focus = {
@@ -528,8 +550,17 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			has_country_flag = RNO_china_accepted_help
 		}
 		completion_reward = {
+			CHI = {
+				country_event = {
+					id = RNO_Request_Chinese_Manpower.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "We will request Chinese manpower in exchange for temporary payments."
+			custom_effect_tooltip = "This might hurt the cohesion of our Military."
 		}
 	}
 
@@ -547,8 +578,18 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			JAP = {
+				has_war_with = CHI
+			}
 		}
 		completion_reward = {
+			JAP = {
+				country_event = {
+					id = RNO_Help_Japan_China.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "We will offer Japan our help against China in exchange for the Japanise Pacific Holdings."
 		}
 	}
 
@@ -563,9 +604,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-		}
+		available = {			has_country_flag = RNO_japan_accepted_help		}
 		completion_reward = {
+			JAP = {
+				country_event = {
+					id = RNO_Request_Japanese_Naval_Advisors.1
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -586,6 +632,13 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			FRA = {
+				country_event = {
+					id = RNO_Guarantees_Indochina.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "If accepted they get our guarantee spirit and we join one defensive war. Should they start an offsensive war our Guarantee will be forfeit we must also join only one defensive war and if they get attacked by a country we are at war with we also have to join the defensive war."
 		}
 	}
 

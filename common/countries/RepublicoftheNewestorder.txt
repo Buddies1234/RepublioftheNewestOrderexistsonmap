@@ -4,3 +4,4 @@ graphical_culture = commonwealth_gfx
 graphical_culture_2d = commonwealth_2d
 
 color = { 73  74  137 }
+unit_names = RNO

@@ -1,0 +1,26 @@
+﻿
+
+add_namespace = ai.buff
+country_event = {
+	id = ai.buff.15
+	title = "AI buff"
+	desc = " Ai buff"
+	picture = GFX_report_event_chinese_soldiers_fighting
+	trigger = {
+		is_ai = yes
+		original_tag = FRA
+		date < 1950.1.1
+		date > 1936.2.1
+		has_game_rule = { rule =
+			buffs_game_rules 
+			option = YES
+		}
+	}
+	option = {
+		name = "Test"
+		add_ideas = NON_Player_Buff
+
+	}
+}
+
+

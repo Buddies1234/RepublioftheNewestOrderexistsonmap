@@ -1,0 +1,9 @@
+ETH_enable_local_developments_category = {
+    icon = placeholder
+
+    visible_when_empty = yes
+    
+    visible = {
+        has_completed_focus = ETH_enable_local_development
+    }
+}

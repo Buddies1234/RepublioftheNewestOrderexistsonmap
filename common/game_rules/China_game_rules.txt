@@ -1,0 +1,20 @@
+China_Unified = {
+	name = "China Unified?"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = NO
+		text = "NO"
+		desc = "China will reamin like it is in base game."
+	}
+	option = {
+		name = YES_debuff
+		text = "YES (with debuff)"
+		desc = "China will be unified but with a debuff to surender limit so Japan does not need to walk to Sinkang"
+	}
+	option = {
+		name = YES
+		text = "YES"
+		desc = "China will be unified without any debuffs"
+	}
+}

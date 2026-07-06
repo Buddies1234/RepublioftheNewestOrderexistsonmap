@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_der_kaiser__large"
+		texturefile = "gfx/characters/der_kaiser/der_kaiser__large.dds"
+	}
+	spriteType = {
+		name = "GFX_der_kaiser__small"
+		texturefile = "gfx/characters/der_kaiser/der_kaiser__small.dds"
+	}
+	spriteType = {
+		name = "GFX_der_kaiser__small"
+		texturefile = "gfx/characters/der_kaiser/der_kaiser__advisor.dds"
+	}
+}

@@ -101,7 +101,7 @@ IF = {
 	limit = {
 		has_dlc = "No Compromise, No Surrender"
 	}
-	create_faction_from_template = faction_template_usa_commonwealth
+	create_faction_from_template = faction_template_RNO
 }
 
 set_grand_doctrine = new_grand_battleplan
@@ -199,7 +199,7 @@ add_ideas = The_Air_Force
 add_ideas = The_Economy
 add_ideas = Our_Colonial_Empire
 add_ideas = Serve_the_Republic
-add_ideas = Remnents_of_the_Revolution
+add_ideas = Remnants_of_the_Revolution
 recruit_character = RNO_poniatowski
 
 if = {
@@ -217,6 +217,14 @@ if = {
 activate_power_balance = {
 	id = RNO_king_constitution_balance
 }
+recruit_character = bor_borowichka
+recruit_character = nikitas_nikitas
+recruit_character = nikitas_involved
+recruit_character = nikitas_invis
+recruit_character = der_kaiser_
+recruit_character = buddies_his_imperial_majesty_buddies
+recruit_character = somebody_somebody
+recruit_character = somebody_borowichka
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #

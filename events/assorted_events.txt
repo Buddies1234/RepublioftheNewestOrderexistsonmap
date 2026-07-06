@@ -1,0 +1,464 @@
+add_namespace = assorted
+
+country_event = {
+	id = assorted.1
+	title = assorted.1.t
+	desc = assorted.1.d
+	picture = placeholder
+
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 10 }
+		name = assorted.1.a #hell nah
+		POL = {
+			country_event = {
+				id = assorted.2
+				#days = 15
+			}
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 10 }
+		name = assorted.1.b #hell yeah
+		POL = {
+			country_event = {
+				id = assorted.3
+				#days = 15
+			}
+		}
+		give_guarantee = POL
+		custom_effect_tooltip = FRA_forced_guarantee_against_russia_tt
+	}
+}
+
+country_event = {
+	id = assorted.2
+	title = assorted.2.t
+	desc = assorted.2.d
+
+	is_triggered_only = yes
+	option = {
+		name = assorted.2.a
+	}
+}
+
+country_event = {
+	id = assorted.3
+	title = assorted.3.t
+	desc = assorted.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.3.a
+	}
+}
+
+##poland demanding clay##
+country_event = {
+	id = assorted.4
+	title = assorted.4.t
+	desc = assorted.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.4.a #just give it to them
+		ai_chance = { factor = 10 }
+		POL = {
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 241
+					}
+				}
+				transfer_state = 241
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 204
+					}
+				}
+				transfer_state = 204
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 206
+					}
+				}
+				transfer_state = 206
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 207
+					}
+				}
+				transfer_state = 207
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 194
+					}
+				}
+				transfer_state = 194
+			}
+		}
+		POL = {
+			country_event = assorted.9
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 90 }
+		name = assorted.4.b
+		POL = {
+			country_event = assorted.10
+		}
+	}
+}
+
+country_event = {
+	id = assorted.5
+	title = assorted.5.t
+	desc = assorted.5.d
+	is_triggered_only = yes
+
+	option = { #give them all of ukraine
+		ai_chance = { factor = 10 }
+		name = assorted.5.a
+		POL = {
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 199
+					}
+				}
+				transfer_state = 199
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 201
+					}
+				}
+				transfer_state = 201
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 198
+					}
+				}
+				transfer_state = 198
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 202
+					}
+				}
+				transfer_state = 202
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 203
+					}
+				}
+				transfer_state = 203
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 197
+					}
+				}
+				transfer_state = 197 
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 192
+					}
+				}
+				transfer_state = 192
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 834
+					}
+				}
+				transfer_state = 834
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 196
+					}
+				}
+				transfer_state = 196
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 226
+					}
+				}
+				transfer_state = 226
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 193
+					}
+				}
+				transfer_state = 193
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 259
+					}
+				}
+				transfer_state = 259
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 221
+					}
+				}
+				transfer_state = 221
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 228
+					}
+				}
+				transfer_state = 228
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 227
+					}
+				}
+				transfer_state = 227
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 200
+					}
+				}
+				transfer_state = 200
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 196
+					}
+				}
+				transfer_state = 196
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 137
+					}
+				}
+				transfer_state = 137
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 225
+					}
+				}
+				transfer_state = 225
+			}
+		}
+		POL = {
+			country_event = assorted.6
+		}
+	}
+
+	option = { #give them everything up to the dnieper
+		name = assorted.5.b
+		POL = {
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 199
+					}
+				}
+				transfer_state = 199
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 201
+					}
+				}
+				transfer_state = 201
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 198
+					}
+				}
+				transfer_state = 198
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 202
+					}
+				}
+				transfer_state = 202
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 203
+					}
+				}
+				transfer_state = 203
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 197
+					}
+				}
+				transfer_state = 197 
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 192
+					}
+				}
+				transfer_state = 192
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 834
+					}
+				}
+				transfer_state = 834
+			}
+
+			IF = {
+				limit = {
+					SOV = {
+						controls_state = 196
+					}
+				}
+				transfer_state = 196
+			}
+		}
+		POL = {
+			country_event = assorted.7
+		}
+	}
+
+	option = { #nah fuck that shit
+		ai_chance = { factor = 10 }
+		name = assorted.5.c
+		POL = {
+			country_event = assorted.8
+		}
+	}
+}
+
+country_event = {
+	id = assorted.6
+	title = assorted.6.t
+	desc = assorted.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.6.a
+	}
+}
+
+country_event = {
+	id = assorted.7
+	title = assorted.7.t
+	desc = assorted.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.7.a
+	}
+}
+
+country_event = {
+	id = assorted.8
+	title = assorted.8.t
+	desc = assorted.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.8.a
+	}
+}
+
+country_event = {
+	id = assorted.9
+	title = assorted.9.t
+	desc = assorted.9.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.9.a
+	}
+}
+
+country_event = {
+	id = assorted.10
+	title = assorted.10.t
+	desc = assorted.10.d
+	is_triggered_only = yes
+
+	option = {
+		name = assorted.10.a
+	}
+}

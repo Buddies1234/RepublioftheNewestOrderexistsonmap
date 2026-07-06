@@ -1,0 +1,16 @@
+hist_game_rules = {
+	name = "Hist Game?"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = NON_HISTORICAL
+		text = "NON-HISTORICAL"
+		desc = "NON Historical rules apply"
+	}
+
+	option = {
+		name = HISTORICAL
+		text = "HISTORICAL"
+		desc = "Historical rules apply"
+	}
+}

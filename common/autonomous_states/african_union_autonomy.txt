@@ -1,0 +1,104 @@
+autonomy_state = {
+	id = autonomy_african_union_member_state
+	
+	is_puppet = yes
+	
+	min_freedom_level = 0.0
+	
+	manpower_influence = 0
+	use_overlord_color = yes
+	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+		
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = yes
+		can_create_collaboration_government = no
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 1
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -0.8
+		cic_to_overlord_factor = 0.35
+		mic_to_overlord_factor = 0.65
+		autonomy_gain_global_factor = -0.3
+		peace_score_ratio_transferred_to_overlord = 0.5
+		lend_lease_tension_with_overlord = -0.40
+	}
+
+	allowed = {
+		OR = {
+			original_tag = EGY
+			original_tag = SUD
+			original_tag = LBA
+			original_tag = KEN
+			original_tag = UGA
+			original_tag = RWA
+			original_tag = BRD
+			original_tag = COG
+			original_tag = TZN
+			original_tag = MLW
+			original_tag = MZB
+			original_tag = ZIM
+			original_tag = BOT
+			original_tag = NMB
+			original_tag = SAF
+			original_tag = MAD
+			original_tag = ANG
+			original_tag = GAB
+			original_tag = EQG
+			original_tag = CMR
+			original_tag = CHA
+			original_tag = NGA
+			original_tag = BIA
+			original_tag = NGR
+			original_tag = DAH
+			original_tag = TOG
+			original_tag = VOL
+			original_tag = GHA
+			original_tag = IVO
+			original_tag = GNA
+			original_tag = SIE
+			original_tag = GNB
+			original_tag = SEN
+			original_tag = GAM
+			original_tag = MRT
+			original_tag = WES
+			original_tag = MOR
+			original_tag = ALG
+			original_tag = TUN
+			original_tag = MLI
+			original_tag = CAR
+			original_tag = ZAM
+
+		}
+
+		OVERLORD = {
+			original_tag = ETH
+		}
+	}
+
+	
+	ai_subject_wants_higher = {
+		factor = 0
+	}
+	
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	ai_overlord_wants_garrison = {
+		always = yes
+	}
+	
+	can_take_level = {
+	}
+
+	can_lose_level = {
+		always = no
+	}
+}

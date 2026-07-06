@@ -1,0 +1,191 @@
+POL_intermarium_PU_decision_category = {
+	romania_personal_union = {
+		visible = {
+			always = yes
+		}
+		available = {
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = ROM
+					is_subject_of = POL
+				}
+				any_occupied_country = {
+					tag = ROM
+				}
+			}
+		}
+		complete_effect = {
+			release_puppet = ROM
+			set_autonomy = {
+				target = ROM
+				autonomous_state = autonomy_personal_union
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		fire_only_once = yes
+	}
+	hungary_personal_union = {
+		visible = {
+			always = yes
+		}
+		available = {
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = HUN
+					is_subject_of = POL
+				}
+				any_occupied_country = {
+					tag = HUN
+				}
+			}
+		}
+		complete_effect = {
+			release_puppet = HUN
+			set_autonomy = {
+				target = HUN
+				autonomous_state = autonomy_personal_union
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		fire_only_once = yes
+	}
+	yugoslavia_personal_union = {
+		visible = {
+			always = yes
+		}
+		available = {
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = YUG
+					is_subject_of = POL
+				}
+				any_occupied_country = {
+					tag = YUG
+				}
+			}
+		}
+		complete_effect = {
+			release_puppet = YUG
+			set_autonomy = {
+				target = YUG
+				autonomous_state = autonomy_personal_union
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		fire_only_once = yes
+	}
+	finland_personal_union = {
+		visible = {
+			always = yes
+		}
+		available = {
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = FIN
+					is_subject_of = POL
+				}
+				any_occupied_country = {
+					tag = FIN
+				}
+			}
+		}
+		complete_effect = {
+			release_puppet = FIN
+			set_autonomy = {
+				target = FIN
+				autonomous_state = autonomy_personal_union
+				end_wars = yes
+				end_civil_wars = no
+			}
+		}
+		fire_only_once = yes
+	}
+}
+
+POL_intermarium_expansion_decision_category = {
+	POL_invade_hungary = {
+		visible = {
+			always = yes
+		}
+		available = {
+			NOT = {
+				has_country_flag = POL_invasion_timer_tt
+			}
+		}
+		days_remove = 45
+		complete_effect = {
+			#will_lead_to_war_with = HUN
+			set_country_flag = {
+				flag = POL_invasion_timer_tt
+				days = 45
+				value = 1
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				type = annex_everything
+				target = HUN
+			}
+			
+		}
+
+		days_re_enable = 70
+	}
+	POL_invade_yugo = {
+		visible = {
+			always = yes
+		}
+		available = {
+			NOT = {
+				has_country_flag = POL_invasion_timer_tt
+			}
+		}
+		days_remove = 45
+		complete_effect = {
+			#will_lead_to_war_with = YUG
+			set_country_flag = {
+				flag = POL_invasion_timer_tt
+				days = 45
+				value = 1
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				type = annex_everything
+				target = YUG
+			}
+		}
+
+		days_re_enable = 70
+	}
+	POL_invade_finland = {
+		visible = {
+			always = yes
+		}
+		available = {
+			NOT = {
+				has_country_flag = POL_invasion_timer_tt
+			}
+		}
+		days_remove = 45
+		complete_effect = {
+			#will_lead_to_war_with = FIN
+			set_country_flag = {
+				flag = POL_invasion_timer_tt
+				days = 45
+				value = 1
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				type = annex_everything
+				target = FIN
+			}
+		}
+
+		days_re_enable = 70
+	}
+}

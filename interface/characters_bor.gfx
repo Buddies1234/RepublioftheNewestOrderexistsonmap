@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bor_borowichka_large"
+		texturefile = "gfx/characters/bor/bor_borowichka_large.dds"
+	}
+	spriteType = {
+		name = "GFX_bor_borowichka_small"
+		texturefile = "gfx/characters/bor/bor_borowichka_small.dds"
+	}
+	spriteType = {
+		name = "GFX_bor_borowichka_small"
+		texturefile = "gfx/characters/bor/bor_borowichka_advisor.dds"
+	}
+}

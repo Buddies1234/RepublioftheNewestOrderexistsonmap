@@ -1,0 +1,27 @@
+﻿
+
+add_namespace = ai.buff
+country_event = {
+	id = ai.buff.4
+	title = "Remove Colonies"
+	desc = " Annex Colonies into you for imporved performance "
+	picture = GFX_report_event_chinese_soldiers_fighting
+	trigger = {
+		original_tag = ENG
+		date < 1936.2.1
+		has_game_rule = { rule =
+			buffs_game_rules 
+			option = YES
+		}
+		is_ai = yes
+	}
+	option = {
+		name = "Remove Colonies"
+		hidden_effect = {
+		add_ideas = NON_Player_Buff
+		}
+
+	}
+}
+
+

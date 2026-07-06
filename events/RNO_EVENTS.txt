@@ -2,7 +2,7 @@
 country_event = {
 	id = RNO_Events_Colonies.1
 	title = "Our Colonies"
-	desc = "We have Colonies Both in Africa and the Pacific to take care of. And while the African Sitouation is higly unstable and debated back home due to there recent purchase, our Pacific Colonies are both newer and intensivly supported by his Majesty and thus face less resistance when reforming. Yet what should be do with them?"
+	desc = "We have colonies both in Africa and the Pacific to manage. While the African situation is highly unstable and is debated at home due to our recent purchase, our Pacific colonies are newer and more intensively supported by His Majesty, so they face less resistance when reformed. Yet what should we do with them?"
 	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 	fire_only_once = yes	
@@ -34,7 +34,7 @@ country_event = {
 country_event = {
 	id = RNO_Events_Colonies.2
 	title = "Our Pacific Colonies"
-	desc = "Our Pacific Colonies offer as many Dangers as they do Opportunities. We must ensure there Loyalty, while also balancing the Relations between Japan and USA and fulliling the Kings Wishes Regarding Colonial Exspension. To do so the King has approved a new asian task froce with the Goal to help achive local objesctives such as Peacekepping and protecting trade routes."
+	desc = "Our Pacific colonies offer as many dangers as they do opportunities. We must ensure their loyalty while balancing relations between Japan and the USA and fulfilling the King's wishes regarding colonial expansion. To do so, the King has approved a new Asian task force with the goal of achieving local objectives such as peacekeeping and protecting trade routes."
 	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 	fire_only_once = yes	
@@ -118,7 +118,7 @@ country_event = {
 country_event = {
 	id = RNO_Events_Colonies.3
 	title = "A Game of Majors"
-	desc = "The Pacif and Asia as a whole currently Offers 3 Majors Power, the Japanise, the Chinise and the USA. Each of them has their own interests in the region, and if we turn to strongly to one side we might lose the support of the other two, still a desicion regarding out forgain polocy has to be made after all neutrality didn´t save us in the first Great War."
+	desc = "The Pacific and Asia as a whole currently offer three major powers: Japan, China, and the USA. Each has its own interests in the region, and if we lean too strongly toward one side we might lose the support of the other two. Still, a decision regarding our foreign policy must be made; after all, neutrality did not save us in the First Great War."
 	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -172,8 +172,8 @@ country_event = {
 add_namespace = modernize_the_republic
 country_event = {
 	id = modernize_the_republic.1
-	title = "The modernization of the republic"
-	desc = "Our nation's industrial capacity is growing, but we must ensure it serves our strategic goals. Now the parliament has decided to start modernizing our industry"
+	title = "The Modernization of the Republic"
+	desc = "Our nation's industrial capacity is growing, but we must ensure it serves our strategic goals. Now parliament has decided to start modernizing our industry."
 	picture = GFX_report_event_generic_usa_treaty
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -218,7 +218,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-			custom_effect_tooltip = "We will lose the East Indies but gain gain a a lot of funds we can put back into our economy."
+			custom_effect_tooltip = "We will lose the East Indies but gain a lot of funds we can put back into our economy."
 			add_ideas = { Payments_From_East_Indies }
 			RNO = {
 				country_event = {
@@ -230,7 +230,7 @@ country_event = {
 		option = {
 			name = "Its Not Worth it."
 			ai_chance = { factor = 0 }
-			custom_effect_tooltip = "The East Indies are worth to much"
+			custom_effect_tooltip = "The East Indies are worth too much."
 			RNO = {
 				country_event = {
 					id = RNO_Buying_East_Indies.2
@@ -264,6 +264,14 @@ country_event = {
 			idea = Buying_The_East_Indies
 			days = 360
 		}
+		set_country_flag = RNO_acquired_east_indies
+		INS = {
+			set_country_flag = RNO_asian_colony_puppet
+			if = {
+				limit = { ROOT = { has_country_flag = RNO_asian_colony_investment_active } }
+				add_ideas = { RNO_Colonial_Puppet_Spirit }
+			}
+		}
 	}
 }
 add_namespace = RNO_buying_Burma
@@ -293,7 +301,7 @@ country_event = {
 	option = {
 		name = "Its Not Worth it."
 		ai_chance = { factor = 0 }
-		custom_effect_tooltip = "Burma is worth too much"
+		custom_effect_tooltip = "Burma is worth too much."
 		RNO = {
 			country_event = {
 				id = RNO_Buying_Burma.2
@@ -327,6 +335,16 @@ country_event = {
 			idea = Buying_Burma
 			days = 360
 		}
+		set_country_flag = RNO_acquired_burma
+		every_country = {
+			BRM = {
+			set_country_flag = RNO_asian_colony_puppet
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = RNO_asian_colony_investment_active } }
+				add_ideas = { RNO_Colonial_Puppet_Spirit }
+			}
+		}
 	}
 }
 add_namespace = RNO_buying_Philippines
@@ -356,7 +374,7 @@ country_event = {
 	option = {
 		name = "Its Not Worth it."
 		ai_chance = { factor = 0 }
-		custom_effect_tooltip = "The Philippines are worth too much"
+		custom_effect_tooltip = "The Philippines are worth too much."
 		RNO = {
 			country_event = {
 				id = RNO_Buying_Philippines.2
@@ -390,13 +408,22 @@ country_event = {
 			idea = Buying_Philippines
 			days = 360
 		}
+		set_country_flag = RNO_acquired_philippines
+		every_country = {
+			limit = { tag = PHI }
+			set_country_flag = RNO_asian_colony_puppet
+			if = {
+				limit = { ROOT = { has_country_flag = RNO_asian_colony_investment_active } }
+				add_ideas = { RNO_Colonial_Puppet_Spirit }
+			}
+		}
 	}
 }
 add_namespace = RNO_buying_Indochina
 country_event = {
 	id = RNO_Buying_Indochina.1
-	title = "The Republic of the Newest Order Offers to buy Indochina"
-	desc = "We are being approached by the Republic for a potential sale of Indochinea ."
+	title = "The Republic of the Newest Order Offers to Buy Indochina"
+	desc = "We are being approached by the Republic for a potential sale of Indochina."
 	picture = GFX_report_event_generic_sign_treaty3
 	is_triggered_only = yes
 	option = {
@@ -418,7 +445,7 @@ country_event = {
 	option = {
 		name = "Not worth it"
 		ai_chance = { factor = 0 }
-		custom_effect_tooltip = "We can´t give up Indochina, its too important to our influence in the region."
+		custom_effect_tooltip = "We can't give up Indochina; it is too important to our influence in the region."
 		RNO = {
 			country_event = { id = RNO_Buying_Indochina.2 days = 1 }
 		}
@@ -448,8 +475,8 @@ country_event = {
 add_namespace = RNO_buying_Resource_Rights
 country_event = {
 	id = RNO_Buying_Resource_Rights.1
-	title = "RNO wants to be granted resource rights in our Territory"
-	desc = "The Republic of the Newest Order has approached us with an offer to buy resource rights in us "
+	title = "RNO Wants Resource Rights in Our Territory"
+	desc = "The Republic of the Newest Order has approached us with an offer to buy resource rights in our territory."
 	picture = GFX_report_event_generic_sign_treaty3
 	is_triggered_only = yes
 	option = {
@@ -530,7 +557,8 @@ country_event = {
 	option = { 
 		puppet = INS
 		name = "Great!" 
-		}
+		set_country_flag = RNO_acquired_east_indies 
+	}
 }
 country_event = {
 	id = RNO_Guarantees_East_Indies.4
@@ -582,6 +610,7 @@ add_namespace = RNO_Guarantees_Indochina
 country_event = {
 	id = RNO_Guarantees_Indochina.1
 	title = "The Republic of the Newest Order Offers Guarantees for Indochina"
+	desc = "The Republic of the Newest Order has offered us guarantees for Indochina, promising to join a defensive war if we accept. Us going to war will forfeit the guarantee."
 	desc = "The Republic of the Newest Order has offered us guarantees for Indochina, promising to join a defensive war if we accept. Us going to war will forfeit the guarantee."
 	picture = GFX_report_event_generic_sign_treaty3
 	is_triggered_only = yes
@@ -661,7 +690,6 @@ option = {
 		}
 	}
 }
-}
 	option = {
 		name = "We should stay out of it"
 		ai_chance = { factor = 0 }
@@ -672,6 +700,110 @@ option = {
 			}
 	}
 }
+add_namespace = RNO_Siam_Indochina_War
+country_event = {
+	id = RNO_Siam_Indochina_War.0
+	title = "The Republic Offers Siam an Indochina Pact"
+	desc = "The Republic of the Newest Order has offered Siam a joint campaign to seize French Indochina."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "We accept"
+		set_country_flag = SIA_siam_indochina_pact_active
+	}
+}
+country_event = {
+	id = RNO_Siam_Indochina_War.1
+	title = "The Indochina Pact Goes to War"
+	desc = "The campaign for French Indochina has begun. Siam and the Republic have agreed to press the attack together."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "For Indochina"
+		set_country_flag = RNO_siam_indochina_war_started
+		set_country_flag = RNO_siam_indochina_pact_active
+		SIA = { set_country_flag = SIA_siam_indochina_pact_active }
+		RNO = { country_event = { id = RNO_Siam_Indochina_War.2 days = 100 } }
+		RNO = { country_event = { id = RNO_Siam_Indochina_War.4 days = 15 } }
+	}
+}
+country_event = {
+	id = RNO_Siam_Indochina_War.2
+	title = "Indochina Campaign Deadline"
+	desc = "The campaign had 100 days to secure French Indochina. Now the results are in."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "See the outcome"
+		if = {
+			limit = {
+				AND = {
+					controls_state = 670
+					controls_state = 671
+					controls_state = 1017
+					controls_state = 286
+					controls_state = 741
+				}
+			}
+			SIA = {
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 1017
+				transfer_state = 286
+				transfer_state = 741
+			}
+			RNO = { puppet = SIA }
+			remove_country_flag = RNO_siam_indochina_pact_active
+			remove_country_flag = RNO_siam_indochina_war_started
+			SIA = { remove_country_flag = SIA_siam_indochina_pact_active }
+		}
+		else = {
+			white_peace = yes
+			RNO = {
+				remove_country_flag = RNO_siam_indochina_pact_active
+				remove_country_flag = RNO_siam_indochina_war_started
+			}
+			SIA = { remove_country_flag = SIA_siam_indochina_pact_active }
+		}
+	}
+}
+country_event = {
+	id = RNO_Siam_Indochina_War.4
+	title = "Siam Is On The Verge Of Collapse"
+	desc = "The campaign is still active. If Siam capitulates we must abandon the pact and cut our losses."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = "Monitor the situation"
+		if = {
+			limit = { SIA = { has_capitulated = yes } }
+			white_peace = yes
+			FRA = { annex = SIA }
+			RNO = {
+				remove_country_flag = RNO_siam_indochina_pact_active
+				remove_country_flag = RNO_siam_indochina_war_started
+			}
+			SIA = { remove_country_flag = SIA_siam_indochina_pact_active }
+		}
+		else = {
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = RNO_siam_indochina_pact_active
+						has_country_flag = RNO_siam_indochina_war_started
+						has_war_with = FRA
+					}
+				}
+				RNO = { country_event = { id = RNO_Siam_Indochina_War.4 days = 15 } }
+			}
+		}
+	}
+}
+
 add_namespace = RNO_Help_China_Japan
 country_event = {
 	id = RNO_Help_China_Japan.1
@@ -692,15 +824,20 @@ country_event = {
 		RNO = {
 			puppet = GXC
 			puppet = GDC
+			set_country_flag = RNO_china_accepted_help
+			every_country = {
+				limit = { OR = { tag = GXC tag = GDC } }
+				set_country_flag = RNO_asian_colony_puppet
+				if = {
+					limit = { ROOT = { has_country_flag = RNO_asian_colony_investment_active } }
+					add_ideas = { RNO_Colonial_Puppet_Spirit }
+				}
+			}
 			country_event = {
 				id = RNO_Help_China_Japan.3
 				days = 1
 			}
-			set_country_flag = RNO_china_accepted_help
-		}
-		
-		# RNO joins China's war against Japan
-		if = {
+			if = {
 			limit = {
 				CHI = {
 					is_in_war = yes
@@ -758,7 +895,7 @@ country_event = {
 		name = "Excellent! Our influence in Asia grows."
 	}
 }
-
+}
 add_namespace = RNO_Help_Japan_China
 country_event = {
 	id = RNO_Help_Japan_China.1
@@ -786,15 +923,7 @@ country_event = {
 				id = RNO_Help_Japan_China.3
 				days = 1
 			}
-		}
-		
-		if = {
-			limit = {
-				JAP = {
-					is_in_war = yes
-					has_war_with = CHI
 				}
-			}
 			RNO = {
 				add_to_war = {
 					targeted_alliance = JAP
@@ -802,7 +931,6 @@ country_event = {
 					hostility_reason = asked_to_join
 				}
 			}
-		}
 		RNO = {
 			transfer_state = 524
 			transfer_state = 526
@@ -846,6 +974,219 @@ country_event = {
 
 	option = {
 		name = "Good. Our foothold in the Pacific grows."
+	}
+}
+
+add_namespace = RNO_Help_USA_Japan
+country_event = {
+	id = RNO_Help_USA_Japan.1
+	title = "The Republic of the Newest Order Offers Help Against Japan"
+	desc = "The Republic of the Newest Order has approached us with an offer to join our war against Japan. In exchange, they request that we give them the Philippines. This could turn the tide of the war, but at what cost to our sovereignty?"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	
+	option = {
+		name = "We accept their help. The Philippines are not worth losing the war."
+		ai_chance = {
+			factor = 100
+		}
+		USA = {
+			give_military_access = RNO
+			give_navy_access = RNO
+		}
+		RNO = {
+			puppet = PHI
+			set_country_flag = RNO_usa_accepted_help
+			set_country_flag = RNO_asian_colony_puppet
+			if = {
+				limit = { has_country_flag = RNO_asian_colony_investment_active }
+				add_ideas = { RNO_Colonial_Puppet_Spirit }
+			}
+			country_event = {
+				id = RNO_Help_USA_Japan.3
+				days = 1
+			}
+			if = {
+				limit = {
+					USA = {
+						is_in_war = yes
+						has_war_with = JAP
+					}
+				}
+				RNO = {
+					add_to_war = {
+						targeted_alliance = USA
+						enemy = JAP
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We refuse. The Philippines are valuable colonies."
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = "We will not hand over the Philippines."
+		
+		RNO = {
+			country_event = {
+				id = RNO_Help_USA_Japan.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = RNO_Help_USA_Japan.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The United States Refuses Our Offer"
+	desc = "The United States has refused our offer of military assistance against Japan. They prefer to keep the Philippines rather than accept our terms."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "A missed opportunity."
+	}
+}
+
+country_event = {
+	id = RNO_Help_USA_Japan.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The United States Accepts Our Offer"
+	desc = "The United States has accepted our terms. We will join their war against Japan. The Philippines are now under our protection."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "Excellent! Our influence in the Pacific grows."
+	}
+}
+
+add_namespace = RNO_Help_UK_Allies
+country_event = {
+	id = RNO_Help_UK_Allies.1
+	title = "The Republic of the Newest Order Offers Malaya for Joining the Allies"
+	desc = "The Republic of the Newest Order has approached us with an offer to join the Allies in exchange for control of Malaya. This could strengthen our coalition significantly, providing us with a valuable ally in the Pacific."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	
+	option = {
+		name = "We accept. Welcome to the Allies!"
+		ai_chance = {
+			factor = 100
+		}
+		RNO = {
+			puppet = MAL
+			set_country_flag = RNO_in_allies_faction
+			country_event = {
+				id = RNO_Help_UK_Allies.3
+				days = 1
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { any_allied_country = { tag = RNO } }
+				ENG = {
+					add_to_faction = PREV
+				}
+			}
+			ENG = {
+				add_to_faction = RNO
+			}
+			RNO = {
+				every_country = {
+					limit = { has_war_with = ENG }
+					RNO = {
+						add_to_war = {
+							targeted_alliance = ENG
+							enemy = PREV
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We decline. Malaya is too valuable."
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = "We reject the offer from the Republic."
+		
+		RNO = {
+			country_event = {
+				id = RNO_Help_UK_Allies.2
+				days = 1
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = RNO_Help_UK_Allies.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The British Decline Our Offer"
+	desc = "The British have rejected our offer to join the Allies in exchange for Malaya. They believe the territory is too valuable or wish to maintain their independence."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "A missed opportunity."
+	}
+}
+
+country_event = {
+	id = RNO_Help_UK_Allies.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The British Accept Our Offer"
+	desc = "The British have accepted our terms. We have joined the Allies faction and transferred Malaya to them. Our place in the alliance is now secure."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "Excellent! We stand together with the Allies."
+	}
+}
+
+country_event = {
+	id = RNO_Asian_Colony_Investment.1
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden_effect = {
+		every_country = {
+			limit = {
+				is_puppet = yes
+				owner = RNO
+				has_country_flag = RNO_asian_colony_puppet
+			}
+			add_ideas = { RNO_Colonial_Puppet_Spirit }
+		}
+	}
+}
+
+country_event = {
+	id = RNO_Asian_Colony_Investment.2
+	is_triggered_only = yes
+	fire_only_once = no
+	hidden_effect = {
+		if = {
+			limit = { has_country_flag = RNO_asian_colony_investment_active }
+			every_country = {
+				limit = {
+					is_puppet = yes
+					owner = RNO
+					has_country_flag = RNO_asian_colony_puppet
+				}
+				add_ideas = { RNO_Colonial_Puppet_Spirit }
+			}
+		}
 	}
 }
 
@@ -923,9 +1264,12 @@ country_event = {
 		add_ideas = { Chinese_Manpower_Organization_Penalty }
 	}
 }
+
 add_namespace = RNO_Request_Japanese_Naval_Advisors
 country_event = {
 	id = RNO_Request_Japanese_Naval_Advisors.1
+	is_triggered_only = yes
+	fire_only_once = yes
 	title = "The Republic Requests Japanese Naval Advisors"
 	desc = "The Republic of the Newest Order has requested that we provide them with naval advisors."
 	option = {
@@ -980,5 +1324,312 @@ country_event = {
 	
 	option = {
 		name = "Thank you for the support."
+	}
+}
+add_namespace = RNO_Request_Anglo_Military_Support
+country_event = {
+	id = RNO_Request_Anglo_Military_Support.1
+	title = "The Republic Requests Anglo Air Support"
+	desc = "The Republic of the Newest Order has requested that we provide them with military advisors to help improve their air force capabilities."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = "They have proven to be good allies, we should help them."
+		RNO = {
+			country_event = {
+				id = RNO_Request_Anglo_Military_Support.3
+				days = 1
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = "We cannot spare the advisors."
+		RNO = {
+			country_event = {
+			id = RNO_Request_Anglo_Military_Support.2
+			days = 1
+			}
+		}
+	}
+}
+country_event = {
+id = RNO_Request_Anglo_Military_Support.2
+is_triggered_only = yes
+fire_only_once = yes
+title = "Britain Refuses Our Military Advisor Request"
+desc = "Britain has refused our request for military advisors, stating they cannot spare the personnel."
+picture = GFX_report_event_generic_sign_treaty3
+option = {
+name = "A disappointment."
+}
+}
+country_event = {
+id = RNO_Request_Anglo_Military_Support.3
+is_triggered_only = yes
+fire_only_once = yes
+title = "Britain Provides Military Air Advisors"
+desc = "Britain has agreed to provide us with military advisors, improving our air force capabilities."
+picture = GFX_report_event_generic_sign_treaty3
+option = {
+	RNO = {
+		add_ideas = { RNO_Anglo_Air_Advisors }
+	}
+name = "Thank you for the support."
+air_experience = 25
+add_tech_bonus = {
+bonus = 2.0
+uses = 1
+category = air_equipment
+}
+add_doctrine_cost_reduction = {
+name = air_doc_bonus
+cost_reduction = 0.5
+uses = 1
+category = air_doctrine
+}
+}
+}
+add_namespace = RNO_Request_USA_Naval_Advisors
+country_event = {
+	id = RNO_Request_USA_Naval_Advisors.1
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "The Republic Requests USA Naval Advisors"
+	desc = "The Republic of the Newest Order has requested that we provide them with naval advisors."
+	option = {
+		name = "They have proven to be good allies, we should help them."
+		ai_chance = {
+			factor = 100
+		}
+		RNO = {
+			add_ideas = { RNO_USA_Naval_Advisors }
+		}
+
+		RNO = {
+			country_event = {
+				id = RNO_Request_USA_Naval_Advisors.3
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = "We cannot spare the advisors."
+		ai_chance = {
+			factor = 0
+		}
+		
+		RNO = {
+			country_event = {
+				id = RNO_Request_USA_Naval_Advisors.2
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = RNO_Request_USA_Naval_Advisors.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "USA Refuses Our Naval Advisor Request"
+	desc = "The USA has refused our request for naval advisors, stating they cannot spare the personnel."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "A disappointment."
+	}
+}
+country_event = {
+	id = RNO_Request_USA_Naval_Advisors.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = "USA Provides Naval Advisors"
+	desc = "The USA has agreed to provide us with naval advisors, improving our naval capabilities."
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	option = {
+		name = "Thank you for the support."
+	}
+}
+############## Ellection ################
+add_namespace = RNO_Election
+country_event = {
+	id = RNO_Election.1
+	title = "The State of our Democracy"
+	desc = "Our Democracy is currently being lead by 3 Majors Parties, The Monarchist Party, the Socalist Party and the Militarist Party. Each of which are aiming to win the upcoming elections. The Monarchist Party is currently leading in the polls, but the Socialist Party is gaining momentum. The Militarist Party is currently in third place, but they have a strong base of support among the military and nationalist groups. The elections are expected to be closely contested, and the outcome will have a significant impact on the future of our country."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "We will observe the elections closely."
+	hidden_effect = {
+		RNO = {
+			country_event = {
+				id = RNO_Election.2
+				days = 1
+			}
+		}
+	}
+	}
+}
+country_event = {
+	id = RNO_Election.2
+	title = "The Monarchists"
+	desc = "Contrary to the common sense, the Monarchist Party is in fact not support by the King and does not fully support him either. Instead they are more of a far right party that is focused on the idea of a strong and centralized government, and they believe that the monarchy is a symbol of that and do not belive the current King a good fit for this Position. They are also known for their strong nationalist rhetoric and their support for traditional values. Once of the biggest critices they are currently facing is the fact that there leader barley 16 years old is often characterizated as a reckless and inexperienced politician. They currently stand to win the Position of President and 2 Parliamental seats. "
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The People must come to there senses and vote for a Party not led by a screaming child."
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.03
+		}
+		custom_effect_tooltip = "The Monarchist Party will perform worse during the elections."
+		add_variable = { name = RNO_election_monarchist_score value = -1 }
+		hidden_effect = {
+			RNO = {
+				country_event = {
+					id = RNO_Election.3
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "The Monarchists are fine where they are, we should not interfere in the elections."
+		add_stability = 0.01
+		custom_effect_tooltip = "No change to Monarchist support."
+		hidden_effect = {
+			RNO = {
+				country_event = {
+					id = RNO_Election.3
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "The Monarchists are the only party that can lead our Party to greatness."
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		custom_effect_tooltip = "The Monarchist Party will perform better during the elections."
+		add_variable = { name = RNO_election_monarchist_score value = 1 }
+		hidden_effect = {
+			RNO = {
+				country_event = {
+					id = RNO_Election.3
+					days = 1
+				}
+			}
+		}
+}
+}
+country_event = {
+	id = RNO_Election.3
+	title = "The Socialists"
+	desc = "The Socialist Party once again contrary to common sense is the one supported by the King with especially the current President from them being on good terms with him. The Socalists themself however do not reciprocate that favor and are often critical of the monarchy and the current King. They are known for their progressive policies and their support for workers' rights and social welfare programs. There biggest proplem is however there internal corruption which is said to be the reason for the Kings favor towards them. They currently stand to win the Prime Minister and 1 Parliamental seat."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The people should vote for a party that is not as corrupt."
+		add_popularity = {
+			ideology = communism
+			popularity = -0.03
+		}
+		custom_effect_tooltip = "The Socialist Party will perform worse during the elections."
+		add_variable = { name = RNO_election_socialist_score value = -1 }
+		hidden_effect = {
+			RNO = {
+				country_event = {
+					id = RNO_Election.4
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "The Socialists are fine where they are, we should not interfere in the elections."
+		add_stability = 0.01
+		custom_effect_tooltip = "No change to Socialist support."
+		hidden_effect = {
+			RNO = {
+				country_event = {
+					id = RNO_Election.4
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "The Socialists is the only resonable choice for the working Man."
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.03
+		}
+		custom_effect_tooltip = "The Socialist Party will perform better during the elections."
+		add_variable = { name = RNO_election_socialist_score value = 1 }
+		hidden_effect = {
+			RNO = {
+				country_event = {	
+					id = RNO_Election.4
+					days = 1
+				}
+			}
+		}
+}
+}
+country_event = {
+	id = RNO_Election.4
+	title = "The Militarists"
+	desc = "Since we do not like common sense here the Militarists are the most Modest Party presenting a more moderate alternative to the Monarchists ideals and stand the most open to cooperation with the others Parties. The Militarists are known for their strong support for the military and their emphasis on national security. They are also known for their support for traditional values and their opposition to communism. Their biggest problem is that they are often seen as too moderate and not willing to take a strong stance on important issues. They currently stand to win 2 Parliamental seat."
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "This is not the time for moderation, we need a strong and decisive leadership."
+		add_popularity = {
+			ideology = neutrality 
+			popularity = -0.03
+		}
+		custom_effect_tooltip = "The Militarist Party will perform worse during the elections."
+		add_variable = { name = RNO_election_militarist_score value = -1 }
+		hidden_effect = {
+			RNO = {
+				set_country_flag = RNO_election_completed
+			}
+		}
+	}
+	option = {
+		name = "The Militarists are fine where they are, we should not interfere in the elections."
+		add_stability = 0.01
+		custom_effect_tooltip = "No change to Militarist support."
+		hidden_effect = {
+			RNO = {
+				set_country_flag = RNO_election_completed
+			}
+		}
+	}
+	option = {
+		name = "Extremists are not the answer, we need a party that can work with others."
+		add_popularity = {
+			ideology = neutrality 
+			popularity = 0.03
+		}
+		custom_effect_tooltip = "The Militarist Party will perform better during the elections."
+		add_variable = { name = RNO_election_militarist_score value = 1 }
+		hidden_effect = {
+			RNO = {
+				set_country_flag = RNO_election_completed
+			}
+		}
 	}
 }

@@ -1,0 +1,383 @@
+add_namespace = RNO_Election_Outcome
+
+# All possible score combinations: 27 outcomes
+# Each party: -1 (suppressed), 0 (neutral), +1 (supported)
+# Monarchist score, Socialist score, Militarist score
+
+# Combination: M=1, S=1, M=1 (all supported equally)
+country_event = {
+	id = RNO_Election_Outcome.M1_S1_M1
+	title = "A United Electorate"
+	desc = "All three parties have gained equal support from the electorate. This rare consensus suggests the people are united in their vision for the Republic's future. The government will be strengthened by this mandate.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 2, Socialist 2, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Unity in purpose"
+	}
+}
+
+# Combination: M=1, S=1, M=0
+country_event = {
+	id = RNO_Election_Outcome.M1_S1_M0
+	title = "Monarchists and Socialists Ascendant"
+	desc = "The Monarchist and Socialist parties have gained the most support, while the Militarists remain neutral. Power will be consolidated between these two parties.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 2, Socialist 2, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "The will of the people"
+	}
+}
+
+# Combination: M=1, S=1, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M1_S1_M_minus1
+	title = "Militarists Rejected"
+	desc = "The Monarchist and Socialist parties have gained support while the Militarist Party has been rejected by the electorate. The balance of power shifts decisively away from the military establishment.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 2, Socialist 2, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "A setback for the military"
+	}
+}
+
+# Combination: M=1, S=0, M=1
+country_event = {
+	id = RNO_Election_Outcome.M1_S0_M1
+	title = "Monarchists and Militarists Strong"
+	desc = "The Monarchist and Militarist parties have gained significant support, while the Socialists remain neutral. A conservative alliance emerges from these elections.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 2, Socialist 1, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Conservative strength"
+	}
+}
+
+# Combination: M=1, S=0, M=0
+country_event = {
+	id = RNO_Election_Outcome.M1_S0_M0
+	title = "Monarchist Dominance"
+	desc = "The Monarchist Party has emerged as the clear victor, gaining majority support while the other parties remain neutral. A strong mandate for nationalist policies.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 3, Socialist 1, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Monarchist ascendancy"
+	}
+}
+
+# Combination: M=1, S=0, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M1_S0_M_minus1
+	title = "Monarchists vs Militarists"
+	desc = "The Monarchist Party gains significant support while the Militarist Party loses ground. A shift in the balance of conservative and military influence.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 3, Socialist 1, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "A new balance"
+	}
+}
+
+# Combination: M=1, S=-1, M=1
+country_event = {
+	id = RNO_Election_Outcome.M1_S_minus1_M1
+	title = "Socialists Rejected"
+	desc = "The Monarchist and Militarist parties gain support while the Socialist Party is rejected by the electorate. A significant shift away from socialist policies.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 3, Socialist 0, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialism in retreat"
+	}
+}
+
+# Combination: M=1, S=-1, M=0
+country_event = {
+	id = RNO_Election_Outcome.M1_S_minus1_M0
+	title = "Socialist Weakness"
+	desc = "The Monarchist Party gains support while the Socialist Party loses ground. The Militarists remain neutral as a powerbroker in the new configuration.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 3, Socialist 0, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialist losses"
+	}
+}
+
+# Combination: M=1, S=-1, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M1_S_minus1_M_minus1
+	title = "Monarchist Triumph"
+	desc = "The Monarchist Party emerges victorious as both the Socialist and Militarist parties are rejected by the electorate. An overwhelming mandate for nationalist policies.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Monarchist Party\n— Parliament: Monarchist 4, Socialist 0, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Monarchist supremacy"
+	}
+}
+
+# Combination: M=0, S=1, M=1
+country_event = {
+	id = RNO_Election_Outcome.M0_S1_M1
+	title = "Socialists and Militarists Strong"
+	desc = "The Socialist and Militarist parties gain significant support while the Monarchists remain neutral. A shift toward progressive and military-focused policies.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 1, Socialist 2, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialism and militarism rise"
+	}
+}
+
+# Combination: M=0, S=1, M=0
+country_event = {
+	id = RNO_Election_Outcome.M0_S1_M0
+	title = "Socialist Dominance"
+	desc = "The Socialist Party emerges as the clear victor while the other parties remain neutral. A strong mandate for progressive policies and workers' rights.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 1, Socialist 3, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialist ascendancy"
+	}
+}
+
+# Combination: M=0, S=1, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M0_S1_M_minus1
+	title = "Socialists Triumph Over Militarists"
+	desc = "The Socialist Party gains support while the Militarist Party is rejected. A decisive shift toward progressive policies and away from military influence.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 1, Socialist 3, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Progressive victory"
+	}
+}
+
+# Combination: M=0, S=0, M=1
+country_event = {
+	id = RNO_Election_Outcome.M0_S0_M1
+	title = "Militarist Ascendancy"
+	desc = "The Militarist Party gains the most support while the other parties remain neutral. Military influence over domestic and foreign policy increases significantly.\n\nGOVERNMENT:\n— President: Militarist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 1, Socialist 1, Militarist 3"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Military ascendancy"
+	}
+}
+
+# Combination: M=0, S=0, M=0
+country_event = {
+	id = RNO_Election_Outcome.M0_S0_M0
+	title = "Balanced Parliament"
+	desc = "The electorate is equally divided across all three parties. The government structure remains unchanged, with power balanced between all parties.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 2, Socialist 1, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Equilibrium maintained"
+	}
+}
+
+# Combination: M=0, S=0, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M0_S0_M_minus1
+	title = "Militarists Rejected"
+	desc = "While the Monarchist and Socialist parties remain neutral, the Militarist Party suffers a significant rejection from the electorate.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 2, Socialist 2, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Militarist setback"
+	}
+}
+
+# Combination: M=0, S=-1, M=1
+country_event = {
+	id = RNO_Election_Outcome.M0_S_minus1_M1
+	title = "Socialists Weakened"
+	desc = "The Militarist Party gains support while the Socialist Party is rejected. A shift away from progressive policies toward military strength.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 2, Socialist 0, Militarist 3"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Militarist gains"
+	}
+}
+
+# Combination: M=0, S=-1, M=0
+country_event = {
+	id = RNO_Election_Outcome.M0_S_minus1_M0
+	title = "Socialist Rejection"
+	desc = "The Socialist Party is rejected by the electorate while the other parties remain neutral. A significant blow to progressive interests.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 3, Socialist 0, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Conservative resurgence"
+	}
+}
+
+# Combination: M=0, S=-1, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M0_S_minus1_M_minus1
+	title = "The Monarchists Prevail"
+	desc = "Both the Socialist and Militarist parties are rejected while the Monarchist Party remains neutral. By default, the Monarchists inherit significant power.\n\nGOVERNMENT:\n— President: Monarchist Party\n— Prime Minister: Monarchist Party\n— Parliament: Monarchist 4, Socialist 0, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Monarchist default"
+	}
+}
+
+# Combination: M=-1, S=1, M=1
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S1_M1
+	title = "Monarchists Rejected"
+	desc = "The Socialist and Militarist parties gain significant support while the Monarchist Party is decisively rejected by the electorate.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 0, Socialist 2, Militarist 3"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "The Monarchists rejected"
+	}
+}
+
+# Combination: M=-1, S=1, M=0
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S1_M0
+	title = "Socialist Rise"
+	desc = "The Socialist Party gains support while the Monarchist Party is rejected. The Militarists remain neutral as the new political order takes shape.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 0, Socialist 3, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialism ascendant"
+	}
+}
+
+# Combination: M=-1, S=1, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S1_M_minus1
+	title = "Socialist Supremacy"
+	desc = "The Socialist Party emerges victorious as both the Monarchist and Militarist parties are rejected. An overwhelming mandate for progressive transformation.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 0, Socialist 4, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialist triumph"
+	}
+}
+
+# Combination: M=-1, S=0, M=1
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S0_M1
+	title = "Militarist vs Monarchist"
+	desc = "The Militarist Party gains support while the Monarchist Party is rejected. The Socialists remain neutral as this new balance emerges.\n\nGOVERNMENT:\n— President: Militarist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 0, Socialist 2, Militarist 3"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Military dominance"
+	}
+}
+
+# Combination: M=-1, S=0, M=0
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S0_M0
+	title = "Monarchists Weakened"
+	desc = "The Monarchist Party is rejected while the other parties remain neutral. The traditional establishment loses influence in this new parliament.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 0, Socialist 3, Militarist 2"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Monarchist losses"
+	}
+}
+
+# Combination: M=-1, S=0, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S0_M_minus1
+	title = "The Socialists Inherit Power"
+	desc = "Both the Monarchist and Militarist parties are rejected while the Socialists remain neutral. By default, the Socialists inherit control of the government.\n\nGOVERNMENT:\n— President: Socialist Party\n— Prime Minister: Socialist Party\n— Parliament: Monarchist 0, Socialist 4, Militarist 1"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Socialist default"
+	}
+}
+
+# Combination: M=-1, S=-1, M=1
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S_minus1_M1
+	title = "Militarist Dominance"
+	desc = "Both the Monarchist and Socialist parties are rejected while the Militarist Party gains significant support. Military authority will dominate the government.\n\nGOVERNMENT:\n— President: Militarist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 0, Socialist 1, Militarist 4"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Militarism triumphant"
+	}
+}
+
+# Combination: M=-1, S=-1, M=0
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S_minus1_M0
+	title = "The Militarists Inherit Power"
+	desc = "Both the Monarchist and Socialist parties are rejected while the Militarists remain neutral. By default, the Militarists inherit control of the government.\n\nGOVERNMENT:\n— President: Militarist Party\n— Prime Minister: Militarist Party\n— Parliament: Monarchist 0, Socialist 1, Militarist 4"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "Military default"
+	}
+}
+
+# Combination: M=-1, S=-1, M=-1
+country_event = {
+	id = RNO_Election_Outcome.M_minus1_S_minus1_M_minus1
+	title = "All Rejected"
+	desc = "A historic moment: all three major parties are rejected by the electorate. The people have spoken against the entire political establishment. The government will be restructured as a coalition of independents and minority voices.\n\nGOVERNMENT:\n— President: Independent\n— Prime Minister: Independent\n— Parliament: Monarchist 0, Socialist 1, Militarist 1, Others 3"
+	picture = GFX_report_event_generic_sign_treaty3
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = {
+		name = "A new beginning"
+	}
+}

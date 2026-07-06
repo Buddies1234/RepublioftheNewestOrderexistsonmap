@@ -13,4 +13,171 @@ characters = {
 		}
 
 	}
+	bor_borowichka = {
+		name = bor_borowichka
+		portraits = {
+			civilian = {
+				small = GFX_bor_borowichka_advisor
+			}
+			army = {
+				large = GFX_bor_borowichka_large
+				small = GFX_bor_borowichka_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = bor_borowichka
+			cost = 100
+			traits = {  }
+		}
+		navy_leader = {
+			traits = { destroyer_leader battleship_adherent cruiser_captain }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			maneuvering_skill = 5
+			coordination_skill = 7
+		}
+	}
+	nikitas_nikitas = {
+		name = nikitas_nikitas
+		portraits = {
+			civilian = {
+				small = GFX_nikitas_nikitas_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = nikitas_nikitas
+			cost = 
+			traits = {  }
+		}
+	}
+	#Involved
+	nikitas_involved = {
+		name = nikitas_involved
+		portraits = {
+			civilian = {
+				small = GFX_nikitas_involved_advisor
+			}
+			army = {
+				large = GFX_nikitas_involved_large
+				small = GFX_nikitas_involved_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nikitas_involved
+			cost = 97
+			traits = { army_infantry_3 }
+		}
+		corps_commander = {
+			traits = { infantry_leader infantry_officer infantry_expert army_infantry_3 }
+			skill = 6
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 7
+			logistics_skill = 6
+		}
+	}
+	#Invis
+	nikitas_invis = {
+		name = nikitas_invis
+		portraits = {
+			civilian = {
+				small = GFX_nikitas_invis_advisor
+			}
+			army = {
+				large = GFX_nikitas_invis_large
+				small = GFX_nikitas_invis_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = nikitas_invis
+			cost = 
+			traits = { navy_carrier_2 }
+		}
+		navy_leader = {
+			traits = { naval_liason naval_aviation_pioneer navy_carrier_2 }
+			skill = 5
+			attack_skill = 7
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 4
+		}
+	}
+	der_kaiser_ = {
+		name = der_kaiser_
+		portraits = {
+			civilian = {
+				large = GFX_der_kaiser__large
+				small = GFX_der_kaiser__advisor
+			}
+			army = {
+				large = GFX_der_kaiser__large
+				small = GFX_der_kaiser__small
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = ""
+		}
+		advisor = {
+			slot = high_command
+			idea_token = der_kaiser_
+			cost = 150
+			traits = { army_armored_2 }
+		}
+		field_marshal = {
+			traits = { politically_connected harsh_leader panzer_leader }
+			skill = 5
+			attack_skill = 8
+			defense_skill = 0
+			planning_skill = 0
+			logistics_skill = 0
+		}
+	}
+	buddies_his_imperial_majesty_buddies = {
+		name = buddies_his_imperial_majesty_buddies
+		portraits = {
+			civilian = {
+				large = GFX_buddies_his_imperial_majesty_buddies_large
+				small = GFX_buddies_his_imperial_majesty_buddies_advisor
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = ""
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = buddies_his_imperial_majesty_buddies
+			cost = 0
+			traits = {  }
+		}
+	}
+	#Somebody
+	somebody_somebody = {
+		name = somebody_somebody
+		portraits = {
+			civilian = {
+				large = GFX_somebody_somebody_large
+				small = GFX_somebody_somebody_advisor
+			}
+		}
+		country_leader = {
+			ideology = 
+			traits = {  }
+			expire = ""
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = somebody_somebody
+			cost = 75
+			traits = {  }
+		}
+	}
 }

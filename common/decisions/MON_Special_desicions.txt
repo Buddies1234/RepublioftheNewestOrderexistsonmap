@@ -1,0 +1,218 @@
+
+simple_category_MON = {		
+	simple_decision_MON = {		#ID of the decision, must not contain spaces!
+	name = "Annex Tannu Tuva"		
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			is_ai = no
+			origin_tag = MON
+			TAN = { is_ai = yes }
+			date < 1936.2.1
+			
+			}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+				original_tag = MON
+			}
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			MON = {
+				add_state_core = 329 # Tannu Tuva
+			}
+			MON = {
+				annex_country = { target = TAN transfer_troops = yes }
+					}
+			329 = {
+				add_extra_state_shared_building_slots = 100
+				add_building_construction = {
+					type = industrial_complex
+					level = 11
+					instant_build = yes
+				}
+			329 = {
+				add_manpower = 1000000
+				add_extra_state_shared_building_slots = 100
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			330 = { add_manpower = 1000000 }
+			818 = { add_manpower = 1000000 }
+			820 = { add_manpower = 1000000 }
+			819 = { add_manpower = 1000000 }
+			817 = { add_manpower = 1000000 }
+		}
+
+	}
+}
+}
+	simple_decision_SOV = {		#ID of the decision, must not contain spaces!
+	name = "Transfer Sibiria to Mongolia"		
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			is_ai = no
+			origin_tag = SOV
+			
+			}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+				original_tag = SOV
+			}
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {	#The effects to execute once the envelope icon is clicked.
+		SOV = { complete_national_focus = SOV_eastern_development }
+		MON = {
+				add_state_core = 654 # Tannu Tuva
+				add_state_core = 569
+				add_state_core = 576
+				add_state_core = 516
+				add_state_core = 568
+				add_state_core = 567
+				add_state_core = 566
+				add_state_core = 564
+				add_state_core = 563
+				add_state_core = 561
+				add_state_core = 657
+				add_state_core = 408
+				add_state_core = 409
+				add_state_core = 655
+				add_state_core = 560
+				add_state_core = 562
+				add_state_core = 874
+				add_state_core = 822
+				add_state_core = 637
+				add_state_core = 574
+				add_state_core = 877
+				add_state_core = 644
+				add_state_core = 876
+				add_state_core = 878
+				add_state_core = 575
+				add_state_core = 565
+			}
+			654 = { transfer_state_to = MON }
+			569 = { transfer_state_to = MON }
+			576 = { transfer_state_to = MON }
+			516 = { transfer_state_to = MON }
+			568 = { transfer_state_to = MON }
+			567 = { transfer_state_to = MON }
+			566 = { transfer_state_to = MON }
+			564 = { transfer_state_to = MON }
+			563 = { transfer_state_to = MON }
+			561 = { transfer_state_to = MON }
+			657 = { transfer_state_to = MON }
+			408 = { transfer_state_to = MON }
+			409 = { transfer_state_to = MON }
+			655 = { transfer_state_to = MON }
+			560 = { transfer_state_to = MON }
+			562 = { transfer_state_to = MON }
+			874 = { transfer_state_to = MON }
+			822 = { transfer_state_to = MON }
+			637 = { transfer_state_to = MON }
+			574 = { transfer_state_to = MON }
+			877 = { transfer_state_to = MON }
+			644 = { transfer_state_to = MON }
+			876 = { transfer_state_to = MON }
+			878 = { transfer_state_to = MON }
+			575 = { transfer_state_to = MON }
+			565 = { transfer_state_to = MON }
+			
+		}
+}
+	simple_decision_SOV2 = {		#ID of the decision, must not contain spaces!
+	name = "Transfer Manpower to Mongolia"		
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			is_ai = no
+			origin_tag = SOV
+			
+			not = { has_idea = Manpower_exchange2 }
+			}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+				original_tag = SOV
+			}
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {	#The effects to execute once the envelope icon is clicked.
+		SOV = {	
+				add_ideas = Manpower_exchange2
+			}
+		MON = {
+				add_ideas = Manpower_exchange
+			}
+			
+		}
+}
+	simple_decision_SOV3 = {		#ID of the decision, must not contain spaces!
+	name = "Remove the Manpower transfer to Mongolia"		
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			is_ai = no
+			origin_tag = SOV
+			
+			has_idea = Manpower_exchange2
+			}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+				original_tag = SOV
+			}
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {	#The effects to execute once the envelope icon is clicked.
+		SOV = {	
+				remove_ideas = Manpower_exchange2
+			}
+		MON = {
+				remove_ideas = Manpower_exchange
+			}
+			
+		}
+}
+}

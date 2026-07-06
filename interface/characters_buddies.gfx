@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_buddies_his_imperial_majesty_buddies_large"
+		texturefile = "gfx/characters/buddies/buddies_his_imperial_majesty_buddies_large.dds"
+	}
+	spriteType = {
+		name = "GFX_buddies_his_imperial_majesty_buddies_small"
+		texturefile = "gfx/characters/buddies/buddies_his_imperial_majesty_buddies_small.dds"
+	}
+	spriteType = {
+		name = "GFX_buddies_his_imperial_majesty_buddies_small"
+		texturefile = "gfx/characters/buddies/buddies_his_imperial_majesty_buddies_advisor.dds"
+	}
+}

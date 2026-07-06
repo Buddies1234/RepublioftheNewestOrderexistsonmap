@@ -1,4 +1,3 @@
-
 #####King's Support Ideas for RNO#####
 ideas = {
 	country = {
@@ -12,7 +11,7 @@ ideas = {
             picture = HUN_hungarian_monarchy
 			modifier = {
 			}
-			
+
 		}
     }
 	country = {
@@ -32,7 +31,7 @@ ideas = {
                 conscription_factor = 0.10
                 non_core_manpower = 0.01
 			}
-			
+
 		}
     }
     country = {
@@ -71,7 +70,7 @@ ideas = {
                 conscription_factor = 0.30
                 non_core_manpower = 0.03
             }
-            
+
         }
     }
     country = {
@@ -91,7 +90,7 @@ ideas = {
                 conscription_factor = -0.10
                 non_core_manpower = -0.01
             }
-            
+
         }
     }
     country = {
@@ -111,7 +110,7 @@ ideas = {
                 conscription_factor = -0.20
                 non_core_manpower = -0.02
             }
-            
+
         }
     }
     country = {
@@ -131,7 +130,7 @@ ideas = {
                 conscription_factor = -0.30
                 non_core_manpower = -0.03
             }
-            
+
         }
     }
 ###### Starting Ideas for RNO ######
@@ -147,14 +146,19 @@ ideas = {
             modifier = {
                 stability_factor = 0.10
                 political_power_gain = 0.05
+                rule = {
+                    can_decline_call_to_war = no
+                }
+                rule = {
+                    can_leave_factions = no
+                }
             }
-            
-        }
 
+        }
     }
     country = {
-        Remnents_of_the_Revolution = {
-            # "Remnents of the Revolution"
+        Remnants_of_the_Revolution = {
+            # "Remnants of the Revolution"
             allowed = {
                 tag = RNO
             }
@@ -167,7 +171,7 @@ ideas = {
                 conscription_factor = -0.05
                 consumer_goods_factor = 0.05
             }
-            
+
         }
     }
     country = {
@@ -262,10 +266,51 @@ ideas = {
     }
     }
 
-###############################################################################################################
-#Colonial Ideas for RNO
-###############################################################################################################
- 
+	###############################################################################################################
+	#Colonial Ideas for RNO
+	###############################################################################################################
+    country = {
+        Developing_Philippines = {
+            # Payments from the East Indies
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.2
+            }
+    }
+    }
+    country = {
+        Developing_East_Indies = {
+            # Payments from the East Indies
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.2
+            }
+    }
+    }
+    country = {
+        Developing_Burma = {
+            # Payments from the East Indies
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = ger_mefo_bills_payment
+            modifier = {
+                consumer_goods_factor = 0.2
+            }
+    }
+    }
     country = {
         Our_Colonial_Empire1 = {
             # improving colonial conditions
@@ -283,7 +328,7 @@ ideas = {
             }
     }
 
-    }
+	}
     country = {
         Our_Colonial_Empire2 = {
             # focusing on colonial expansion
@@ -301,7 +346,7 @@ ideas = {
             }
     }
 
-    }
+	}
         country = {
         Our_Colonial_Empire3 = {
             # Serving the motherland
@@ -318,7 +363,7 @@ ideas = {
             }
     }
 
-    }
+	    }
     country = {
         Payments_From_East_Indies = {
             # Payments from the East Indies
@@ -480,23 +525,70 @@ ideas = {
     }
     }
 
-    #################### indutstry ideas ####################
     country = {
-        
+        RNO_East_Indies_Development = {
+            allowed = { tag = INS }
+            cancel = {}
+            picture = LIT_invested_in_farms
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+    }
+    }
+    country = {
+        RNO_East_Indies_Development2 = {
+            allowed = { tag = INS }
+            cancel = {}
+            picture = LIT_invested_in_farms
+            modifier = {
+                consumer_goods_factor = -0.10
+            }
+    }
+    }
+    country = {
+        RNO_East_Indies_Development3 = {
+            allowed = { tag = INS }
+            cancel = {}
+            picture = LIT_invested_in_farms
+            modifier = {
+                consumer_goods_factor = -0.15
+            }
+    }
+    }
+    country = {
+        RNO_INS_East_Indies_Development = {
+            allowed = { tag = INS }
+            cancel = {}
+            picture = LIT_invested_in_farms
+            modifier = {
+                industrial_capacity_factory = 0.2
+                industrial_capacity_dockyard = 0.2
+                consumer_goods_factor = -0.20
+                local_resources_factor = 0.20
+                autonomy_gain = -2.5
+            }
+    }
+    }
+
+
+
+	#################### indutstry ideas ####################
+    country = {
+
         modernized_republic = {
 
             # modernized republic
             picture = generic_research_bonus
-            
+
             allowed = {
                 tag = RNO
             }
             cancel = {
             }
             picture = generic_research_bonus
-            modifier = { 
+            modifier = {
                 research_speed_factor = 0.05
-            }       
+            }
         }
     }
 ############### Guarantee on action ideas ###############
@@ -513,6 +605,10 @@ country = {
         }
     }
 }
+    RNO_Alliance = {
+        picture = generic_constitutional_guarantees
+
+    }
 country = {
     RNO_Guarantee_FRA = {
         allowed = {
@@ -526,7 +622,7 @@ country = {
         }
     }
 }
-    country = {
+country = {
         Guarantee_Refused = {
             allowed = {
             }
@@ -589,8 +685,64 @@ country = {
             }
         }
     }
-}
-            
+    country = {
+        RNO_USA_Naval_Advisors = {
+            allowed = {
+                tag = RNO
+            }
+            picture = generic_navy_bonus
+            modifier = {
+                naval_invasion_prep_speed = 0.25
+                navy_fuel_consumption_factor = -0.1
+                naval_detection = 0.1
+                naval_damage_factor = 0.1
+            }
+        }
+    }
+    country = {
+        Faction_Military_Surge = {
+            allowed = {
+            }
+            cancel = {
+            }
+            picture = generic_navy_bonus
+            modifier = {
+                weekly_manpower = 1000
+                conscription_factor = 0.05
+            }
+        }
+    }
+
+	################## Navy Ideas ##################
+    country = {
+        Submarine_Plan_Finished = {
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_navy_submarines
+            modifier = {
+            convoy_raiding_efficiency_factor = 0.25
+            }
+    }
+	}
+
+	################ Air Ideas ##################
+    country = {
+        RNO_Anglo_Air_Advisors = {
+            allowed = {
+                tag = RNO
+            }
+            cancel = {
+            }
+            picture = generic_aircraft_support
+            modifier = {
+                air_attack_factor = 0.05
+                air_agility_factor = 0.05
+            }
+    }
+	}
 
 
 
@@ -608,3 +760,2132 @@ country = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}

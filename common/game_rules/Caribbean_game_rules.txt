@@ -1,0 +1,15 @@
+Caribbean_Unified = {
+	name = "Caribbean Unified?"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = YES
+		text = "YES"
+		desc = "The Caribbean will be unified without any debuffs."
+	}
+	option = {
+		name = NO
+		text = "NO"
+		desc = "The Caribbean will remain like it is in base game."
+	}
+}

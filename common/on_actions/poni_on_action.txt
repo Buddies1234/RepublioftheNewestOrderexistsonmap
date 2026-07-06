@@ -1,0 +1,66 @@
+on_actions = {
+    on_weekly = {
+        effect = {
+    		add_mastery = {
+				amount = 1
+				track = infantry
+			}
+			add_mastery = {
+				amount = 1
+				track = combat_support
+			}
+			add_mastery = {
+				amount = 1
+				track = armor
+			}
+			add_mastery = {
+				amount = 1
+				track = operations
+			}
+			add_mastery = {
+				amount = 1
+				track = capital_ships
+			}
+			add_mastery = {
+				amount = 1
+				track = carriers
+			}
+			add_mastery = {
+				amount = 1
+				track = screens
+			}
+			add_mastery = {
+				amount = 1
+				track = submarines
+			}
+			add_mastery = {
+				amount = 1
+				track = fighter_aircraft
+			}
+			add_mastery = {
+				amount = 1
+				track = strike_aircraft
+			}
+			add_mastery = {
+				amount = 1
+				track = medium_aircraft
+			}
+			add_mastery = {
+				amount = 1
+				track = heavy_aircraft
+			}
+			add_mastery = {
+				amount = 1
+				track = rangers
+			}
+			add_mastery = {
+				amount = 1
+				track = Mountaineers
+			}
+			add_mastery = {
+				amount = 1
+				track = Marines
+			}
+        }
+	}
+}

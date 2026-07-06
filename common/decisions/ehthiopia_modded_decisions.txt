@@ -1,0 +1,1265 @@
+ETH_enable_local_developments_category = {
+	egypt_local_development = {
+		visible = {
+			EGY = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = EGY
+			}
+			EGY = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = EGY
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	sudan_local_development = {
+		visible = {
+			SUD = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = SUD
+			}
+			SUD = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = SUD
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	libya_local_development = {
+		visible = {
+			LBA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = LBA
+			}
+			LBA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = LBA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	kenya_local_development = {
+		visible = {
+			KEN = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = KEN
+			}
+			KEN = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = KEN
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	uganda_local_development = {
+		visible = {
+			UGA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = UGA
+			}
+			UGA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = UGA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	rwanda_local_development = {
+		visible = {
+			RWA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = RWA
+			}
+			RWA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = RWA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	burundi_local_development = {
+		visible = {
+			BRD = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = BRD
+			}
+			BRD = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = BRD
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	congo_local_development = {
+		visible = {
+			COG = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = COG
+			}
+			COG = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = COG
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	tanzania_local_development = {
+		visible = {
+			TZN = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = TZN
+			}
+			TZN = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = TZN
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	malawi_local_development = {
+		visible = {
+			MLW = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = MLW
+			}
+			MLW = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = MLW
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	mozambique_local_development = {
+		visible = {
+			MZB = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = MZB
+			}
+			MZB = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = MZB
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	zimbabwe_local_development = {
+		visible = {
+			ZIM = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = ZIM
+			}
+			ZIM = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = ZIM
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	botswana_local_development = {
+		visible = {
+			BOT = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = BOT
+			}
+			BOT = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = BOT
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	namibia_local_development = {
+		visible = {
+			NMB = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = NMB
+			}
+			NMB = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = NMB
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	southafrica_local_development = {
+		visible = {
+			SAF = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = SAF
+			}
+			SAF = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = SAF
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	madagascar_local_development = {
+		visible = {
+			MAD = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = MAD
+			}
+			MAD = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = MAD
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	angola_local_development = {
+		visible = {
+			ANG = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = ANG
+			}
+			ANG = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = ANG
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	gabon_local_development = {
+		visible = {
+			GAB = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = GAB
+			}
+			GAB = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = GAB
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	equatorialguinea_local_development = {
+		visible = {
+			EQG = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = EQG
+			}
+			EQG = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = EQG
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	cameroon_local_development = {
+		visible = {
+			CMR = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = CMR
+			}
+			CMR = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = CMR
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	chad_local_development = {
+		visible = {
+			CHA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = CHA
+			}
+			CHA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = CHA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	nigeria_local_development = {
+		visible = {
+			NGA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = NGA
+			}
+			NGA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = NGA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	benin_local_development = {
+		visible = {
+			BIA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = BIA
+			}
+			BIA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = BIA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	niger_local_development = {
+		visible = {
+			NGR = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = NGR
+			}
+			NGR = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = NGR
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	dahomey_local_development = {
+		visible = {
+			DAH = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = DAH
+			}
+			DAH = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = DAH
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	togo_local_development = {
+		visible = {
+			TOG = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = TOG
+			}
+			TOG = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = TOG
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	volta_local_development = {
+		visible = {
+			VOL = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = VOL
+			}
+			VOL = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = VOL
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	ghana_local_development = {
+		visible = {
+			GHA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = GHA
+			}
+			GHA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = GHA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	cotedivoire_local_development = {
+		visible = {
+			IVO = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = IVO
+			}
+			IVO = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = IVO
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	guinea_local_development = {
+		visible = {
+			GNA = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = GNA
+			}
+			GNA = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = GNA
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	sierraleone_local_development = {
+		visible = {
+			SIE = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = SIE
+			}
+			SIE = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = SIE
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	guineabissau_local_development = {
+		visible = {
+			GNB = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = GNB
+			}
+			GNB = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = GNB
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	senegal_local_development = {
+		visible = {
+			SEN = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = SEN
+			}
+			SEN = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = SEN
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	gambia_local_development = {
+		visible = {
+			GAM = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = GAM
+			}
+			GAM = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = GAM
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	mauritania_local_development = {
+		visible = {
+			MRT = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = MRT
+			}
+			MRT = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = MRT
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	sahrawi_local_development = {
+		visible = {
+			WES = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = WES
+			}
+			WES = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = WES
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	morocco_local_development = {
+		visible = {
+			MOR = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = MOR
+			}
+			MOR = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = MOR
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	algeria_local_development = {
+		visible = {
+			ALG = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = ALG
+			}
+			ALG = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = ALG
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	tunisia_local_development = {
+		visible = {
+			TUN = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = TUN
+			}
+			TUN = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = TUN
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	mali_local_development = {
+		visible = {
+			MLI = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = MLI
+			}
+			MLI = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = MLI
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}
+	}
+	car_local_development = {
+		visible = {
+			CAR = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = CAR
+			}
+			CAR = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = CAR
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}	
+	}
+	zambia_local_development = {
+		visible = {
+			ZAM = {
+				any_core_state = {
+					is_controlled_by = ROOT
+				}
+				NOT = {
+					has_country_flag = has_been_integrated_into_african_union
+				}
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = ZAM
+			}
+			ZAM = {
+				all_core_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			release_autonomy = {
+				target = ZAM
+				autonomy_state = autonomy_african_union_member_state
+				freedom_level=0.3
+			}
+		}	
+	}
+}

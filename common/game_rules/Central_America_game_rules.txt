@@ -1,0 +1,20 @@
+Central_America_Unified = {
+	name = "Central America Unified?"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = YES
+		text = "YES"
+		desc = "Central America will be unified without any debuffs."
+	}
+	option = {
+		name = YES_debuff
+		text = "YES (with debuff)"
+		desc = "Central America will be unified but made unplayable."
+	}
+	option = {
+		name = NO
+		text = "NO"
+		desc = "Central America will remain like it is in base game."
+	}
+}

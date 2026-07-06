@@ -1,0 +1,143 @@
+﻿###########################
+# Turkey Events
+###########################
+
+add_namespace = turkey
+
+# President dies
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_report_event_generic_funeral
+
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = TUR
+		#has_government = neutrality
+		date > 1938.11.1
+		has_start_date < 1936.01.02
+		NOT = { has_dlc = "Battle for the Bosporus" }
+	}	
+
+	mean_time_to_happen = {
+		days = 30
+		modifier = {
+			factor = 0.5
+			date > 1938.12.1
+		}
+		modifier = {
+			factor = 0.2
+			date > 1939.1.1
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			promote_character = TUR_ismet_inonu # Character already has country leader role set in character file (Non-Aligned -> Despotism)
+		}
+	}
+
+	option = {
+		name = turkey.1.a
+		every_country = {
+	 		limit = {
+				TUR_mustafa_kemal_ataturk = { is_unit_leader = yes }
+			}
+	 		TUR_mustafa_kemal_ataturk = { remove_unit_leader_role = yes }
+	 	}	
+	}			
+}
+
+country_event = {
+	id = Turkey.2
+	title = Sale_of_Syria
+	desc = Sale_of_Syria
+	picture = GFX_report_event_soviet_japanese_pact
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = Turkey_Can_Go_Fuck_Themselves
+		ai_chance = { 
+			base = 15
+			modifier = {
+				factor = 10
+				has_government = Non-Aligned
+				FROM = {
+					NOT =  {
+						has_government = Non-Aligned
+					}
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = Turkey.2
+				hours = 6
+			}
+		}
+	}
+
+	#SYRIA LAND TRANSFER
+	option = {
+		name = The_Sale_of_Syria
+		ai_chance = { 
+			base = 15
+			#can't afford to lose more land
+			modifier = {
+				factor = 0
+				surrender_progress > 0.5
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					has_war_with = ROOT
+					is_major = yes
+				}
+			}
+		}
+		
+		trigger = {
+			553 = { is_owned_and_controlled_by = LEB }
+			554 = { is_owned_and_controlled_by = SYR }
+			680 = { is_owned_and_controlled_by = SYR }
+			677 = { is_owned_and_controlled_by = SYR }
+			799 = { is_owned_and_controlled_by = SYR }
+		}
+		553 = { transfer_state_to = FROM }
+		554 = { transfer_state_to = FROM }
+		680 = { transfer_state_to = FROM }
+		677 = { transfer_state_to = FROM }
+		799 = { transfer_state_to = FROM }
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = SOV_russian_corporate_state_2IC
+			}
+			
+		FROM = {
+			country_event = {
+				id = Turkey.2
+				hours = 6
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,205 @@
+add_namespace = afu_rework
+
+#message to uk
+country_event = {
+	id = afu_rework.1
+	title = "[FROM.GetName] is Demanding Control Over Our African Holdings!"
+	desc = afu_rework.1.d
+	is_triggered_only = yes
+	picture = placeholder
+	option = {
+		name = "Yeah sure, why not"
+			ETH = {
+				transfer_state = 907
+				transfer_state = 447
+				transfer_state = 452
+				transfer_state = 457
+				transfer_state = 456
+				transfer_state = 552
+				transfer_state = 767
+				transfer_state = 551
+				transfer_state = 883
+				transfer_state = 886
+				transfer_state = 549
+				transfer_state = 887
+				transfer_state = 885
+				transfer_state = 884
+				transfer_state = 548
+				transfer_state = 904
+				transfer_state = 547
+				transfer_state = 903
+				transfer_state = 905
+				transfer_state = 546
+				transfer_state = 770
+				transfer_state = 771
+				transfer_state = 981
+				transfer_state = 542
+				transfer_state = 545
+				transfer_state = 900
+				transfer_state = 901
+				transfer_state = 902
+				transfer_state = 558
+				transfer_state = 274
+				transfer_state = 700
+				transfer_state = 701
+			country_event = afu_rework.4
+			}
+		
+	}
+	option = {
+		name = "Uhh... How about no?"
+		FROM = {
+			country_event = afu_rework.5
+		}
+		
+	}
+}
+
+#message to france
+country_event = {
+	id = afu_rework.2
+	title = "[FROM.GetName] is Demanding Our African Holdings!"
+	desc = afu_rework.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = "Yeah sure, why not"
+			ETH = {
+				transfer_state = 665
+				transfer_state = 458
+				transfer_state = 460
+				transfer_state = 459
+				transfer_state = 513
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 514
+				transfer_state = 786
+				transfer_state = 782
+				transfer_state = 557
+				transfer_state = 272
+				transfer_state = 899
+				transfer_state = 898
+				transfer_state = 780
+				transfer_state = 556
+				transfer_state = 778
+				transfer_state = 781
+				transfer_state = 515
+				transfer_state = 779
+				transfer_state = 777
+				transfer_state = 776
+				transfer_state = 775
+				transfer_state = 774
+				transfer_state = 773
+				transfer_state = 660
+				transfer_state = 772
+				transfer_state = 539
+				transfer_state = 543
+				transfer_state = 708
+				transfer_state = 706
+				country_event = afu_rework.4
+			}
+		
+	}
+
+	option = {
+		name = "Sure, but we're keeping Algeria."
+		ETH = {
+			transfer_state = 665
+			transfer_state = 458
+			#transfer_state = 460
+			#transfer_state = 459
+			#transfer_state = 513
+			transfer_state = 461
+			transfer_state = 462
+			#transfer_state = 514
+			transfer_state = 786
+			transfer_state = 782
+			transfer_state = 557
+			transfer_state = 272
+			transfer_state = 899
+			transfer_state = 898
+			transfer_state = 780
+			transfer_state = 556
+			transfer_state = 778
+			transfer_state = 781
+			transfer_state = 515
+			transfer_state = 779
+			transfer_state = 777
+			transfer_state = 776
+			transfer_state = 775
+			transfer_state = 774
+			transfer_state = 773
+			transfer_state = 660
+			transfer_state = 772
+			transfer_state = 539
+			transfer_state = 543
+			transfer_state = 708
+			transfer_state = 706
+		country_event = afu_rework.4
+		}
+	}
+	option = {
+		name = "Uhh... How about no?"
+		FROM = {
+			country_event = afu_rework.5
+		}
+		
+	}
+}
+
+#the good news
+country_event = {
+	id = afu_rework.4
+	title = "[FROM.GetName] has transferred all our desired lands!"
+	desc = "After careful consideration, [FROM.GetName] has decided to let go of their territories in Africa and hand them over to us. Today marks a great victory for the African peoples."
+	is_triggered_only = yes
+	picture = placeholder
+	option = {
+		name = "This is very good"
+	}
+}
+
+#the non-so good news
+country_event = {
+	id = afu_rework.5
+	title = "[FROM.GetName] has denied our request."
+	desc = "For reasons unbeknownst to us, [FROM.GetName] has denied us the very reasonable request of annexing all of their African colonial holdings. We must do unto them for what did unto us."
+	is_triggered_only = yes
+	picture = placeholder
+	option = {
+		name = "They will pay for this..."
+			create_wargoal = {
+				type = liberate_wargoal
+				target = FROM
+			}
+	}
+}
+
+#south africa business
+country_event = {
+	id = afu_rework.6
+	title = "[FROM.GetName] Requests control over South Africa."
+	desc = afu_rework.6.d
+	is_triggered_only = yes
+	picture = placeholder
+	option = {
+		name = "I don't see what can possibly go wrong."
+		hidden_effect = {
+			end_puppet = SAF
+		}
+		FROM = {
+			set_autonomy = {
+				target = SAF
+				autonomous_state = autonomy_african_union_member_state
+				end_wars = yes
+				end_civil_wars = yes
+			}
+		}
+	}
+	option = {
+		name = "Tell them enough is enough."
+		FROM = {
+			country_event = afu_rework.5
+		}
+	}
+}

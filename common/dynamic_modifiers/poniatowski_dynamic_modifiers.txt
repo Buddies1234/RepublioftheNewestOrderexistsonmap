@@ -1,0 +1,24 @@
+POL_Poniatowski_Military_Reform_1 = {
+	icon = RAJ_private_military_complex
+	#enable {always = yes}
+	
+	custom_modifier_tooltip = POL_Mil_Reform_tt
+
+	### Left Branch
+	army_infantry_attack_factor = POL_inf_attack_var
+	army_infantry_defence_factor = POL_inf_def_var
+	army_org_factor = POL_army_org_fac_var
+	cas_damage_reduction = POL_cas_reduction_var
+
+	### Right Branch
+	army_armor_attack_factor = POL_tank_attack_var
+	army_armor_defence_factor = POL_tank_attack_var
+	air_attack_factor = POL_air_attack_var
+	air_defence_factor = POL_air_defence_var
+	air_cas_efficiency = POL_cas_effectiveness_var
+
+	## shared
+	army_morale_factor = POL_army_morale_var
+	army_core_attack_factor = POL_core_att_var
+	army_core_defence_factor = POL_core_def_var
+}

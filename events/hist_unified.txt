@@ -1,0 +1,61 @@
+﻿###########################
+# Hist anti Lag event
+###########################
+add_namespace = hist.unified
+country_event = {
+	id = hist.unified.1
+	title = "Anti Lag Operation"
+	desc = "You will be lag free but at what cost?"
+	picture = GFX_report_event_chinese_soldiers_fighting
+	trigger = {
+		original_tag = bhu
+		date < 1936.2.1
+		has_game_rule = { rule =
+			hist_game_rules 
+			option = HISTORICAL
+		}
+	}
+	fire_only_once = yes 
+	option = {
+		name = "Do it"
+		ai_chance = { factor = 100 }
+		annex_country = { target = NEP transfer_troops = no }
+		annex_country = { target = TIB transfer_troops = no }
+		annex_country = { target = AFG transfer_troops = no }
+		annex_country = { target = IRE transfer_troops = no }
+		annex_country = { target = GUA transfer_troops = no }
+		annex_country = { target = ELS transfer_troops = no }
+		annex_country = { target = HON transfer_troops = no }
+		annex_country = { target = NIC transfer_troops = no }
+		annex_country = { target = COS transfer_troops = no }
+		annex_country = { target = PAN transfer_troops = no }
+		annex_country = { target = BOL transfer_troops = no }
+		annex_country = { target = PAR transfer_troops = no }
+		annex_country = { target = URU transfer_troops = no }
+		annex_country = { target = PRU transfer_troops = no }
+		annex_country = { target = ECU transfer_troops = no }
+		annex_country = { target = COL transfer_troops = no }
+		annex_country = { target = HAI transfer_troops = no }
+		annex_country = { target = DOM transfer_troops = no }
+		annex_country = { target = LIB transfer_troops = no }
+		annex_country = { target = ARG transfer_troops = no }
+		annex_country = { target = CHL transfer_troops = no }
+		annex_country = { target = URG transfer_troops = no }
+		annex_country = { target = SAU transfer_troops = no }
+		BHU = {
+			add_ideas = closed_economy
+			add_ideas = Reversed_NON_Player_Buff
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		
+
+	}
+	option = {
+		name = "Nah I like lag"
+		ai_chance = { factor = 0 }
+	}
+}
+

@@ -1,0 +1,108 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_ideas = less_cas_yay
+			}
+			if = {
+				limit = { 
+					has_game_rule = { 
+					rule = Caribbean_Unified 
+					option = YES
+				}
+				}
+				CUB = {
+					annex_country = { target = HAI transfer_troops = YES }
+					annex_country = { target = DOM transfer_troops = YES }
+				}
+			}
+			if = {
+				limit = { 
+					has_game_rule = { 
+					rule = Central_America_Unified 
+					option = YES
+				}
+				}
+				ELS = {
+					annex_country = { target = GUA transfer_troops = YES }
+					annex_country = { target = HON transfer_troops = YES }
+					annex_country = { target = NIC transfer_troops = YES }
+					annex_country = { target = COS transfer_troops = YES }
+				}
+			}
+			if = {
+				limit = { 
+					has_game_rule = { 
+					rule = Central_America_Unified 
+					option = YES_debuff
+				}
+				}
+				ELS = {
+					add_ideas = Reversed_NON_Player_Buff
+					annex_country = { target = GUA transfer_troops = YES }
+					annex_country = { target = HON transfer_troops = YES }
+					annex_country = { target = NIC transfer_troops = YES }
+					annex_country = { target = COS transfer_troops = YES }
+				}
+			}
+			if = {
+				limit = { 
+					has_game_rule = { 
+					rule = China_Unified 
+					option = YES
+				}
+				}
+				CHI = {
+					annex_country = { target = SND transfer_troops = YES }
+					annex_country = { target = HBC transfer_troops = YES }
+					annex_country = { target = SHX transfer_troops = YES }
+					annex_country = { target = PRC transfer_troops = YES }
+					annex_country = { target = NXM transfer_troops = YES }
+					annex_country = { target = GSM transfer_troops = YES }
+					annex_country = { target = XSM transfer_troops = YES }
+					annex_country = { target = KHM transfer_troops = YES }
+					annex_country = { target = SIK transfer_troops = YES }
+					annex_country = { target = SIC transfer_troops = YES }
+					annex_country = { target = YUN transfer_troops = YES }
+					annex_country = { target = XIC transfer_troops = YES }
+					annex_country = { target = GXC transfer_troops = YES }
+					annex_country = { target = GDC transfer_troops = YES }
+				}
+			}
+			if = {
+				limit = { 
+					has_game_rule = { 
+					rule = China_Unified 
+					option = YES_debuff
+				}
+				}
+				CHI = {
+					add_ideas = Unification_Balance
+					annex_country = { target = SND transfer_troops = YES }
+					annex_country = { target = HBC transfer_troops = YES }
+					annex_country = { target = SHX transfer_troops = YES }
+					annex_country = { target = PRC transfer_troops = YES }
+					annex_country = { target = NXM transfer_troops = YES }
+					annex_country = { target = GSM transfer_troops = YES }
+					annex_country = { target = XSM transfer_troops = YES }
+					annex_country = { target = KHM transfer_troops = YES }
+					annex_country = { target = SIK transfer_troops = YES }
+					annex_country = { target = SIC transfer_troops = YES }
+					annex_country = { target = YUN transfer_troops = YES }
+					annex_country = { target = XIC transfer_troops = YES }
+					annex_country = { target = GXC transfer_troops = YES }
+					annex_country = { target = GDC transfer_troops = YES }
+				}
+			}
+		}
+	}
+	on_war = {
+		effect = {
+			limit = {
+				NOT = { has_ideas = less_cas_yay }
+			}
+				add_ideas = less_cas_yay
+		}
+	}
+}
+

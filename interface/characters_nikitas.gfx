@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_nikitas_nikitas_large"
+		texturefile = "gfx/characters/nikitas/nikitas_nikitas_large.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_nikitas_small"
+		texturefile = "gfx/characters/nikitas/nikitas_nikitas_small.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_nikitas_small"
+		texturefile = "gfx/characters/nikitas/nikitas_nikitas_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_involved_large"
+		texturefile = "gfx/characters/nikitas/nikitas_involved_large.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_involved_small"
+		texturefile = "gfx/characters/nikitas/nikitas_involved_small.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_involved_small"
+		texturefile = "gfx/characters/nikitas/nikitas_involved_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_invis_large"
+		texturefile = "gfx/characters/nikitas/nikitas_invis_large.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_invis_small"
+		texturefile = "gfx/characters/nikitas/nikitas_invis_small.dds"
+	}
+	spriteType = {
+		name = "GFX_nikitas_invis_small"
+		texturefile = "gfx/characters/nikitas/nikitas_invis_advisor.dds"
+	}
+}

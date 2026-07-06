@@ -1,0 +1,59 @@
+ideas = {
+	country = {
+		NON_Player_Buff = {
+		
+			allowed = {
+				tag = CHI
+			}
+			cancel = {
+			OR = {	
+				is_ai = no
+				has_civil_war = yes
+				is_subject = yes
+			}
+			}
+			modifier = {
+				conscription_factor = 0.5
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				command_power_gain_mult = 0.3
+				war_support_factor = 0.3
+				stability_factor = 0.3
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+				army_org_Factor = 0.1
+				planning_speed = 0.25
+
+			}
+			
+		}
+
+}
+	country = {
+		Reversed_NON_Player_Buff = {
+		
+			allowed = {
+			}
+			cancel = {
+			}
+			modifier = {
+				conscription_factor = -500
+				industrial_capacity_factory = -500
+				industrial_capacity_dockyard = -500
+				command_power_gain_mult = -500
+				war_support_factor = -500
+				stability_factor = -500
+				political_power_gain = -500
+				resistance_target = -500
+				can_create_factions = no
+				can_join_factions = no
+				can_send_volunteers = no
+				fascism_drift = 100
+				consumer_goods_factor = 500
+				enemy_justify_war_goal_time = 5000
+			}
+			
+		}
+
+}
+}

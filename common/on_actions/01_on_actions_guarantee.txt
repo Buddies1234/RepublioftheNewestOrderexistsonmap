@@ -29,4 +29,241 @@ on_actions = {
             }
         }
     }
+    ################## Ellection ###################
+    on_monthly = { 
+        effect = { 
+            if = { 
+                limit = {
+                    date = 1937.1.1
+                    RNO = { has_government = democratic }
+                    NOT = { RNO = { has_country_flag = RNO_election_started } }
+                    complete_national_focus = 1937_election
+                }
+            }
+            # Calculate election results based on final scores
+            if = {
+                limit = {
+                    RNO = { has_country_flag = RNO_election_completed }
+                }
+                RNO = {
+                    if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S1_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S1_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S1_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S0_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S0_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S0_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S_minus1_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S_minus1_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 1 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M1_S_minus1_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S1_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S1_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S1_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S0_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S0_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S0_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S_minus1_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S_minus1_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = 0 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M0_S_minus1_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S1_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S1_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = 1 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S1_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S0_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S0_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = 0 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S0_M_minus1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = 1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S_minus1_M1 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = 0 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S_minus1_M0 days = 0 }
+                    }
+                    else_if = {
+                        limit = {
+                            check_variable = { var = RNO_election_monarchist_score = -1 }
+                            check_variable = { var = RNO_election_socialist_score = -1 }
+                            check_variable = { var = RNO_election_militarist_score = -1 }
+                        }
+                        country_event = { id = RNO_Election_Outcome.M_minus1_S_minus1_M_minus1 days = 0 }
+                    }
+                }
+            }
+        }
+    }
 }

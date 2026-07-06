@@ -1,0 +1,62 @@
+
+simple_category = {		
+	simple_decision = {		#ID of the decision, must not contain spaces!
+	name = "Special Research Facility"		
+		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		
+			219 = {
+			is_fully_controlled_by = SOV
+			air_facility < 1
+			land_facility < 1
+			naval_facility < 1
+			nuclear_facility < 1
+			}
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			ROOT = {
+				is_ai = no
+			219 = {
+			is_fully_controlled_by = SOV
+			air_facility < 1
+			land_facility < 1
+			naval_facility < 1
+			nuclear_facility < 1
+			}
+			}
+		}		
+
+		cost = 0		#The cost to execute the decision, by default its political power.
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "DECISION_EFFECT_YAY"
+					219 = {
+						add_building_construction = {
+							type = land_facility
+							level = 1
+							instant_build = yes
+							province = 9378 # Kurchatov
+						}	
+					}
+					generate_scientist_character = {
+									skills = {
+									specialization_land = 2
+									}
+					}
+		
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1000		
+		}
+	}
+}
+}
+	
+	

@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_somebody_somebody_large"
+		texturefile = "gfx/characters/somebody/somebody_somebody_large.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_somebody_small"
+		texturefile = "gfx/characters/somebody/somebody_somebody_small.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_somebody_small"
+		texturefile = "gfx/characters/somebody/somebody_somebody_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_borowichka_large"
+		texturefile = "gfx/characters/somebody/somebody_borowichka_large.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_borowichka_small"
+		texturefile = "gfx/characters/somebody/somebody_borowichka_small.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_borowichka_small"
+		texturefile = "gfx/characters/somebody/somebody_borowichka_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_borowichka_1_large"
+		texturefile = "gfx/characters/somebody/somebody_borowichka_1_large.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_borowichka_1_small"
+		texturefile = "gfx/characters/somebody/somebody_borowichka_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_somebody_borowichka_1_small"
+		texturefile = "gfx/characters/somebody/somebody_borowichka_1_advisor.dds"
+	}
+}

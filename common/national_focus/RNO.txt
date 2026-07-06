@@ -13,7 +13,7 @@ focus_tree = {
 ####################################################################################################################
 #Elections
 ####################################################################################################################
-	continuous_focus_position = { x = 100 y = 1000 }
+	continuous_focus_position = { x = 100 y = 1200 }
 	focus = {
 		id = Dust_to_Dust
 		icon = GFX_focus_generic_democratic_europe
@@ -28,15 +28,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			FRA = {
-				add_opinion_modifier = {
-					target = RNO
-					modifier = RNO_Aproch
-				}
-			}
+			custom_effect_tooltip = "Due to the unfinished state of the Mod Most of these political events/desicions will not impact the political direction of the Republic or only have one option more will be added with time. This counts for the Entire Tree."
+			custom_effect_tooltip = "Focuses between this one and the 1937 Ellection will decide our Political direction"
 		}
 	}
-
 
 
 	focus = {
@@ -54,7 +49,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			custom_effect_tooltip = "The Balance of Power being in Kings Supremacy will unlock the Monarchist Branch, Constitutional Supremacy will unlock the Communist Branch, while everything else will be needed for the other Paths."
+			country_event = {
+				id = RNO_Election.1
+				days = 1
+			}
+			custom_effect_tooltip = "Currently only demo is avalible so go be a good boy and be democratic."
 		}
 	}
 	focus = {
@@ -70,21 +69,16 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			always = no
 		}
 		completion_reward = {
-			FRA = {
-				add_opinion_modifier = {
-					target = RNO
-					modifier = RNO_Aproch
-				}
-			}
 		}
 	}
 
 #########################################################################################################################
 #Monarchist Branch
 #########################################################################################################################
-	focus = {
+	'focus = {
 		id = Buddies_Reign
 		icon = GFX_focus_generic_election
 		prerequisite = { focus = Ashes_To_Ashes }
@@ -104,8 +98,8 @@ focus_tree = {
 		completion_reward = {
 
 		}
-	}
-
+	}'
+}
 ######################################################################################################################
 #COLONIAL BRANCH
 ######################################################################################################################
@@ -114,7 +108,7 @@ focus_tree = {
 		icon = GFX_focus_ARG_revive_the_colonial_plan
 		#prerequisite = { focus = }
 		x = 10
-		y = 0
+		y = 20
 		#relative_position_id =
 		cost = 5
 		ai_will_do = {
@@ -210,7 +204,7 @@ focus_tree = {
 		prerequisite = { focus = State_of_the_Economy }
 		relative_position_id = State_of_the_Economy
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -240,12 +234,6 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			FRA = {
-				add_opinion_modifier = {
-					target = RNO
-					modifier = RNO_Aproch
-				}
-			}
 		}
 	}
 
@@ -253,23 +241,6 @@ focus_tree = {
 # COLONIAL SUB-BRANCHES - Office of Asian Colonial & Foreign Policy Contacts
 ######################################################################################################################
 
-	focus = {
-		id = Office_of_Asian_Colonial
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = The_State_of_our_Pacific_Colonies }
-		relative_position_id = The_State_of_our_Pacific_Colonies
-		x = -5
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		completion_reward = {
-				
-		}
-	}
 
 	# --- Contact Row ---
 
@@ -420,6 +391,51 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = Develop_East_Indies
+		icon = GFX_focus_generic_industry_investment
+		prerequisite = { focus = Buy_the_East_Indies focus = East_Indies_for_Guarantees }
+		relative_position_id = Buy_the_East_Indies
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_country_flag = RNO_acquired_east_indies
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = Developing_East_Indies
+				days = 180
+			}
+			if = {
+				limit = {
+					has_idea = RNO_East_Indies_Development
+				}
+				swap_ideas = {
+					remove_idea = RNO_East_Indies_Development
+					add_idea = RNO_East_Indies_Development2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RNO_East_Indies_Development2
+				}
+				swap_ideas = {
+					remove_idea = RNO_East_Indies_Development2
+					add_idea = RNO_East_Indies_Development3
+				}
+			}
+			else = {
+				add_ideas = RNO_East_Indies_Development
+			}
+
+			INS = { add_ideas = RNO_INS_East_Indies_Development }
+		}
+
+	}
+	focus = {
 		id = East_Indies_for_Guarantees
 		icon = GFX_focus_CHI_the_southern_mandate
 		prerequisite = { focus = Office_of_Asian_Forgain_Affairs }
@@ -460,8 +476,18 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = RNO_leaning_towards_usa
+			USA = {
+				has_war_with = JAP
+			}
 		}
 		completion_reward = {
+			USA = {
+				country_event = {
+					id = RNO_Help_USA_Japan.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "We will offer the USA our help against Japan in exchange for the Philippines."
 		}
 	}
 
@@ -485,11 +511,56 @@ focus_tree = {
 		completion_reward = {
 			USA = {
 				country_event = {
-					id = RNO_Buying_Philippines.1
+					id = RNO_buying_Philippines.1
 					days = 1
 				}
 			}
 			custom_effect_tooltip = "Should the Americans Accept the Trade we will get 10% Consumer goods Factor and 5% less output for a year but we will gain the Philippines."
+		}
+	}
+
+	focus = {
+		id = Develop_Philippines
+		icon = GFX_focus_generic_industry_investment
+		prerequisite = { focus = Buy_Philippines focus = Philippines_Help_Against_Japan }
+		relative_position_id = Buy_Philippines
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_country_flag = RNO_acquired_philippines
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = Developing_Philippines
+				days = 180
+			}
+			if = {
+				limit = {
+					has_idea = RNO_East_Indies_Development
+				}
+				swap_ideas = {
+					remove_idea = RNO_East_Indies_Development
+					add_idea = RNO_East_Indies_Development2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RNO_East_Indies_Development2
+				}
+				swap_ideas = {
+					remove_idea = RNO_East_Indies_Development2
+					add_idea = RNO_East_Indies_Development3
+				}
+			}
+			else = {
+				add_ideas = RNO_East_Indies_Development
+			}
+
+			PHI = { add_ideas = RNO_INS_East_Indies_Development }
 		}
 	}
 
@@ -507,6 +578,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			USA = {
+				country_event = {
+					id = RNO_Request_USA_Naval_Advisors.1
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -615,6 +692,7 @@ focus_tree = {
 		}
 	}
 
+
 	# --- Indochina Branch ---
 
 	focus = {
@@ -659,7 +737,7 @@ focus_tree = {
 		completion_reward = {
 			FRA = {
 				country_event = {
-					id = RNO_Buying_Indochina.1
+					id = RNO_buying_Indochina.1
 					days = 1
 				}
 			}
@@ -683,8 +761,106 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			set_country_flag = RNO_siam_indochina_pact_active
+			SIA = {
+				country_event = {
+					id = RNO_Siam_Indochina_War.0
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "Not finished I will crash your game if you do this."
+			hidden_effect = {
+				every_country = {
+					declare_war_on = {
+						target = RNO
+						type = annex_everything
+					}
+				}
+				every_country = {
+					declare_war_on = {
+						target = every_country
+						type = annex_everything
+					}
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Neutral }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Slightly_Positive }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Positive }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Very_Positive }
+				}
+				every_country = {
+					declare_war_on = {
+						target = RNO
+						type = annex_everything
+					}
+				}
+				every_country = {
+					declare_war_on = {
+						target = every_country
+						type = annex_everything
+					}
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Neutral }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Slightly_Positive }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Positive }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Very_Positive }
+				}
+				every_country = {
+					declare_war_on = {
+						target = RNO
+						type = annex_everything
+					}
+				}
+				every_country = {
+					declare_war_on = {
+						target = GER
+						type = annex_everything
+					}
+				}
+				every_country = {
+					declare_war_on = {
+						target = ENG
+						type = annex_everything
+					}
+				}
+				every_country = {
+					declare_war_on = {
+						target = SOV
+						type = annex_everything
+					}
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Neutral }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Slightly_Positive }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Positive }
+				}
+				every_country = {
+					add_ideas = { The_King_Support_Very_Positive }
+				}
+				every_state = { transfer_state_to = RNO } 
+				LUX = annex_country = RNO
+				every_state = { transfer_state_to = GER }
+				every_state = { transfer_state_to = ENG }
+			}
 		}
-	}
+		}
 
 	focus = {
 		id = Buy_Resource_Rights
@@ -702,7 +878,7 @@ focus_tree = {
 		completion_reward = {
 			SIA = {
 				country_event = {
-					id = RNO_Buying_Resource_Rights.1
+					id = RNO_buying_Resource_Rights.1
 					days = 1
 				}
 			}
@@ -724,8 +900,24 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			not = {
+				has_country_flag = RNO_leaning_towards_japan
+			}
+			ENG = {
+				is_in_faction = yes
+			}
+			ENG = {
+				has_war_with_major = yes
+			}
 		}
 		completion_reward = {
+			ENG = {
+				country_event = {
+					id = RNO_Help_UK_Allies.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "We will offer the British Malaya in exchange for joining the Allies."
 		}
 	}
 
@@ -745,14 +937,57 @@ focus_tree = {
 		completion_reward = {
 			ENG = {
 				country_event = {
-					id = RNO_Buying_Burma.1
+					id = RNO_buying_Burma.1
 					days = 1
 				}
 			}
 			custom_effect_tooltip = "Should the British Accept the Trade we will get 20% Consumer goods Factor and 10% less output for a year but we will gain Burma."
 		}
 	}
+	focus = {
+		id = RNO_Develop_Burma
+		icon = GFX_focus_generic_industry_investment
+		prerequisite = { focus = Burma_for_Payment }
+		relative_position_id = Burma_for_Payment
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_country_flag = RNO_acquired_burma
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = Developing_Burma
+				days = 180
+			}
+			if = {
+				limit = {
+					has_idea = RNO_East_Indies_Development
+				}
+				swap_ideas = {
+					remove_idea = RNO_East_Indies_Development
+					add_idea = RNO_East_Indies_Development2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RNO_East_Indies_Development2
+				}
+				swap_ideas = {
+					remove_idea = RNO_East_Indies_Development2
+					add_idea = RNO_East_Indies_Development3
+				}
+			}
+			else = {
+				add_ideas = RNO_East_Indies_Development
+			}
 
+			BRM = { add_ideas = RNO_INS_East_Indies_Development }
+		}
+	}
 	focus = {
 		id = Request_Anglo_Military_Support
 		icon = GFX_focus_NORDIC_dem_selector_airforce
@@ -765,8 +1000,20 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
+			is_in_faction = yes
+			has_country_flag = RNO_in_allies_faction
 		}
 		completion_reward = {
+			ENG = {
+				country_event = {
+					id = RNO_Request_Anglo_Military_Support.1
+					days = 1
+				}
+			}
+			custom_effect_tooltip = "If Britain accepts, we will receive air experience, air equipment research bonuses, a positive spirit and air doctrine cost reduction."
 		}
 	}
-}
+
+	################# TEMP #####################
+###############################################################################################################
+

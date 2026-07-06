@@ -5,5 +5,5 @@ tags={
 	"Alternative History"
 	"National Focuses"
 }
-name="Republic of the Newest Order exists now Sub Mod"
-supported_version="1.17.5.1"
+name="Republic at War"
+supported_version="1.18.1.0"

@@ -1,0 +1,20 @@
+POL_intermarium_PU_decision_category = {
+
+	icon = PER_unification_initiative_idea
+
+	visible_when_empty = no
+
+	visible = {
+		has_completed_focus = POL_prop_up_loyalist_regimes
+	}
+}
+
+POL_intermarium_expansion_decision_category = {
+	icon = placeholder
+
+	visible_when_empty = yes
+
+	visible = {
+		has_completed_focus = POL_intermarium_expansion
+	}
+}

@@ -1,0 +1,25 @@
+﻿l_english:
+ CW_SKIP_GROUP:0 "Civil War Avoidance"
+ GER_CW_SKIP:0 "Avoid German Civil War"
+ SOV_CW_SKIP:0 "Avoid Soviet/Russian Civil War"
+ JAP_CW_SKIP:0 "Avoid Japanese Civil War"
+ USA_CW_SKIP:0 "Avoid American Civil War"
+
+ GER_CW_SKIP_OPTION_NOT_ALLOWED:0 "Not Allowed"
+ GER_CW_SKIP_OPTION_ALLOWED:0 "Allowed"
+ SOV_CW_SKIP_OPTION_NOT_ALLOWED:0 "Not Allowed"
+ SOV_CW_SKIP_OPTION_ALLOWED:0 "Allowed"
+ JAP_CW_SKIP_OPTION_NOT_ALLOWED:0 "Not Allowed"
+ JAP_CW_SKIP_OPTION_ALLOWED:0 "Allowed"
+ USA_CW_SKIP_OPTION_NOT_ALLOWED:0 "Not Allowed"
+ USA_CW_SKIP_OPTION_ALLOWED:0 "Allowed"
+
+ GER_CW_SKIP_OPTION_NOT_ALLOWED_DESC:0 "Vanilla civil war rules; no changes will be implemented to civil wars."
+ SOV_CW_SKIP_OPTION_NOT_ALLOWED_DESC:0 "Vanilla civil war rules; no changes will be implemented to civil wars."
+ JAP_CW_SKIP_OPTION_NOT_ALLOWED_DESC:0 "Vanilla civil war rules; no changes will be implemented to civil wars."
+ USA_CW_SKIP_OPTION_NOT_ALLOWED_DESC:0 "Vanilla civil war rules; no changes will be implemented to civil wars."
+
+ GER_CW_SKIP_OPTION_ALLOWED_DESC:0 "Removes the German civil war after taking the §YRally the Wehrmacht§W focus. This does not affect the communist civil war which is avoidable in the vanilla game. §RFoci and other content will be rebalanced on account of the civil war no longer existing."
+ SOV_CW_SKIP_OPTION_ALLOWED_DESC:0 "Removes the Soviet/Russian civil wars when not going down §YThe Centre§W path. §RThe Soviet/Russian focus tree will be heavily rebalanced due to civil war avoidance."
+ JAP_CW_SKIP_OPTION_ALLOWED_DESC:0 "Removes the Japanese civil war after taking the §YCast the Die§W or §YPre-emptive Coup foci. §RManchuria will still free itself where relevant.§W No further balancing will be applied to the Japanese focus tree or content."
+ USA_CW_SKIP_OPTION_ALLOWED_DESC:0 "Removes the American civil war which is automatically progressed by taking certain foci. §RFascist USA and Socialist USA will be heavily rebalanced to reflect these changes."

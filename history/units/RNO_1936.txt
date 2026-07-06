@@ -114,21 +114,21 @@ division_template = {
 units = {
 	division = {
 		name = "1st Royal Guard Division"
-		location = 13769 # State 1056 - Capital (17 VP)
+		location = 13769 # State 1091 - Capital (17 VP)
 		division_template = "Royal Guard Division"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Royal Guard Division"
-		location = 13769 # State 1054 - Major VP (22 points)
+		location = 13769 # State 1089 - Major VP (22 points)
 		division_template = "Royal Guard Division"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3rd Royal Guard Division"
-		location = 13571 # State 1059 - Port & VP (21 points)
+		location = 13571 # State 1094 - Port & VP (21 points)
 		division_template = "Royal Guard Division"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
@@ -136,49 +136,49 @@ units = {
 	# Infantry Divisions - Strategic Victory Points
 	division = {
 		name = "1st Republican Infantry Division"
-		location = 13571 # State 1063 - Republica (50 VP)
+		location = 13571 # State 1098 - Republica (50 VP)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Republican Infantry Division"
-		location = 13769 # State 1062 - Kings Palace (50 VP)
+		location = 13769 # State 1097 - Kings Palace (50 VP)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3rd Republican Infantry Division"
-		location = 13390 # State 1056 - Capital (17 VP)
+		location = 13390 # State 1091 - Capital (17 VP)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "4th Republican Infantry Division"
-		location = 13396 # State 1054 - Major VP (22 points)
+		location = 13396 # State 1089 - Major VP (22 points)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "5th Republican Infantry Division"
-		location = 13704 # State 1059 - Port & VP (21 points)
+		location = 13704 # State 1094 - Port & VP (21 points)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "6th Republican Infantry Division"
-		location = 13419 # State 1051 - Major VP (19 points)
+		location = 13419 # State 1086 - Major VP (19 points)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "7th Republican Infantry Division"
-		location = 13491 # State 1064 - Air Base & VP (18 points)
+		location = 13491 # State 1099 - Air Base & VP (18 points)
 		division_template = "Republican Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
@@ -187,119 +187,119 @@ units = {
 	# Garrison Divisions - Core Defense & Ports (All 17 Restored)
 	division = {
 		name = "1st Republican Garrison Division"
-		location = 13384 # State 1047 - Dockyard & VP (12 points)
+		location = 13384 # State 1082 - Dockyard & VP (12 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "2nd Republican Garrison Division"
-		location = 13408 # State 1048 - Port & VP (8 points)
+		location = 13408 # State 1083 - Port & VP (8 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "3rd Republican Garrison Division"
-		location = 13383 # State 1050 - Naval Base & VP
+		location = 13383 # State 1085 - Naval Base & VP
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "4th Republican Garrison Division"
-		location = 13476 # State 1061 - Industrial VP (14 points)
+		location = 13476 # State 1096 - Industrial VP (14 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "5th Republican Garrison Division"
-		location = 13391 # State 1052 - VP (11 points)
+		location = 13391 # State 1087 - VP (11 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "6th Republican Garrison Division"
-		location = 13586 # State 1060 - VP (10 points)
+		location = 13586 # State 1095 - VP (10 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "7th Republican Garrison Division"
-		location = 13388 # State 1055 - VP (9 points)
+		location = 13388 # State 1090 - VP (9 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "8th Republican Garrison Division"
-		location = 13508 # State 1058 - VP (5 points)
+		location = 13508 # State 1093 - VP (5 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "9th Republican Garrison Division"
-		location = 13489 # State 1049 - Peninsula VP (15 points)
+		location = 13489 # State 1084 - Peninsula VP (15 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "10th Republican Garrison Division"
-		location = 13402 # State 1057 - VP (13 points)
+		location = 13402 # State 1092 - VP (13 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "11th Republican Garrison Division"
-		location = 13386 # State 1053 - VP (6 points)
+		location = 13386 # State 1088 - VP (6 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "12th Republican Garrison Division"
-		location = 13878 # State 1062 - Naval Base & VP (50 points)
+		location = 13878 # State 1097 - Naval Base & VP (50 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "13th Republican Garrison Division"
-		location = 13571 # State 1063 - Republica VP (50 points)
+		location = 13571 # State 1098 - Republica VP (50 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "14th Republican Garrison Division"
-		location = 13420 # State 1048 - Coastal Port
+		location = 13420 # State 1083 - Coastal Port
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "15th Republican Garrison Division"
-		location = 13423 # State 1048 - Coastal Port
+		location = 13423 # State 1083 - Coastal Port
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "16th Republican Garrison Division"
-		location = 13704 # State 1059 - Naval Base & VP (21 points)
+		location = 13704 # State 1094 - Naval Base & VP (21 points)
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "17th Republican Garrison Division"
-		location = 13418 # State 1050 - Naval Base
+		location = 13418 # State 1085 - Naval Base
 		division_template = "Republican Garison Division"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.8
@@ -308,35 +308,35 @@ units = {
 	# Marine Divisions - Coastal Defense & Amphibious
 	division = {
 		name = "1st Republican Marine Division"
-		location = 13878 # State 1062 - Major Naval Base (8)
+		location = 13878 # State 1097 - Major Naval Base (8)
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2nd Republican Marine Division"
-		location = 13704 # State 1059 - Naval Base (3)
+		location = 13704 # State 1094 - Naval Base (3)
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3rd Republican Marine Division"
-		location = 13952 # State 1050 - Naval Base
+		location = 13952 # State 1085 - Naval Base
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "4th Republican Marine Division"
-		location = 13612 # State 1048 - Coastal Port
+		location = 13612 # State 1083 - Coastal Port
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "5th Republican Marine Division"
-		location = 13382 # State 1048 - Coastal Port
+		location = 13569 # State 1083 - Coastal Port
 		division_template = "Republican Marine Division"
 		start_experience_factor = 0.15
 		start_equipment_factor = 1.0

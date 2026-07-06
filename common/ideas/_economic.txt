@@ -22,6 +22,25 @@ ideas = {
 				fuel_gain_factor = -0.6
 			}
 		}
+		conservative_economic_policy = {
+			name = "Conservative Economic Policy"
+			picture = HABSBURG_economy
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+                stability_weekly = 0.0005
+                war_support_weekly = 0.0005
+				consumer_goods_expected_value = 0.30
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				max_fuel_factor = -0.30
+				fuel_gain_factor = -0.5
+			}
+		}
 		undisturbed_isolation = {
 
 

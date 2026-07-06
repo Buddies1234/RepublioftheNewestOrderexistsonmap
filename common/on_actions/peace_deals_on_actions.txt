@@ -1,0 +1,53 @@
+on_actions = {
+	on_before_peace_conference_start = {
+		effect = {
+			if = {
+				limit = {
+					ETH = { exists = yes }
+                    FROM = { original_tag = ETH}
+                    ROOT = { original_tag = ITA}
+				}
+			ITA = {
+				annex_country = {
+					target = ETH
+					transfer_troops = no
+				}
+			}
+			}
+		} 
+	}
+	on_before_peace_conference_start = {
+		effect = {
+			if = {
+				limit = {
+					IRE = { exists = yes }
+                    FROM = { original_tag = IRE}
+                    ROOT = { original_tag = ENG}
+				}
+			ENG = {
+				annex_country = {
+					target = IRE
+					transfer_troops = no
+				}
+			}
+			}
+		} 
+	}
+	on_before_peace_conference_start = {
+		effect = {
+			if = {
+				limit = {
+					ELS = { exists = yes }
+                    FROM = { original_tag = ELS}
+                    ROOT = { original_tag = MEX}
+				}
+			MEX = {
+				annex_country = {
+					target = ELS
+					transfer_troops = no
+				}
+			}
+			}
+		} 
+	}
+}
